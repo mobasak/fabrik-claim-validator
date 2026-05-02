@@ -1,0 +1,75 @@
+# Makefile.python - Standard commands for Python projects
+# Copy to project root as "Makefile" and customize:
+#   1. PROJECT_NAME
+#   2. PORT
+#   3. Entry point in dev command
+#
+# Usage: make setup-dev, make dev, make test, make docker-smoke
+
+.PHONY: setup-dev dev test docker-smoke docker-build docker-dev clean install lint format gate-lean
+
+# ===== CUSTOMIZE THESE =====
+PROJECT_NAME ?= fabrik-claim-validator
+PORT ?= 8000
+# ===========================
+
+# ============================================================
+# Environment Setup
+# ============================================================
+
+setup-dev:
+	python -m venv .venv
+	.venv/bin/pip install -r requirements-dev.txt
+
+# ============================================================
+# Local Development (fast)
+# ============================================================
+
+install:
+	uv sync
+
+dev:
+	PYTHONPATH=src uvicorn fabrik_claim_validator.main:app --host 0.0.0.0 --port $(PORT) --reload
+
+test:
+	pytest -v
+
+lint:
+	ruff check .
+	mypy .
+
+format:
+	ruff format .
+	ruff check --fix .
+
+gate-lean:
+	@.venv/bin/ruff check . --fix && .venv/bin/ruff format . && .venv/bin/mypy .
+
+# ============================================================
+# Docker (parity check)
+# ============================================================
+
+docker-build:
+	docker build -t $(PROJECT_NAME) .
+
+docker-smoke: docker-build
+	@echo "Starting container..."
+	@docker run -d --name smoke-test -p $(PORT):$(PORT) --env-file .env $(PROJECT_NAME) || true
+	@sleep 3
+	@echo "Health check..."
+	@curl -sf http://localhost:$(PORT)/health && echo " ✓ Health OK" || echo " ✗ Health FAILED"
+	@docker stop smoke-test && docker rm smoke-test
+
+docker-dev:
+	docker compose -f compose.yaml -f compose.dev.yaml up --build
+
+# ============================================================
+# Cleanup
+# ============================================================
+
+clean:
+	docker stop smoke-test 2>/dev/null || true
+	docker rm smoke-test 2>/dev/null || true
+	docker rmi $(PROJECT_NAME) 2>/dev/null || true
+	find . -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true
+	find . -type d -name .pytest_cache -exec rm -rf {} + 2>/dev/null || true

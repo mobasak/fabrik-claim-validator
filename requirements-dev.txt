@@ -1,0 +1,9 @@
+-r requirements.txt
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
+ruff
+mypy
+bandit
+semgrep
+sqlfluff
+vulture

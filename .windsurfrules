@@ -1,0 +1,125 @@
+# Cascade Agent Contract
+
+## ⚠️ MANDATORY FIRST OUTPUT
+`RULES ACTIVE: CASCADE | [3 specific rules from this file]`
+
+## Completion Contract (every task)
+1. **IMPLEMENT** — Stay in Scope. No hardcoded secrets/localhost (use `os.getenv()`). No silent failures. Write 1 test for the core path (skip docs-only). Adjacent fixes allowed only inside files already in Scope; never broaden Scope.
+2. **QUALITY GATE** — Run the literal command from the ticket's `Final Gate Instruction` field; fix until `status: "success"`:
+   - Standard: `python scripts/final_gate.py --lean --json`
+   - Milestone/multi-component/schema/auth: `python scripts/final_gate.py --json`
+   - Epic Closure: `python scripts/final_gate.py --systemic --json`
+3. **CHANGELOG** — One entry under `## [Unreleased]` (gate-enforced).
+4. **EXIT** — Gate auto-stages (`git add -A`). Do not commit, do not stage manually.
+
+## Cross-Cutting (every task)
+- **Doc currency:** Update `INDEX.md`, `CHANGELOG.md`, `README.md` on file/feature change. Update `docs/CONFIGURATION.md` + `.env.example` on env-var change. Update `docs/user-guide/<feature>.md` if user-facing AND `HAS_USER_GUIDE: true`.
+- **Logging:** No `print()` / `console.log()` in prod. Use scaffolded logger (`src/{package}/logger.py` Python, `src/logger.js` Node). Don't create custom logging modules.
+- **Reusable code:** Goes in `src/utils/` or `src/lib/`, zero project-specific imports, tagged `[reusable]` in `INDEX.md`, with docstrings + types.
+- **Lessons Learnt:** Fill the ticket's `Lessons Learnt:` line explicitly with `none` OR a structured entry appended to `docs/LESSONS_LEARNT.md` per ticket-breakdown Step 5 triggers. Silence = failure.
+
+## HARD STOPS — NEVER
+| Rule | Instead |
+|:--|:--|
+| `git commit` / `git add` | Gate auto-stages on success |
+| bare `pip install` | `/opt/<project>/.venv/bin/pip install` |
+| Alpine base image | `python:<stable>-slim-bookworm` / `node:<LTS>-bookworm-slim` |
+| edit files outside Scope | stay strictly in ticket Scope |
+| modify `pyproject.toml` / `requirements.txt` | only if ticket explicitly requires deps change |
+| create files outside project tree | local project paths only |
+| expose Docker ports via `ports:` | route through Traefik (DOCKER-USER iptables blocks raw ports) |
+| admin dashboard without Authelia | add `authelia-forward@docker` middleware |
+| API service without `X-Internal-Token` | validate `SERVICE_INTERNAL_SECRET_KEY` header |
+
+## Orientation (do first)
+Scan repo root and read any present: `README.md`, `.windsurf/rules/*.md` (see catalog below), `.windsurf/workflows/`, `compose.yaml`, `Dockerfile`, `.env.example`, `pyproject.toml`, `package.json`. Don't recreate `.venv` or replace existing Docker config. When creating a plan in `docs/development/plans/`, include Key Invariants, Failure Modes, and 5–10 testable Acceptance Criteria.
+
+## Rule Pack Catalog (`.windsurf/rules/`)
+
+**Always-loaded** (auto-applied): `CROSS_CUTTING_REQUIREMENTS.md` (doc/observability/user-guide/reusability), `60-saas-ui.md` (SaaS UI patterns + 5 required states), `ocoron-design-system.md` (visual + verbal identity).
+
+**Read on-demand:**
+
+| When task involves... | Open |
+|:--|:--|
+| Python | `10-python.md` |
+| API endpoints/schemas | `15-api-contracts.md` |
+| TypeScript | `20-typescript.md` |
+| PostgreSQL queries/migrations | `25-data-postgres.md` |
+| Docker/compose/ops | `30-ops.md` |
+| Auth/sessions/secrets | `35-security-auth.md` |
+| Doc generation | `40-documentation.md` |
+| Docusaurus | `42-docusaurus.md` |
+| Testing/One-Test Rule | `45-testing-strategy.md` |
+| Code review/gates | `50-code-review.md` |
+| Logging/health/monitoring | `55-observability.md` |
+| WordPress | `62-wordpress.md` |
+| RAG/vector search | `65-rag-search.md` |
+| Chrome extensions (MV3) | `70-chrome-ext.md` |
+| Background workers/jobs | `75-workers-jobs.md` |
+| React Native/mobile | `80-mobile.md` |
+| Paddle/billing | `85-payments-billing.md` |
+| n8n/automation | `90-automation.md` |
+| Multi-tenant/RLS | `95-multi-tenant-saas.md` |
+
+**Conflict rule:** Rule wins over task spec; surface the conflict to user before proceeding.
+
+## Environment
+WSL Ubuntu only — Linux paths, never Windows tooling. Follow scaffold structure verbatim; don't reorganize. If task contradicts existing project state, stop and report — never silently overwrite.
+
+Code must work in all three envs without modification:
+
+| Env | DB | Config |
+|:--|:--|:--|
+| WSL dev | PostgreSQL localhost | `.env` |
+| VPS Docker | `postgres-main` | `compose.yaml` |
+| Supabase | Supabase PG | env vars |
+
+## Cascade Behavior
+- **Check before create:** verify file exists (`ls`/`find`/`read_file`) before `write_to_file`. File-already-exists = STOP.
+- **Present before execute:** present plan, wait for approval, then execute. Read-only commands (`ls`/`cat`/`find`/`grep`/`head`/`tail`) exempt.
+- **No unsolicited advice:** no breaks, no lifestyle tips, no non-task commentary.
+
+## Web Search Tools (for agents without native web search)
+When web search is needed, use these available tools:
+- `mcp2_web_search_exa` - Exa web search (superior results, requires Exa MCP configured)
+- `mcp3_firecrawl_search` - Firecrawl search (available, requires Firecrawl API key)
+- `search_web` - General web search (native Windsurf tool, no quota)
+
+## Essential Invariants
+- No hardcoded `localhost`/`127.0.0.1`/DB strings/keys/passwords. Always `os.getenv("KEY", "default")`.
+- Base images: `slim-bookworm` only. Never Alpine.
+- `compose.yaml` includes `platform: linux/amd64` for all build services.
+- Health endpoints test real deps (e.g. `await db.execute("SELECT 1")`).
+- CHANGELOG entry required for any code/config/infra change (format in `50-code-review.md`).
+- DB schema → Alembic migrations only (raw SQL DDL banned per `25-data-postgres.md`); `db/schema.sql` is reference only.
+- `.env.example` updated when adding env vars.
+- Ports: Python 8000–8099, Frontend 3000–3099. Register in `PORTS.md` before use.
+- No `/tmp/` — use project `.tmp/`.
+- No class-level config — function-level only.
+- **Naming: kebab-case.** Exceptions: `README.md`, `CHANGELOG.md`, `INDEX.md`, `PORTS.md`, `AGENTS.md`, `AGENTS-compact.md`, `LESSONS_LEARNT.md`, `Makefile`, `Dockerfile`, Python pkgs (snake_case), auto-generated, dotfiles.
+- Docker port security: never expose container ports via `ports:`. Traefik handles external. Docker bypasses UFW; DOCKER-USER iptables enforces. See `30-ops.md`.
+- Service auth (4 layers): iptables → Authelia (admin 2FA) → `X-Internal-Token` (API m2m) → Traefik (public). New admin dashboards add `authelia-forward@docker`. New API services validate `X-Internal-Token`.
+
+## Sensitive Data Protection
+Before modifying `.env`/`*.key`/`*.pem`/`secrets/`/`.ssh/`:
+```bash
+cp <file> <file>.backup.$(date +%Y%m%d-%H%M%S)
+```
+No backup = STOP.
+
+## Before Creating New Scripts
+grep_search scripts/ and scripts/enforcement/ first. Extend existing code; don't duplicate.
+
+## PEP 668: Venv
+NEVER bare pip install (fails "externally-managed-environment"). Use /opt/<project>/.venv/bin/pip install <pkg>.
+
+## Password Policy
+32 chars, [a-zA-Z0-9], secrets.choice(). Forbidden: postgres, admin, password123.
+
+## Decision-Grade Audit (before reporting done)
+- Error handling: silent/misleading/brittle failures handled?
+- Complexity: any "debugging footgun" in 6 months?
+- One-Test Rule: propose exactly ONE test (highest risk reduction). Document Why + Given/When/Then + mocked vs real. In plan file or commit msg.
+
+For mechanical checks and gate commands, see 50-code-review.md.

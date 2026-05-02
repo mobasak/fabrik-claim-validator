@@ -1,0 +1,60 @@
+# Dockerfile.python - Multi-stage Python FastAPI/uvicorn build
+# Copy to project root as "Dockerfile" and customize:
+#   1. Entry point (app.main:app vs src.main:app)
+#   2. System dependencies (libpq-dev for postgres, etc.)
+#   3. Port number
+#
+# Build: docker build -t PROJECT_NAME .
+# Run: docker run -p 8000:8000 --env-file .env PROJECT_NAME
+
+FROM python:3.12-slim-bookworm AS builder
+
+WORKDIR /app
+
+# Install build dependencies (add more as needed)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install uv and Python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir uv && \
+    uv pip install --system --no-cache -r requirements.txt
+
+# Production stage
+FROM python:3.12-slim-bookworm
+
+WORKDIR /app
+
+# Install runtime dependencies only
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libpq5 \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy installed packages from builder (uv installs to system)
+COPY --from=builder /usr/local/lib/python3.12/site-packages /usr/local/lib/python3.12/site-packages
+COPY --from=builder /usr/local/bin /usr/local/bin
+
+# Copy application code
+COPY . .
+
+# Create non-root user
+RUN useradd -m appuser && chown -R appuser:appuser /app
+USER appuser
+
+# Health check (customize port and endpoint)
+# Note: /health tests actual dependencies (DB, etc.) - adjust start_period if deps need warmup
+HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
+    CMD curl -f http://localhost:${PORT:-8000}/health || exit 1
+
+# Default port (customize as needed)
+ENV PORT=8000
+EXPOSE ${PORT}
+
+# Python path - enables imports from src/fabrik_claim_validator
+ENV PYTHONPATH=/app/src
+
+# Entry point — scaffold replaces fabrik_claim_validator with the actual package name
+CMD ["sh", "-c", "uvicorn fabrik_claim_validator.main:app --host 0.0.0.0 --port ${PORT:-8000}"]

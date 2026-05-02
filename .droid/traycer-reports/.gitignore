@@ -1,0 +1,3 @@
+# Traycer report files — committed .gitignore, reports are gitignored
+*.md
+!.gitignore

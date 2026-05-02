@@ -1,0 +1,8 @@
+# Kilo/Traycer runtime files — do not commit
+*
+!.gitignore
+!review-context/
+!review-context/**
+!traycer-reports/
+!traycer-reports/.gitignore
+traycer-reports/*.md

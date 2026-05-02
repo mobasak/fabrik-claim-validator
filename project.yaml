@@ -1,0 +1,32 @@
+# Project metadata — source of truth
+# Created by: fabrik scaffold
+# Updated by: project owner or fabrik scan
+#
+# Fields:
+#   status: development | ready | production | archived
+#   category: production | active | planning | shell
+#   ports: list of host ports this project binds (must be unique across /opt)
+#   external_systems: list of external services (e.g. supabase, stripe, cloudflare-r2)
+#   monthly_cost: estimated USD/month
+#   dependencies: other /opt project names this depends on
+#   tags: free-form labels
+#   has_user_guide: true if project has user-facing docs (activates user-guide gate)
+
+name: fabrik-claim-validator
+type: python-api
+description: Multi-tradition claim validation + substance discovery service. Sibling
+  to fabrik-citation-verifier. Validates substance/indication claims across 11 medical
+  traditions with peer-equal evidence weighting; surfaces convergent substances via
+  discovery endpoint.
+created: '2026-05-03'
+status: development
+category: active
+url: null
+domain: null
+ports:
+- 8002
+external_systems: []
+monthly_cost: 0
+dependencies: []
+tags: []
+has_user_guide: false
