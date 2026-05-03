@@ -10,24 +10,33 @@ from fabrik_claim_validator.main import app
 client = TestClient(app)
 
 
-def test_health_returns_200_without_db():
-    """Health returns 200 when DB is not configured."""
+def test_health_returns_503_without_db():
+    """Health returns 503 when DB is unreachable — .windsurfrules requires
+    health endpoints to test real deps, not just acknowledge configuration.
+    """
     with patch.dict(os.environ, {}, clear=True):
         response = client.get("/health")
-        assert response.status_code == 200
+        assert response.status_code == 503
         data = response.json()
         assert data["service"] == "fabrik-claim-validator"
-        assert data["status"] == "ok"
+        assert data["status"] == "degraded"
         assert data["dependencies"]["database"] == "not_configured"
 
 
-def test_health_returns_200_with_db_configured():
-    """Health returns 200 when DB is configured (mocked)."""
-    with patch.dict(os.environ, {"DATABASE_URL": "postgresql://test@localhost/test"}):
-        response = client.get("/health")
-        assert response.status_code == 200
-        data = response.json()
-        assert data["dependencies"]["database"] == "configured"
+def test_health_returns_503_when_db_url_set_but_unreachable():
+    """With a bogus DSN, the lifespan still boots but /health surfaces the
+    DB error and returns 503 — critical-dep failures must not 200.
+    """
+    with patch.dict(os.environ, {"DATABASE_URL": "postgresql://nope@127.0.0.1:1/x"}):
+        # Use a fresh TestClient so the lifespan re-runs with the patched env.
+        from fastapi.testclient import TestClient
+
+        with TestClient(app) as fresh_client:
+            response = fresh_client.get("/health")
+        assert response.status_code == 503
+        body = response.json()
+        assert body["status"] == "degraded"
+        assert body["dependencies"]["database"] != "ok"
 
 
 def test_root_endpoint():

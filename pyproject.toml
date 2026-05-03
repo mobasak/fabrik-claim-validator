@@ -41,6 +41,9 @@ dependencies = [
     "python-dotenv>=1.0.0",
     "pyyaml>=6.0.0",
     "structlog>=24.4.0",
+
+    # MCP server (FCV-009)
+    "mcp>=1.0.0",
 ]
 
 [project.optional-dependencies]

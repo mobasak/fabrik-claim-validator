@@ -38,6 +38,28 @@ def _run_alembic(*args: str) -> subprocess.CompletedProcess[str]:
 
 
 def test_migrations_round_trip_and_seed_is_valid() -> None:
+    # 0. Wipe FK-dependent rows so seed downgrade (DELETE traditions) succeeds.
+    #    Other tests in this suite leave ingest_log / claim_evidence rows that
+    #    reference traditions; a fresh downgrade would otherwise hit the FK.
+    import psycopg as _psycopg
+
+    _dsn = os.environ["DATABASE_URL"]
+    for prefix in ("postgresql+asyncpg://", "postgresql+psycopg://"):
+        if _dsn.startswith(prefix):
+            _dsn = _dsn.replace(prefix, "postgresql://", 1)
+    with _psycopg.connect(_dsn) as _conn, _conn.cursor() as _cur:
+        # Skip if tables are already gone (rerun after a previous downgrade).
+        _cur.execute(
+            "SELECT to_regclass('public.ingest_log') IS NOT NULL "
+            "AND to_regclass('public.claim_evidence') IS NOT NULL"
+        )
+        if _cur.fetchone()[0]:
+            _cur.execute(
+                "TRUNCATE ingest_log, claim_evidence, claims, monographs, "
+                "taxa_aliases, cache_entries, discovery_cache, proxy_budget "
+                "RESTART IDENTITY CASCADE"
+            )
+
     # 1. Fresh downgrade to base (clean slate for reproducibility).
     down = _run_alembic("downgrade", "base")
     assert down.returncode == 0, down.stderr
