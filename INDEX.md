@@ -43,6 +43,17 @@
 
 See [docs/README.md](docs/README.md) for documentation index with purposes.
 
+## docs/ Files
+
+| File | Purpose |
+|------|---------|
+| **docs/README.md** | Documentation index — entry point into all docs |
+| **docs/development/PLAN.md** | v2 build plan — 7 sprints, 54 tickets, status legend |
+| **docs/development/PLANS.md** | (deleted, superseded by `PLAN.md`) |
+| **docs/reference/AFCL.md** | Agentic Friction & Constraint Log scaffold |
+| **docs/LESSONS_LEARNT.md** | Per-ticket lessons-learnt log (gate-required when triggered) |
+| **docs/STRATEGIC_BACKLOG.md** | Cross-cutting backlog feeding sprint planning |
+
 ---
 
 ## docs/ — Subdirectories
@@ -64,10 +75,12 @@ See [docs/README.md](docs/README.md) for documentation index with purposes.
 |-----------|---------|
 | **src/** | Source code (main package) |
 | **tests/** | Test suite |
+| **alembic/** | Database migrations — `env.py` loads `.env.local`, versions/ holds hand-written DDL per plan §4 |
+| **alembic/versions/** | Per-table migrations 0001_traditions..0010_ingest_log + 0011_traditions_seed |
 | **scripts/** | Automation scripts — `final_gate.py`, `kilo_code_review.py`, enforcement checks |
 | **scripts/enforcement/** | Individual quality gate checks |
 | **config/** | Configuration files |
-| **db/** | Database schema (`schema.sql` is source of truth) |
+| **db/** | Legacy reference schema (`schema.sql`) — actual DDL lives in `alembic/versions/` |
 | **.droid/** | Kilo/Traycer runtime — review context, reports (mostly gitignored) |
 | **.windsurf/** | Cascade rules and workflows (synced from Fabrik) |
 

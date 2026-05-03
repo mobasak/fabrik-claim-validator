@@ -6,10 +6,34 @@
 
 Multi-tradition claim validation + substance discovery service. Sibling to fabrik-citation-verifier. Validates substance/indication claims across 11 medical traditions with peer-equal evidence weighting; surfaces convergent substances via discovery endpoint.
 
-**Type:** {python-api | node-api | saas-skeleton | chrome-extension | mobile-app | desktop-app | static-site}
-**Port:** {PORT}
+**Type:** python-api (FastAPI)
+**Port:** 8002 (registered in `/opt/fabrik/PORTS.md`)
 
 ---
+
+## Quick Start
+
+WSL dev (PostgreSQL via Unix socket, peer auth as `ozgur`):
+
+```bash
+cd /opt/fabrik-claim-validator
+python -m venv .venv && source .venv/bin/activate
+pip install -e ".[dev]"
+cp .env.example .env  # adjust if needed; .env.local is git-tracked for WSL defaults
+
+# Apply schema migrations
+set -a && source .env.local && set +a
+alembic upgrade head
+
+# Run tests
+pytest
+
+# Run service
+uvicorn fabrik_claim_validator.main:app --port 8002 --reload
+curl http://localhost:8002/health
+```
+
+VPS prod is Coolify-managed; see `compose.yaml`.
 
 ## Overview
 

@@ -21,7 +21,10 @@ This document tracks port allocations for fabrik-claim-validator services to pre
 
 | Port | Service | URL/Purpose |
 |------|---------|-------------|
-| TBD | Main service | Add your allocations here |
+| 8002 | fabrik-claim-validator | FastAPI main — `http://localhost:8002` (registered in `/opt/fabrik/PORTS.md`) |
+| 8032 | fabrik-citation-verifier | Sibling service — citation verification (upstream dependency) |
+| 18011 | /opt/captcha | Captcha solver (Anti-Captcha-backed HTTP service) — upstream dep for scrapers |
+| 18013 | /opt/proxy | Residential-proxy manager (Webshare) — upstream dep for scrapers |
 
 ---
 
