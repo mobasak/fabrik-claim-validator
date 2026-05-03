@@ -1,0 +1,10 @@
+{
+  "scraper_id": "ema_hmpc",
+  "request": {"method": "GET", "url": "https://www.ema.europa.eu/en/medicines/herbal/echinaceae-purpureae-herba"},
+  "response": {
+    "status": 200,
+    "headers": {"content-type": "text/html"},
+    "text": "<html><body><h1>Echinaceae purpureae herba - Purple coneflower herb</h1><div class=\"field-content\"><h2>Therapeutic indications</h2><p>Traditional use: Short-term prevention and treatment of common cold; relief of minor skin conditions and superficial wounds based on long-standing use.</p><h2>Contraindications</h2><p>Hypersensitivity to the active substance or to other plants of the Asteraceae (Compositae) family; Progressive systemic diseases such as tuberculosis, leucosis, collagenosis, multiple sclerosis, AIDS, HIV infection and autoimmune diseases.</p><h2>Pharmaceutical form</h2><p>Herbal tea; Comminuted herbal substance; Expressed juice from fresh flowering aerial parts; Dry extract; Liquid extract.</p></div><div class=\"documents\"><ul><li><a href=\"/en/documents/herbal-monograph/community-herbal-monograph-echinaceae-purpureae-herba.pdf\">Community herbal monograph</a></li><li><a href=\"/en/documents/herbal-monograph/assessment-report-echinaceae-purpureae-herba.pdf\">Assessment report</a></li></ul></div></body></html>"
+  },
+  "recorded_at": "2026-05-03T12:00:03Z"
+}

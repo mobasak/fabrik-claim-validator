@@ -1,0 +1,27 @@
+{
+  "scraper_id": "pubchem",
+  "request": {
+    "method": "GET",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/synonyms/JSON"
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "InformationList": {
+        "Information": [
+          {
+            "CID": 2244,
+            "Synonym": [
+              "aspirin",
+              "50-78-2",
+              "2-Acetoxybenzoic acid",
+              "Acetylsalicylic acid"
+            ]
+          }
+        ]
+      }
+    },
+    "text": null
+  },
+  "recorded_at": "2026-05-03T10:00:00Z"
+}

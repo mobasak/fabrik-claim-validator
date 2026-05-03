@@ -1,0 +1,10 @@
+{
+  "scraper_id": "ema_hmpc",
+  "request": {"method": "GET", "url": "https://www.ema.europa.eu/en/medicines/herbal?page=1"},
+  "response": {
+    "status": 200,
+    "headers": {"content-type": "text/html"},
+    "text": "<html><body><div class=\"view-content\"><h1>Herbal medicines</h1><p>No results found.</p></div></body></html>"
+  },
+  "recorded_at": "2026-05-03T12:00:01Z"
+}

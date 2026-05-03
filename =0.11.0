@@ -1,0 +1,23 @@
+Collecting pdfplumber
+  Downloading pdfplumber-0.11.9-py3-none-any.whl.metadata (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 116.1 kB/s eta 0:00:00
+Collecting pdfminer.six==20251230 (from pdfplumber)
+  Downloading pdfminer_six-20251230-py3-none-any.whl.metadata (4.3 kB)
+Collecting Pillow>=9.1 (from pdfplumber)
+  Using cached pillow-12.2.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+Collecting pypdfium2>=4.18.0 (from pdfplumber)
+  Downloading pypdfium2-5.7.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (68 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 68.2/68.2 kB 374.2 kB/s eta 0:00:00
+Requirement already satisfied: charset-normalizer>=2.0.0 in ./.venv/lib/python3.12/site-packages (from pdfminer.six==20251230->pdfplumber) (3.4.7)
+Requirement already satisfied: cryptography>=36.0.0 in ./.venv/lib/python3.12/site-packages (from pdfminer.six==20251230->pdfplumber) (47.0.0)
+Requirement already satisfied: cffi>=2.0.0 in ./.venv/lib/python3.12/site-packages (from cryptography>=36.0.0->pdfminer.six==20251230->pdfplumber) (2.0.0)
+Requirement already satisfied: pycparser in ./.venv/lib/python3.12/site-packages (from cffi>=2.0.0->cryptography>=36.0.0->pdfminer.six==20251230->pdfplumber) (3.0)
+Downloading pdfplumber-0.11.9-py3-none-any.whl (60 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.0/60.0 kB 147.5 kB/s eta 0:00:00
+Downloading pdfminer_six-20251230-py3-none-any.whl (6.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 495.9 kB/s eta 0:00:00
+Using cached pillow-12.2.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+Downloading pypdfium2-5.7.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 509.0 kB/s eta 0:00:00
+Installing collected packages: pypdfium2, Pillow, pdfminer.six, pdfplumber
+Successfully installed Pillow-12.2.0 pdfminer.six-20251230 pdfplumber-0.11.9 pypdfium2-5.7.1

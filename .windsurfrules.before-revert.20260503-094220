@@ -1,0 +1,116 @@
+# Cascade Agent Contract
+
+**Last Updated:** 2026-05-03
+**Read by:** Windsurf Cascade only
+**Other agents:** Kilo CLI reads `AGENTS-compact.md` (via `opencode.json`); Traycer reads `AGENTS.md`.
+**Auto-loaded with this ** every `.windsurf/rules/*.md` pack with `activation: always_on` (currently `CROSS_CUTTING_REQUIREMENTS.md`), plus any pack whose `activation: glob` matches the touched files. Do not duplicate their content here.
+
+## ⚠️ MANDATORY FIRST OUTPUT
+`RULES ACTIVE: CASCADE | <3 rules from this file you actually applied>`
+
+## ⚠️ AGENT VALIDATED (BEFORE any code, when ticket declares Required Role)
+
+When a ticket header declares `Required Role: <role>` and `Required Priority: ≤<N>`, the agent must do all of this BEFORE the first non-validation tool call. This complements (does NOT replace) the `RULES ACTIVE: CASCADE | …` line above — both must appear.
+
+1. **Identify yourself.** State your model id verbatim (e.g. `anthropic/claude-opus-4.6`, `google/gemini-3.1-pro-preview`, `windsurf/swe-1.5`).
+2. **Query the registry:**
+
+   ```bash
+   sqlite3 /opt/fabrik/scripts/kilo-benchmarks/kilo_agents.db \
+     "SELECT priority FROM agent_roles WHERE role='<required-role>' AND agent_id='<my-id>';"
+   ```
+
+3. **Refuse or proceed:**
+   - Returns priority `P` where `P ≤ ticket's required priority` → proceed.
+   - Returns nothing OR returns priority > ticket's required priority → **STOP** and emit:
+
+     ```text
+     AGENT IDENTITY MISMATCH
+     ticket requires: role=<role>, priority≤<N>
+     this agent: <my-id>
+     registry lookup: <empty | role=X priority=Y>
+     refusing to start — re-route to a registered agent or run role_mapper.py to update assignments
+     ```
+
+4. **Second output line MUST be:**
+
+   ```text
+   AGENT VALIDATED: <my-id> | role=<role> | priority=<N> | ticket=<ticket-id>
+   ```
+
+Source-of-truth contract: `docs/development/PLAN.md` §6.2. Tickets without `Required Role` / `Required Priority` headers are scaffolding-only and skip steps 2–3, but still emit `AGENT VALIDATED: <my-id> | role=none | priority=- | ticket=<ticket-id>` as the second output line.
+
+## Orient (do first, every task)
+1. Read `project.yaml` (`type`, `ports`, `has_user_guide`), `README.md`, `INDEX.md`, `compose.yaml`, `Dockerfile`, `.env.example`, `pyproject.toml` / `package.json`.
+2. If `AFCL.md` exists, append friction / constraint findings as you encounter them.
+3. Rule packs in `.windsurf/rules/` self-activate via frontmatter — trust the frontmatter; the navigation table at the bottom is for human discovery only.
+4. When writing a plan in `docs/development/plans/`, include Key Invariants, Failure Modes, and 5–10 testable Acceptance Criteria.
+
+## Behavior
+- **Check before create:** verify the file does not already exist before any write. File-already-exists = STOP.
+- **Present before execute:** present the plan, wait for approval, then execute. Read-only IDE calls (`read_file`, `grep_search`, `list_dir`, `find_references`) are exempt.
+- **No unsolicited advice:** stay on the assigned task; no lifestyle / process commentary.
+- **Conflict resolution:** when a rule pack contradicts the ticket, the rule wins; surface the conflict before proceeding.
+- **State conflict:** if the task contradicts existing project state, stop and report — never silently overwrite.
+
+## Completion Contract
+1. **IMPLEMENT** — Stay strictly in ticket Scope. Adjacent fixes allowed only inside files already in Scope. Write 1 test for the core path (skip docs-only).
+2. **QUALITY GATE** — Run the literal command from the ticket's `Final Gate Instruction` field; fix until `status: "success"`. If absent, default by tier:
+   - Standard: `python scripts/final_gate.py --lean --json`
+   - Milestone / multi-component / schema / auth: `python scripts/final_gate.py --json`
+   - Epic Closure: `python scripts/final_gate.py --systemic --json`
+3. **CHANGELOG** — One entry under `## [Unreleased]` (gate-enforced).
+4. **LESSONS LEARNT** — Fill the ticket's `Lessons Learnt:` line with `none` OR a structured entry appended to `docs/LESSONS_LEARNT.md`. Silence = failure.
+5. **EXIT** — Gate auto-stages on success. Do not commit, do not stage manually.
+
+## HARD STOPS — Cascade mechanics
+| Rule | Instead |
+|:--|:--|
+| `git commit` / `git add` | Gate auto-stages on success |
+| edit files outside ticket Scope | stay strictly in ticket Scope |
+| modify `pyproject.toml` / `requirements.txt` / `package.json` / `uv.lock` / `package-lock.json` | only if the ticket explicitly authorises a deps change |
+| create files outside the project tree | use local project paths only |
+| recreate `.venv` or replace existing Docker config | extend, don't replace |
+
+For technical hard stops (Alpine ban, raw `pip install`, Docker port exposure, Authelia, `X-Internal-Token`, kebab-case naming, `/tmp/` ban, port ranges, etc.) the auto-loaded packs in `.windsurf/rules/` are authoritative.
+
+## Pointers (content lives in the linked packs)
+- **Backup before editing secrets** (`.env`, `*.key`, `*.pem`, `secrets/`, `.ssh/`) — see `.windsurf/rules/35-security-auth.md` § Sensitive Data Protection.
+- **Password policy** (32 chars, `[a-zA-Z0-9]`, `secrets.choice()`, banned: `postgres`/`admin`/`password123`) — see `.windsurf/rules/35-security-auth.md` § Password Policy.
+
+## Before Creating New Scripts
+`grep_search` `scripts/` and `scripts/enforcement/` first. Extend existing code; don't duplicate.
+
+## Web Search Tools (Cascade-specific MCP inventory)
+Use the first available:
+1. `search_web` — native Windsurf, no quota.
+2. Any tool whose name ends in `web_search_exa` — Exa MCP if configured.
+3. Any tool whose name ends in `firecrawl_search` — Firecrawl MCP if configured.
+
+## Environment
+WSL Ubuntu only — Linux paths, never Windows tooling. Code must work in WSL dev (PostgreSQL localhost, `.env`), VPS Docker (`postgres-main` service name, `compose.yaml`), and Supabase (Supabase PG, env vars) without modification.
+
+## Rule Pack Pointers (navigation only — frontmatter governs loading)
+| When task involves… | Open |
+|:--|:--|
+| Python | `.windsurf/rules/10-python.md` |
+| API endpoints / schemas | `.windsurf/rules/15-api-contracts.md` |
+| TypeScript | `.windsurf/rules/20-typescript.md` |
+| PostgreSQL queries / migrations | `.windsurf/rules/25-data-postgres.md` |
+| Docker / compose / ops | `.windsurf/rules/30-ops.md` |
+| Auth / sessions / secrets | `.windsurf/rules/35-security-auth.md` |
+| Doc generation | `.windsurf/rules/40-documentation.md` |
+| Docusaurus | `.windsurf/rules/42-docusaurus.md` |
+| Testing / One-Test Rule | `.windsurf/rules/45-testing-strategy.md` |
+| Code review / gates | `.windsurf/rules/50-code-review.md` |
+| Logging / health / monitoring | `.windsurf/rules/55-observability.md` |
+| SaaS UI | `.windsurf/rules/60-saas-ui.md` |
+| WordPress | `.windsurf/rules/62-wordpress.md` |
+| RAG / vector search | `.windsurf/rules/65-rag-search.md` |
+| Chrome extensions (MV3) | `.windsurf/rules/70-chrome-ext.md` |
+| Background workers / jobs | `.windsurf/rules/75-workers-jobs.md` |
+| React Native / mobile | `.windsurf/rules/80-mobile.md` |
+| Paddle / billing | `.windsurf/rules/85-payments-billing.md` |
+| n8n / automation | `.windsurf/rules/90-automation.md` |
+| Multi-tenant / RLS | `.windsurf/rules/95-multi-tenant-saas.md` |
+| Visual + verbal identity (UI) | `.windsurf/rules/ocoron-design-system.md` |

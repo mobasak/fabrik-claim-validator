@@ -1,0 +1,18 @@
+{
+  "scraper_id": "indication_norm",
+  "request": {"method": "GET", "url": "https://id.who.int/icd/release/11/2024-01/mms/search", "params": {"q": "headache", "lang": "en"}},
+  "response": {
+    "status": 200,
+    "json": {
+      "destinationEntities": [
+        {
+          "id": "http://id.who.int/icd/entity/1843895818",
+          "title": "Headache",
+          "theCode": "8A80",
+          "score": 0.95
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-05-03T12:00:05Z"
+}

@@ -40,7 +40,10 @@ async def pool() -> AsyncIterator[object]:
         async with p.acquire() as conn:
             await conn.execute(
                 "TRUNCATE cache_entries, discovery_cache, ingest_log, "
-                "proxy_budget, claim_evidence, claims RESTART IDENTITY CASCADE"
+                "proxy_budget, claim_evidence, claims, "
+                "monographs, scrape_queue, "
+                "taxa_aliases, compounds "
+                "RESTART IDENTITY CASCADE"
             )
         yield p
     finally:

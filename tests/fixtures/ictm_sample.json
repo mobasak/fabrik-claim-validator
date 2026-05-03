@@ -1,0 +1,28 @@
+[
+  {
+    "ictm_code": "TM2.PA00",
+    "canonical_name": "Panax ginseng",
+    "pubchem_cid": null,
+    "aliases": [
+      {"name": "\u4eba\u53c2",       "lang": "zh", "script": "Hans", "tradition": "tcm"},
+      {"name": "\u671d\u9bae\u4eba\u53c2", "lang": "ja", "script": "Jpan", "tradition": "kampo"},
+      {"name": "\uc778\uc0bc",       "lang": "ko", "script": "Hang", "tradition": "korean"},
+      {"name": "\u0416\u0435\u043d\u044c\u0448\u0435\u043d\u044c", "lang": "ru", "script": "Cyrl", "tradition": "tpm"},
+      {"name": "ginseng",            "lang": "en", "script": "Latn", "tradition": null},
+      {"name": "\u062c\u064a\u0646\u0633\u0646\u063a",       "lang": "ar", "script": "Arab", "tradition": "unani"},
+      {"name": "ginseng d'Asie",     "lang": "fr", "script": "Latn", "tradition": null},
+      {"name": "জিনসেং",           "lang": "bn", "script": "Beng", "tradition": null}
+    ]
+  },
+  {
+    "ictm_code": "TM2.CU00",
+    "canonical_name": "Curcuma longa",
+    "pubchem_cid": null,
+    "aliases": [
+      {"name": "\u59dc\u9ec4",   "lang": "zh", "script": "Hans", "tradition": "tcm"},
+      {"name": "haldi",          "lang": "hi", "script": "Latn", "tradition": "ayush"},
+      {"name": "turmeric",       "lang": "en", "script": "Latn", "tradition": null},
+      {"name": "\u0939\u0932\u094d\u0926\u0940",     "lang": "hi", "script": "Deva", "tradition": "ayush"}
+    ]
+  }
+]

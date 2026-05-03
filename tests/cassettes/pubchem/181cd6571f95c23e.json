@@ -1,0 +1,13 @@
+{
+  "scraper_id": "pubchem",
+  "request": {
+    "method": "GET",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/caffeine/cids/JSON"
+  },
+  "response": {
+    "status": 200,
+    "json": {"IdentifierList": {"CID": [2519]}},
+    "text": null
+  },
+  "recorded_at": "2026-05-03T10:00:00Z"
+}

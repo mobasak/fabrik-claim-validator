@@ -1,0 +1,13 @@
+{
+  "scraper_id": "herb_ac_cn",
+  "request": {
+    "method": "GET",
+    "url": "http://herb.cuilab.cn/Detail?id=Ginseng"
+  },
+  "response": {
+    "status": 200,
+    "json": null,
+    "text": "<html><body><h1>Ginseng</h1><h2 id=\"targets\">Targets</h2><ul><li><a href=\"#\">AKT1</a></li><li><a href=\"#\">TP53</a></li><li><a href=\"#\">VEGFA</a></li></ul><h2 id=\"ingredients\">Ingredients</h2><ul><li>Ginsenoside Rb1</li><li>Ginsenoside Rg1</li><li>Ginsenoside Re</li></ul><h2 id=\"related_papers\">Related Papers</h2><ul><li>PMID: 12345678</li><li>PMID: 23456789</li><li>PMID: 34567890</li></ul><h2>Footer</h2></body></html>"
+  },
+  "recorded_at": "2026-05-03T10:00:00Z"
+}

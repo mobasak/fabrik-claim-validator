@@ -1,0 +1,16 @@
+"""Health Canada LNHPD JSON API scraper (ARCHIVED - FCV-255 pivot).
+
+This file is archived because the LNHPD JSON API at health-products.canada.ca/api/natural-licences/
+returns empty arrays (backing DB detached or endpoint shape changed). The API is responsive
+but returns no data.
+
+FCV-255 pivoted to scraping the NHPID web UI instead (webprod.hc-sc.gc.ca/nhpid-bdipsn/),
+which provides the actual ingredient monograph data we need.
+
+Archived: 2026-05-03
+Reason: API returns [] for all queries; pivot to HTML web UI
+Original target: https://hpr-rps.hres.ca/api/v1/products
+New target: https://webprod.hc-sc.gc.ca/nhpid-bdipsn/
+"""
+
+# This is the original nhpid.py content before the FCV-255 pivot

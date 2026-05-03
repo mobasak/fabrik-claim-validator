@@ -56,8 +56,8 @@ def test_migrations_round_trip_and_seed_is_valid() -> None:
         if _cur.fetchone()[0]:
             _cur.execute(
                 "TRUNCATE ingest_log, claim_evidence, claims, monographs, "
-                "taxa_aliases, cache_entries, discovery_cache, proxy_budget "
-                "RESTART IDENTITY CASCADE"
+                "taxa_aliases, compounds, cache_entries, discovery_cache, "
+                "proxy_budget RESTART IDENTITY CASCADE"
             )
 
     # 1. Fresh downgrade to base (clean slate for reproducibility).
@@ -94,6 +94,7 @@ def test_migrations_round_trip_and_seed_is_valid() -> None:
             "ingest_log",
             "monographs",
             "proxy_budget",
+            "scrape_queue",
             "taxa_aliases",
             "traditions",
         }

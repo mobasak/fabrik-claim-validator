@@ -1,0 +1,11 @@
+{
+  "scraper_id": "indication_norm",
+  "request": {"method": "GET", "url": "https://id.who.int/icd/release/11/2024-01/mms/search", "params": {"q": "liver qi stagnation", "lang": "en"}},
+  "response": {
+    "status": 200,
+    "json": {
+      "destinationEntities": []
+    }
+  },
+  "recorded_at": "2026-05-03T12:00:07Z"
+}

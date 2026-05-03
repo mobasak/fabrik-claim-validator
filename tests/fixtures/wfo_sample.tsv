@@ -1,0 +1,12 @@
+taxonID	scientificName	taxonomicStatus	family
+wfo-0000000001	Panax ginseng	Accepted	Araliaceae
+wfo-0000000002	Panax quinquefolius	Accepted	Araliaceae
+wfo-0000000003	Astragalus membranaceus	Accepted	Fabaceae
+wfo-0000000004	Glycyrrhiza uralensis	Accepted	Fabaceae
+wfo-0000000005	Curcuma longa	Accepted	Zingiberaceae
+wfo-0000000006	Withania somnifera	Accepted	Solanaceae
+wfo-0000000007	Zingiber officinale	Accepted	Zingiberaceae
+wfo-0000000008	Panax ginseng var. japonicus	Synonym	Araliaceae
+wfo-0000000009	Salvia miltiorrhiza	Accepted	Lamiaceae
+wfo-0000000010	Bupleurum chinense	Accepted	Apiaceae
+wfo-0000000011	Foo barensis	Synonym	Madeup

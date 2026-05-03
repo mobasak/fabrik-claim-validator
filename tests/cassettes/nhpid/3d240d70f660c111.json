@@ -1,0 +1,59 @@
+{
+  "scraper_id": "nhpid",
+  "request": {"method": "GET", "url": "https://hpr-rps.hres.ca/api/v1/products", "params": {"page": "1", "per_page": "100"}},
+  "response": {
+    "status": 200,
+    "json": {
+      "total": 5,
+      "items": [
+        {
+          "id": "80001234",
+          "product_name_en": "Echinacea Purpurea Root Extract",
+          "product_name_fr": "Extrait de racine d'échinacée pourpre",
+          "status": "Licensed",
+          "indications": ["Used in Herbal Medicine to help fight off infections, especially of the upper respiratory tract", "Helps relieve the symptoms and shorten the duration of upper respiratory tract infections"],
+          "contraindications": ["Known allergy to plants of the Asteraceae/Compositae/Daisy family"],
+          "dosage_form": ["Capsule", "Tablet"]
+        },
+        {
+          "id": "80001235",
+          "product_name_en": "Valerian Root",
+          "product_name_fr": "Racine de valériane",
+          "status": "Licensed",
+          "indications": ["Used in Herbal Medicine as a sleep aid", "Used in Herbal Medicine to help relieve nervousness and restlessness"],
+          "contraindications": ["Do not use if you are allergic to valerian"],
+          "dosage_form": ["Capsule"]
+        },
+        {
+          "id": "80001236",
+          "product_name_en": "Ginkgo Biloba Leaf Extract",
+          "product_name_fr": "Extrait de feuille de ginkgo biloba",
+          "status": "Licensed",
+          "indications": ["Used in Herbal Medicine to help enhance cognitive function and memory"],
+          "contraindications": ["Do not use if taking anticoagulant medication"],
+          "dosage_form": ["Tablet", "Capsule"]
+        },
+        {
+          "id": "80001237",
+          "product_name_en": "St. John's Wort Standardized Extract",
+          "product_name_fr": "Extrait normalisé de millepertuis",
+          "status": "Cancelled",
+          "indications": ["Used in Herbal Medicine to help relieve restlessness or nervousness"],
+          "contraindications": [],
+          "dosage_form": ["Tablet"]
+        },
+        {
+          "id": "80001238",
+          "product_name_en": "Milk Thistle Seed Extract",
+          "product_name_fr": "Extrait de graines de chardon-Marie",
+          "status": "Licensed",
+          "indications": ["Used in Herbal Medicine as a liver protectant", "Used in Herbal Medicine to help support liver function"],
+          "contraindications": ["Known allergy to plants of the Asteraceae/Compositae/Daisy family"],
+          "dosage_form": ["Capsule", "Softgel"]
+        }
+      ]
+    },
+    "text": null
+  },
+  "recorded_at": "2026-05-03T12:00:04Z"
+}

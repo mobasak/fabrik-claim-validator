@@ -1,0 +1,18 @@
+{
+  "scraper_id": "indication_norm",
+  "request": {"method": "GET", "url": "https://id.who.int/icd/release/11/2024-01/mms/search", "params": {"q": "joint pain", "lang": "en"}},
+  "response": {
+    "status": 200,
+    "json": {
+      "destinationEntities": [
+        {
+          "id": "http://id.who.int/icd/entity/1023890452",
+          "title": "Joint pain",
+          "theCode": "ME82",
+          "score": 0.92
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-05-03T12:00:06Z"
+}

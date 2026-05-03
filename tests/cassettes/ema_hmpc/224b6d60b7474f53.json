@@ -1,0 +1,10 @@
+{
+  "scraper_id": "ema_hmpc",
+  "request": {"method": "GET", "url": "https://www.ema.europa.eu/en/medicines/herbal/valerianae-radix"},
+  "response": {
+    "status": 200,
+    "headers": {"content-type": "text/html"},
+    "text": "<html><body><h1>Valerianae radix - Valerian root</h1><div class=\"field-content\"><h2>Therapeutic indications</h2><p>Well-established use: Relief of mild nervous tension and sleep disorders.</p><p>Traditional use: Used traditionally to aid sleep and to relieve mild symptoms of mental stress; relief of mild spasmodic gastrointestinal complaints.</p><h2>Contraindications</h2><p>Hypersensitivity to the active substance; Children under 12 years of age (well-established use) or under 4 years (traditional use).</p><h2>Pharmaceutical form</h2><p>Herbal tea; Dry extract (drug-extract ratio 3-7.4:1); Tincture (1:5 ethanol 70%); Expressed juice from fresh root.</p></div><div class=\"documents\"><ul><li><a href=\"/en/documents/herbal-monograph/community-herbal-monograph-valerianae-radix.pdf\">Community herbal monograph</a></li><li><a href=\"/en/documents/herbal-monograph/assessment-report-valerianae-radix.pdf\">Assessment report</a></li><li><a href=\"/en/documents/herbal-monograph/list-references-valerianae-radix.pdf\">List of references</a></li></ul></div></body></html>"
+  },
+  "recorded_at": "2026-05-03T12:00:02Z"
+}

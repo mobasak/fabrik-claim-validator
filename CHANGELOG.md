@@ -10,6 +10,162 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added — Sprint 2.5: Carry-forward & live ingest (2026-05-03)
+
+- **FCV-251 (✅):** Migration `0013_taxa_aliases_null_tradition_uniqueness` — replaced
+  single `taxa_aliases_uniq` index with two partial unique indexes: one for
+  tradition-scoped rows (WHERE tradition_code IS NOT NULL), one for null-tradition
+  rows (WHERE tradition_code IS NULL). ICTM loader updated with branched
+  ON CONFLICT clauses. Idempotency test un-skipped and passing (null_rows: 8→4).
+- **FCV-256 (✅):** 5-language indication normalizer corpus — `_LOCAL_MAP` expanded
+  with DE (14 terms), FR (12 terms), ES (12 terms), ZH pinyin (10 terms).
+  Test corpus: `tests/fixtures/indication_norm_corpus.json` (50 entries, 10 per lang).
+  Evaluation: all 5 languages at 100% match rate. Report:
+  `docs/operations/sprint_2_5_indication_norm_eval.md`.
+- **FCV-252 (✅):** WFO loader — suffix check handles `.json.zip` / `.json.gz`
+  (Zenodo format). Stream-parsing rewrote to handle 5.6 GB Solr-style JSON
+  (`wfo_id_s`, `role_s`, `full_name_string_no_authors_plain_s`). Downloaded
+  WFO 2022-12 from Zenodo (record 7467360, 384 MB zip) directly from WSL.
+  **Live result: 449,666 accepted taxa → compounds table** (target was ≥100K).
+- **FCV-255 (✅):** NHPID pivot — rewrote scraper from LNHPD JSON API
+  to NHPID web UI (`https://webprod.hc-sc.gc.ca/nhpid-bdipsn/`). Two-phase:
+  GET homepage for CSRF token, POST `/searchIngred` for ingredient list (~15K),
+  then scrape `ingredReq?id=NNN` detail pages. Extracts: CAS number, role
+  (medicinal/non-medicinal), monograph reference, category via
+  `leftLabel`/`alignedContent` div pairs. Metadata stored in `page_refs` JSONB.
+  **Live result: 600 ingredients scraped (0 errors), 140 medicinal, 44 with
+  monograph references.** Old LNHPD code archived. Full 15K run available
+  but takes ~8h at polite rate (1 req/2s).
+- **FCV-253 (🟡 blocked):** HERB scraper not yet written — Sprint 3 scope.
+  `herb.ac.cn` is reachable from WSL (HTTP 200). Runbook in `data_ingest.md`.
+- **FCV-254 (🟡 blocked):** EMA HMPC listing URL `/en/medicines/herbal` returns
+  404 — EMA restructured their website. Scraper code exists but listing endpoint
+  needs discovery of the new URL structure. Reachable from WSL (no geoblock).
+
+### Added — Sprint 2: Western regulatory scrapers (2026-05-03)
+
+- **FCV-201:** `scrapers/ema_hmpc.py` — EMA HMPC herbal listing scraper.
+  TokenBucket(1/3s), worker_id sticky session, `scrape_queue` table
+  (migration 0012), cache round-trip, cassette-backed integration tests.
+- **FCV-202 (🟡 partial):** EMA HMPC detail parser (`process_queue` method) —
+  ships HTML assessment-page parser only (fallback path). PDF parsing (the
+  primary path per DoD) was skipped. Evidence tier A/B logic and monograph
+  upsert work correctly against HTML input. Carry-forward ticket **FCV-202b**
+  opened: replace HTML fallback with pdfplumber + vision-LLM for table-as-image
+  pages. Must land before Sprint 4.
+- **FCV-203:** `scrapers/nhpid.py` — Health Canada NHPID JSON API scraper.
+  Paginated fetch, filter `status=Licensed`, EN+FR title preservation.
+  Integration test: 5 products → 4 licensed → 4 monograph rows.
+- **FCV-204:** `services/indication_norm.py` — Indication normalizer v0.
+  3-tier resolution: local map (50 entries) → WHO ICD-11 API (OAuth2) →
+  ICTM TM2 DB fallback. 50-indication corpus: 46/50 (92%) mapped.
+  Env vars: `ICD_CLIENT_ID`, `ICD_CLIENT_SECRET`.
+- Migration `0012_scrape_queue` — queue table for URL-based scrape jobs
+  with status tracking (pending/processing/done/failed), retry support.
+- Test cassettes: `tests/cassettes/ema_hmpc/` (4 files),
+  `tests/cassettes/nhpid/` (1 file), `tests/cassettes/indication_norm/` (3 files).
+- 30 new tests (13 scraper + 17 normalizer), all passing.
+
+### Added — FCV-202b: EMA HMPC PDF parser (2026-05-03)
+
+- **FCV-202b (✅ closed):** `parsers/pdf_monograph.py` — generic PDF-to-monograph
+  parser with `ParsedMonograph` dataclass (uniform `sections` dict, `images_extracted`,
+  `parse_warnings`). Reusable for Sprint 4 JP18/KP12 ingest.
+- `parsers/_vision.py` — canonical vision-LLM invocation via OpenRouter,
+  cassette-replayable. Env: `KILO_VISION_AGENT_ID`, `OPENROUTER_API_KEY`.
+- `ema_hmpc.py` updated: PDF primary path with link classification
+  (community-herbal-monograph → primary, assessment-report → secondary,
+  list-references → references). HTML parser preserved as fallback.
+- `pdfplumber>=0.11.0` added to dependencies.
+- 2 synthetic test PDFs (Valerian well-established, Passiflorae traditional).
+- 2 PDF download cassettes + updated detail page cassettes with PDF links.
+- 14 new tests (dataclass contract, text extraction, section parsing, link
+  classification, vision result, integration). 70 total passing.
+- Spot-check: 2/5 monographs verified (Valerian tier A, Passiflorae tier B).
+  3 deferred to operator-side live run (requires real EMA PDFs).
+- FCV-202 promoted from 🟡 to ✅. Sprint 2 debt cleared.
+
+### Sprint 2 retrospective (2026-05-03)
+
+- **Contract violation (recorded exception, not precedent):** Sprint 2 was
+  executed by `anthropic/claude-sonnet-4.5` (tbench 46.5, below 70.0 coding
+  floor). Agent bypassed §6.2 self-validation contract by inventing a
+  non-existent "operator override" clause. Contract text is correct as written —
+  no override path exists. Going forward: §6.2 mismatch = unconditional STOP.
+- **FCV-202b executed** under explicit operator override (Özgür directed proceed
+  after agent self-validated via registry SQL and disclosed no `coding` role).
+  This is operator override, not agent override — contract binds agents, not
+  the operator.
+- **Operational note reclassified:** "operator-side data runs" is by design
+  (cassettes-only CI), not a deferral. Matches `fabrik-citation-verifier`
+  scaffold pattern.
+
+### Added — FCV-011 close-out: agent-rules contract embed (2026-05-03)
+
+- Embed `docs/development/PLAN.md` §6.2 self-validation contract verbatim into:
+  - `AGENTS-compact.md` — new "AGENT VALIDATED" section above COMPLETION
+    CONTRACT (read by Kilo CLI executor agents)
+- `AGENTS.md` deliberately unchanged — Traycer-only orchestration context
+- `.windsurfrules` deliberately unchanged — operator instruction (2026-05-03);
+  Cascade rules are user-managed and the contract is NOT embedded there
+- **Revert 2026-05-03 (later same day):** initial close-out had also embedded the
+  contract into `.windsurfrules`. Reverted at operator request via `sed -i '11,42d'
+  .windsurfrules`; backup preserved at `.windsurfrules.before-revert.20260503-094220`.
+  PLAN.md FCV-011 row + status banner amended to reflect single-file scope.
+- Verification (post-revert): `grep -c "AGENT VALIDATED"` returns 3 / 0 / 0 for
+  `AGENTS-compact.md` / `.windsurfrules` / `AGENTS.md` respectively
+- PLAN.md status banner updated: FCV-001..011 ✅ (was 001..010 ✅, 011 🟡);
+  FCV-011 row flipped from 🟡 to ✅ with grep verification embedded in the
+  Done-2026-05-03 note
+
+### Added — Sprint 1 resolvers + loaders (FCV-101..104) (2026-05-03)
+
+- Add `src/fabrik_claim_validator/resolvers/` package with:
+  - `_rate_limit.py` — async `TokenBucket` (classic token-bucket rate limiter,
+    refills at `rate_per_sec`, burst capped at `capacity`)
+  - `pubchem.py` (FCV-101) — async PUG-REST client. `cid_from_name`,
+    `cid_from_cas`, `cid_from_inchikey`, `properties`, `cas_number`, and
+    `upsert(pool, cid)` that writes to `compounds`. 5 rps limiter. Cassette-aware
+    `_get` routes every call through `services.cassettes`
+  - `herb_ac_cn.py` (FCV-104) — async herb.cuilab.cn detail client. 1 req/2s
+    limiter. Regex section parser extracts `{targets, ingredients, related_papers}`.
+    Cache round-trip via `services.cache`. Accepts injected `httpx.AsyncClient`
+    so operators can plug in an FCV-006 proxy when needed
+- Add `src/fabrik_claim_validator/loaders/` package with:
+  - `wfo_seed.py` (FCV-102) — World Flora Online Plant List TSV ingest.
+    Accepted-only filter. CLI: `python -m fabrik_claim_validator.loaders.wfo_seed
+    --tsv <path>`. Uses `pubchem_cid = -<wfo_numeric>` negative-space convention
+    for plant-only rows (documented in module docstring)
+  - `ictm_seed.py` (FCV-103) — WHO ICD-11 TM2 JSON ingest → `taxa_aliases`.
+    Idempotent for tradition-scoped rows. CLI:
+    `python -m fabrik_claim_validator.loaders.ictm_seed --json <path>`
+- Add `tests/fixtures/wfo_sample.tsv` (9 accepted + 2 synonym rows) for FCV-102
+- Add `tests/fixtures/ictm_sample.json` (2 entries, 9 distinct langs, full
+  ginseng coverage across zh/ja/ko/ru/en/ar) for FCV-103
+- Add 8 cassettes under `tests/cassettes/pubchem/` and `tests/cassettes/herb_ac_cn/`
+  so all resolver tests run without network access
+- Add `tests/test_resolvers.py` (7 One-Test-Rule regressions: FCV-101 name→CID→
+  properties for aspirin + caffeine, upsert round-trip, FCV-104 parse Ginseng +
+  Astragalus, empty-section parser, cache round-trip)
+- Add `tests/test_loaders.py` (4 tests: FCV-102 accepted-only filter, loader
+  persistence, FCV-103 language coverage + ginseng aliases, idempotency caveat)
+- Extend `tests/conftest.py` pool fixture truncation to include `compounds` and
+  `taxa_aliases` so Sprint 1 tests start clean
+- Extend `tests/test_migrations.py` pre-clean step to include `compounds`
+
+### Known caveats
+
+- **`taxa_aliases` unique index + NULL `tradition_code`**: standard SQL NULL
+  semantics mean null-tradition aliases duplicate on loader re-run. This is a
+  schema-level issue from FCV-001, outside Sprint 1 scope. Test
+  `test_ictm_seed_idempotent_for_tradition_scoped_rows` pins the behaviour so a
+  future `NULLS NOT DISTINCT` migration fix surfaces as an explicit test change
+- **FCV-102 real-data DoD (≥100K rows)** is operator-side. CI verifies loader
+  correctness against a small fixture; the ≥100K-row assertion runs once in
+  production against the live WFO dump
+- **FCV-104 live scrape** against herb.cuilab.cn may need FCV-006 proxy/captcha;
+  resolver accepts an injected `httpx.AsyncClient` for that
+
 ### Added — Sprint 0 services + endpoints + MCP stub (FCV-003..010) (2026-05-03)
 
 - Add `src/fabrik_claim_validator/db.py` (asyncpg pool factory + `ping()`) so

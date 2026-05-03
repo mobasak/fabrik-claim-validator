@@ -37,6 +37,9 @@ dependencies = [
     # HTTP Client
     "httpx>=0.28.0",
 
+    # PDF parsing (FCV-202b: EMA HMPC PDF monographs; Sprint 4: JP18/KP12)
+    "pdfplumber>=0.11.0",
+
     # Utilities
     "python-dotenv>=1.0.0",
     "pyyaml>=6.0.0",
