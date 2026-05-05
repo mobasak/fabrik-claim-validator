@@ -9,76 +9,68 @@
 
 ## Core Features
 
-<!-- Group features by what the user/customer cares about, not by technical module.
-     Each feature: what it does, why it matters, and how to use it.
-     This section doubles as marketing copy — write for the customer, not the codebase. -->
+### Data Ingestion
 
-### {Feature Category 1 — e.g., "Website Provisioning"}
-
-<!-- One paragraph: what this capability is and why it matters. -->
+Multi-source scrapers and resolvers that populate the validator's evidence database.
 
 | Feature | Description |
 |---------|-------------|
-| {Feature name} | {What it does — one sentence, benefit-oriented} |
-| {Feature name} | {What it does} |
+| WFO botanical taxonomy seed | Bulk-loads 449K+ accepted plant taxa from World Flora Online Zenodo dumps |
+| EMA HMPC monograph scraper | Fetches European herbal monographs, parses PDF assessment reports, extracts indications/contraindications/evidence tiers |
+| NHPID ingredient scraper | Scrapes Health Canada's Natural Health Products Ingredients Database for ingredient monographs, CAS numbers, and role classifications |
+| HERB 2.0 resolver | Resolves herb names to TCM data via HERB 2.0 JSON API — ingredients, gene targets, diseases, clinical trials, and PubMed references |
+| PubChem resolver | Resolves compound names to PubChem CIDs, molecular formulas, CAS numbers, and canonical SMILES |
 
-<!-- For API projects, include endpoint reference per feature: -->
-<!-- | Endpoint | `POST /api/v1/{resource}` | -->
-
-### {Feature Category 2 — e.g., "DNS Management"}
-
-| Feature | Description |
-|---------|-------------|
-| {Feature name} | {What it does} |
-| {Feature name} | {What it does} |
-
-### {Feature Category 3}
+### Evidence Normalisation
 
 | Feature | Description |
 |---------|-------------|
-| {Feature name} | {What it does} |
+| Indication normaliser | Maps free-text therapeutic claims to ICD-11 codes across 5 languages (EN, DE, FR, ES, ZH) |
+| Evidence tier classification | Categorises monograph evidence as well-established (A), traditional use (B), or folk/ethnobotanical (C) |
+| PDF monograph parser | Extracts structured data from EMA-style PDF assessment reports including dual-column well-established/traditional layouts |
+
+### Infrastructure
+
+| Feature | Description |
+|---------|-------------|
+| Cassette-based HTTP testing | Records and replays HTTP interactions for deterministic offline tests — no network calls in CI |
+| Scrape queue | Priority-ordered, idempotent job queue for batch scraping with retry and failure tracking |
+| Response cache | 90-day TTL cache in PostgreSQL for upstream API responses, keyed by scraper + query |
 
 ---
 
 ## Technical Capabilities
 
-<!-- Internal reference — what the system supports under the hood.
-     Not marketing-facing, but useful for integration docs and agent context. -->
-
 | Capability | Details |
 |------------|---------|
-| Health monitoring | `GET /health` — dependency-aware status check |
-| {e.g., Authentication} | {e.g., API key, JWT, or network trust} |
-| {e.g., Rate limiting} | {e.g., 100 req/min per IP} |
-| {e.g., Async processing} | {e.g., Job queue with status polling} |
-| {e.g., Multi-tenancy} | {e.g., Subdomain-per-customer isolation} |
-
-<!-- Delete rows that don't apply. -->
+| Health monitoring | `GET /health` — checks PostgreSQL connectivity |
+| Async HTTP | All scrapers/resolvers use `httpx.AsyncClient` with `TokenBucket` rate limiting |
+| Schema migrations | Alembic with hand-written DDL (13 migrations through Sprint 2.5) |
+| Structured logging | JSON logs via `structlog` with correlation IDs |
+| Cassette modes | `replay` (CI default), `record` (live capture), `passthrough` (dev) via `CASSETTE_MODE` env var |
 
 ---
 
 ## Feature Status
 
-<!-- Track what's shipped, what's next, and what's been removed.
-     Keep this lean — Traycer tracks detailed task status. -->
-
 | Feature | Status | Notes |
 |---------|--------|-------|
-| {Core feature 1} | ✅ Shipped | — |
-| {Core feature 2} | ✅ Shipped | — |
-| {Upcoming feature} | 🔜 Planned | {Target date or milestone} |
-
-<!-- Status key: ✅ Shipped | 🔜 Planned | ⚠️ Beta | ❌ Removed -->
+| WFO seed loader | ✅ Shipped | Sprint 2 — 449K+ taxa loaded |
+| EMA HMPC scraper + PDF parser | ✅ Shipped | Sprint 2 + 2.5 spot-check |
+| NHPID web UI scraper | ✅ Shipped | Sprint 2.5 — 600 ingredients |
+| HERB 2.0 JSON API resolver | ✅ Shipped | Sprint 2.5 — 10/10 corpus herbs |
+| PubChem resolver | ✅ Shipped | Sprint 1 |
+| Indication normaliser (5-lang) | ✅ Shipped | Sprint 2.5 |
+| Discovery API (`/api/v1/discover`) | 🔜 Planned | Sprint 5 |
+| JP18 / KP12 pharmacopoeia scrapers | 🔜 Planned | Sprint 4 |
+| Ayurveda / Unani scrapers | 🔜 Planned | Sprint 4 |
 
 ---
 
 ## Removed / Deprecated
 
-<!-- Log removed features so agents don't try to rebuild them. -->
-
 | Feature | Removed | Reason | Migration |
 |---------|---------|--------|-----------|
-| (none) | — | — | — |
-
-<!-- Example: -->
-<!-- | Namecheap DNS sync | 2026-04-07 | Migrated to Cloudflare | Use `/api/cloudflare/*` endpoints | -->
+| LNHPD JSON API scraper | 2026-05-03 | API returns empty arrays; DB detached. NHPID ≠ LNHPD. | Use NHPID web UI scraper (`scrapers/nhpid.py`) |
+| HERB v1 HTML regex parser | 2026-05-03 | HERB site is SPA; HTML regex never worked live. | Use HERB 2.0 JSON API resolver. `parse_detail_html` kept for legacy cassette compat. |
+| `herb.cuilab.cn` base URL | 2026-05-03 | Domain defunct. | Use `HERB_BASE_URL` env var (default `http://47.92.70.12`) |

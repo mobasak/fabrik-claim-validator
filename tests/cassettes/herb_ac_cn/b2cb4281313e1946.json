@@ -1,0 +1,414 @@
+{
+  "scraper_id": "herb_ac_cn",
+  "request": {
+    "method": "POST",
+    "url": "http://47.92.70.12/chedi/api/",
+    "body": {
+      "keyword": "Dang Gui",
+      "label": "Herb",
+      "func_name": "search_api"
+    }
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "res_data": [
+        [
+          "Herb ID",
+          "Herb PinYin Name",
+          "Herb Chinese name",
+          "Herb Alias Name",
+          "Herb English Name",
+          "Herb Latin Name"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001210&label=Herb",
+            "title": "HERB001210"
+          },
+          "Dang Gui",
+          "当归",
+          "干归; 马尾当归; 秦哪; 马尾归; 云归; 西当归; 岷当归",
+          "Root of Chinese Angelica; Chinese Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Angelicae Sinensis Radix; Radix Angelicae Sinensis"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004247&label=Herb",
+            "title": "HERB004247"
+          },
+          "Ou Dang Gui",
+          "欧当归",
+          "NA",
+          "Garden Lovage",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Radix Levistici Officinalis"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005551&label=Herb",
+            "title": "HERB005551"
+          },
+          "Tu Dang Gui",
+          "土当归",
+          "NA",
+          "Udo Equivalent Plant: Aralia Fargesii",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Aralia Cordata"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003417&label=Herb",
+            "title": "HERB003417"
+          },
+          "Lin Dang Gui",
+          "林当归",
+          "NA",
+          "Wild Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Angelica Sylvestris"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001829&label=Herb",
+            "title": "HERB001829"
+          },
+          "Gao Dang Gui",
+          "高当归",
+          "NA",
+          "High Ligusticum",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Ligusticum Elatum"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005552&label=Herb",
+            "title": "HERB005552"
+          },
+          "Tu Dang Gui I",
+          "NA",
+          "NA",
+          "NA",
+          "NA"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001334&label=Herb",
+            "title": "HERB001334"
+          },
+          "Dong Dang Gui",
+          "东当归",
+          "当归; 延边当早归; 朝鲜当归; 大和当归; 日本当归",
+          "Acutelobed Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Angelica Acutiloba"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006766&label=Herb",
+            "title": "HERB006766"
+          },
+          "Yuan Dang Gui",
+          "圆当归",
+          "NA",
+          "Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Angelica Archangelica"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005553&label=Herb",
+            "title": "HERB005553"
+          },
+          "Tu Dang Gui Ii",
+          "NA",
+          "NA",
+          "NA",
+          "NA"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004572&label=Herb",
+            "title": "HERB004572"
+          },
+          "Qu Xi Dang Gui",
+          "膝曲当归",
+          "NA",
+          "Root of Chinese Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Angelica Genuflexa"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005953&label=Herb",
+            "title": "HERB005953"
+          },
+          "Xia Ye Dang Gui",
+          "狭叶当归",
+          "水大活",
+          "Narrowleaf Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Radix Angelicae Seu Heraclei"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004630&label=Herb",
+            "title": "HERB004630"
+          },
+          "Ri Ben Dang Gui",
+          "日本当归",
+          "NA",
+          "Japanese Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Angelica Japonica"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005088&label=Herb",
+            "title": "HERB005088"
+          },
+          "Si Guo Dang Gui",
+          "四国当归",
+          "NA",
+          "Root of Chinese Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Angelica Shikokiana"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000379&label=Herb",
+            "title": "HERB000379"
+          },
+          "Bei Hai Dang Gui",
+          "北海当归",
+          "NA",
+          "Northsea Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Angelica Acutiloba Var. Sugiyamae"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002335&label=Herb",
+            "title": "HERB002335"
+          },
+          "Hou Guo Dang Gui",
+          "厚果当归",
+          "NA",
+          "Thickfruit Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Angelica Pachycarpa"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000486&label=Herb",
+            "title": "HERB000486"
+          },
+          "Bin Hai Dang Gui",
+          "滨海当归",
+          "NA",
+          "Seashore Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Angelica Keiskei"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003093&label=Herb",
+            "title": "HERB003093"
+          },
+          "Kai Shi Dang Gui",
+          "开始当归",
+          "NA",
+          "Keislce Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Angelica Keislcei"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001680&label=Herb",
+            "title": "HERB001680"
+          },
+          "Fen Cha Dang Gui",
+          "分叉当归",
+          "NA",
+          "Furcate Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Angelica Furcijuga"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006991&label=Herb",
+            "title": "HERB006991"
+          },
+          "Zhi Gen Dang Gui",
+          "植根当归",
+          "NA",
+          "Taproot Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Angelica Radix"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006429&label=Herb",
+            "title": "HERB006429"
+          },
+          "Yao Yong Dang Gui",
+          "药用当归",
+          "NA",
+          "Medicinal Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Angelica Officinalis"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000753&label=Herb",
+            "title": "HERB000753"
+          },
+          "Chao Xian Dang Gui",
+          "朝鲜当归",
+          "土当归",
+          "Gigantic Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Angelica Gigas"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005949&label=Herb",
+            "title": "HERB005949"
+          },
+          "Xia Yan Gu Dang Gui",
+          "下延古当归",
+          "NA",
+          "Decurrent Archangelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Archangelica Decurrens"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001411&label=Herb",
+            "title": "HERB001411"
+          },
+          "Dua Jing Gu Dang Gui",
+          "短茎古当归",
+          "NA",
+          "Shortstem Archangelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Archangelica Brevicaulis"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000658&label=Herb",
+            "title": "HERB000658"
+          },
+          "Chang Bian Hua Dang Gui",
+          "NA",
+          "NA",
+          "Longradiate Angelica",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Angelica Longeradiata"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000742&label=Herb",
+            "title": "HERB000742"
+          },
+          "Chang Bian Hua Dang Gui",
+          "NA",
+          "NA",
+          "Root of Chinese Angelica",
+          "NA"
+        ]
+      ]
+    },
+    "text": "{\"res_data\": [[\"Herb ID\", \"Herb PinYin Name\", \"Herb Chinese name\", \"Herb Alias Name\", \"Herb English Name\", \"Herb Latin Name\"], [{\"link\": \"/Detail/?v=HERB001210&label=Herb\", \"title\": \"HERB001210\"}, \"Dang Gui\", \"\\u5f53\\u5f52\", \"\\u5e72\\u5f52; \\u9a6c\\u5c3e\\u5f53\\u5f52; \\u79e6\\u54ea; \\u9a6c\\u5c3e\\u5f52; \\u4e91\\u5f52; \\u897f\\u5f53\\u5f52; \\u5cb7\\u5f53\\u5f52\", \"Root of Chinese Angelica; Chinese Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Angelicae Sinensis Radix; Radix Angelicae Sinensis\"}], [{\"link\": \"/Detail/?v=HERB004247&label=Herb\", \"title\": \"HERB004247\"}, \"Ou Dang Gui\", \"\\u6b27\\u5f53\\u5f52\", \"NA\", \"Garden Lovage\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Radix Levistici Officinalis\"}], [{\"link\": \"/Detail/?v=HERB005551&label=Herb\", \"title\": \"HERB005551\"}, \"Tu Dang Gui\", \"\\u571f\\u5f53\\u5f52\", \"NA\", \"Udo Equivalent Plant: Aralia Fargesii\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Aralia Cordata\"}], [{\"link\": \"/Detail/?v=HERB003417&label=Herb\", \"title\": \"HERB003417\"}, \"Lin Dang Gui\", \"\\u6797\\u5f53\\u5f52\", \"NA\", \"Wild Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Angelica Sylvestris\"}], [{\"link\": \"/Detail/?v=HERB001829&label=Herb\", \"title\": \"HERB001829\"}, \"Gao Dang Gui\", \"\\u9ad8\\u5f53\\u5f52\", \"NA\", \"High Ligusticum\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Ligusticum Elatum\"}], [{\"link\": \"/Detail/?v=HERB005552&label=Herb\", \"title\": \"HERB005552\"}, \"Tu Dang Gui I\", \"NA\", \"NA\", \"NA\", \"NA\"], [{\"link\": \"/Detail/?v=HERB001334&label=Herb\", \"title\": \"HERB001334\"}, \"Dong Dang Gui\", \"\\u4e1c\\u5f53\\u5f52\", \"\\u5f53\\u5f52; \\u5ef6\\u8fb9\\u5f53\\u65e9\\u5f52; \\u671d\\u9c9c\\u5f53\\u5f52; \\u5927\\u548c\\u5f53\\u5f52; \\u65e5\\u672c\\u5f53\\u5f52\", \"Acutelobed Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Angelica Acutiloba\"}], [{\"link\": \"/Detail/?v=HERB006766&label=Herb\", \"title\": \"HERB006766\"}, \"Yuan Dang Gui\", \"\\u5706\\u5f53\\u5f52\", \"NA\", \"Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Angelica Archangelica\"}], [{\"link\": \"/Detail/?v=HERB005553&label=Herb\", \"title\": \"HERB005553\"}, \"Tu Dang Gui Ii\", \"NA\", \"NA\", \"NA\", \"NA\"], [{\"link\": \"/Detail/?v=HERB004572&label=Herb\", \"title\": \"HERB004572\"}, \"Qu Xi Dang Gui\", \"\\u819d\\u66f2\\u5f53\\u5f52\", \"NA\", \"Root of Chinese Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Angelica Genuflexa\"}], [{\"link\": \"/Detail/?v=HERB005953&label=Herb\", \"title\": \"HERB005953\"}, \"Xia Ye Dang Gui\", \"\\u72ed\\u53f6\\u5f53\\u5f52\", \"\\u6c34\\u5927\\u6d3b\", \"Narrowleaf Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Radix Angelicae Seu Heraclei\"}], [{\"link\": \"/Detail/?v=HERB004630&label=Herb\", \"title\": \"HERB004630\"}, \"Ri Ben Dang Gui\", \"\\u65e5\\u672c\\u5f53\\u5f52\", \"NA\", \"Japanese Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Angelica Japonica\"}], [{\"link\": \"/Detail/?v=HERB005088&label=Herb\", \"title\": \"HERB005088\"}, \"Si Guo Dang Gui\", \"\\u56db\\u56fd\\u5f53\\u5f52\", \"NA\", \"Root of Chinese Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Angelica Shikokiana\"}], [{\"link\": \"/Detail/?v=HERB000379&label=Herb\", \"title\": \"HERB000379\"}, \"Bei Hai Dang Gui\", \"\\u5317\\u6d77\\u5f53\\u5f52\", \"NA\", \"Northsea Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Angelica Acutiloba Var. Sugiyamae\"}], [{\"link\": \"/Detail/?v=HERB002335&label=Herb\", \"title\": \"HERB002335\"}, \"Hou Guo Dang Gui\", \"\\u539a\\u679c\\u5f53\\u5f52\", \"NA\", \"Thickfruit Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Angelica Pachycarpa\"}], [{\"link\": \"/Detail/?v=HERB000486&label=Herb\", \"title\": \"HERB000486\"}, \"Bin Hai Dang Gui\", \"\\u6ee8\\u6d77\\u5f53\\u5f52\", \"NA\", \"Seashore Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Angelica Keiskei\"}], [{\"link\": \"/Detail/?v=HERB003093&label=Herb\", \"title\": \"HERB003093\"}, \"Kai Shi Dang Gui\", \"\\u5f00\\u59cb\\u5f53\\u5f52\", \"NA\", \"Keislce Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Angelica Keislcei\"}], [{\"link\": \"/Detail/?v=HERB001680&label=Herb\", \"title\": \"HERB001680\"}, \"Fen Cha Dang Gui\", \"\\u5206\\u53c9\\u5f53\\u5f52\", \"NA\", \"Furcate Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Angelica Furcijuga\"}], [{\"link\": \"/Detail/?v=HERB006991&label=Herb\", \"title\": \"HERB006991\"}, \"Zhi Gen Dang Gui\", \"\\u690d\\u6839\\u5f53\\u5f52\", \"NA\", \"Taproot Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Angelica Radix\"}], [{\"link\": \"/Detail/?v=HERB006429&label=Herb\", \"title\": \"HERB006429\"}, \"Yao Yong Dang Gui\", \"\\u836f\\u7528\\u5f53\\u5f52\", \"NA\", \"Medicinal Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Angelica Officinalis\"}], [{\"link\": \"/Detail/?v=HERB000753&label=Herb\", \"title\": \"HERB000753\"}, \"Chao Xian Dang Gui\", \"\\u671d\\u9c9c\\u5f53\\u5f52\", \"\\u571f\\u5f53\\u5f52\", \"Gigantic Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Angelica Gigas\"}], [{\"link\": \"/Detail/?v=HERB005949&label=Herb\", \"title\": \"HERB005949\"}, \"Xia Yan Gu Dang Gui\", \"\\u4e0b\\u5ef6\\u53e4\\u5f53\\u5f52\", \"NA\", \"Decurrent Archangelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Archangelica Decurrens\"}], [{\"link\": \"/Detail/?v=HERB001411&label=Herb\", \"title\": \"HERB001411\"}, \"Dua Jing Gu Dang Gui\", \"\\u77ed\\u830e\\u53e4\\u5f53\\u5f52\", \"NA\", \"Shortstem Archangelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Archangelica Brevicaulis\"}], [{\"link\": \"/Detail/?v=HERB000658&label=Herb\", \"title\": \"HERB000658\"}, \"Chang Bian Hua Dang Gui\", \"NA\", \"NA\", \"Longradiate Angelica\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Angelica Longeradiata\"}], [{\"link\": \"/Detail/?v=HERB000742&label=Herb\", \"title\": \"HERB000742\"}, \"Chang Bian Hua Dang Gui\", \"NA\", \"NA\", \"Root of Chinese Angelica\", \"NA\"]]}"
+  },
+  "recorded_at": "2026-05-03T20:46:39.340560+00:00"
+}

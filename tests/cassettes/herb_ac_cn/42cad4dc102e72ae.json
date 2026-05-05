@@ -1,0 +1,569 @@
+{
+  "scraper_id": "herb_ac_cn",
+  "request": {
+    "method": "POST",
+    "url": "http://47.92.70.12/chedi/api/",
+    "body": {
+      "v": "HERB001780",
+      "label": "Herb",
+      "key_id": "HERB001780",
+      "func_name": "detail_api"
+    }
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "cmap2_data": "None.",
+      "herb_ingredient": [
+        [
+          "Ingredient id",
+          "Ingredient name",
+          "Ingredient alias name",
+          "Molecular formula",
+          "Canonical smiles"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN002087&label=Ingredient",
+            "title": "HBIN002087"
+          },
+          "18alpha-glycyrrhetinic acid",
+          "1449-05-4; 18a-Glycyrrhetic acid; beta-Glycyrrhetinic acid; CCRIS 3963; 18-Isoglycyrrhetinic acid; 18a-glycyrrhetinic acid; EINECS 215-907-9; NSC 35350; BRN 2956366",
+          "C30H46O4",
+          "CC1(C2CCC3(C(C2(CCC1O)C)C(=O)C=C4C3(CCC5(C4CC(CC5)(C)C(=O)O)C)C)C)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN002095&label=Ingredient",
+            "title": "HBIN002095"
+          },
+          "18beta-glycyrrhetinic acid",
+          "enoxolone; 471-53-4; Glycyrrhetic acid; GLYCYRRHETINIC ACID; Uralenic acid; 18-beta-Glycyrrhetinic acid; Rhetinic Acid; Glycyrrhetin; Biosone",
+          "C30H46O4",
+          "CC1(C2CCC3(C(C2(CCC1O)C)C(=O)C=C4C3(CCC5(C4CC(CC5)(C)C(=O)O)C)C)C)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN026662&label=Ingredient",
+            "title": "HBIN026662"
+          },
+          "Formononetin",
+          "485-72-3; Biochanin B; Formononetol; 7-hydroxy-3-(4-methoxyphenyl)-4H-chromen-4-one; 7-Hydroxy-4'-methoxyisoflavone; 7-hydroxy-3-(4-methoxyphenyl)chromen-4-one; Neochanin; 4H-1-Benzopyran-4-one, 7-hydroxy-3-(4-methoxyphenyl)-; Flavosil",
+          "C16H12O4",
+          "COC1=CC=C(C=C1)C2=COC3=C(C2=O)C=CC(=C3)O"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN028184&label=Ingredient",
+            "title": "HBIN028184"
+          },
+          "Glycyrrhetinic acid",
+          "enoxolone; 471-53-4; Glycyrrhetic acid; Uralenic acid; 18-beta-Glycyrrhetinic acid; 18beta-Glycyrrhetinic acid; Rhetinic Acid; Glycyrrhetin; Biosone",
+          "C30H46O4",
+          "CC1(C2CCC3(C(C2(CCC1O)C)C(=O)C=C4C3(CCC5(C4CC(CC5)(C)C(=O)O)C)C)C)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN028190&label=Ingredient",
+            "title": "HBIN028190"
+          },
+          "Glycyrrhizic acid",
+          "glycyrrhizin; 1405-86-3; Glycyron; Glycyrrhizinic acid; Glycyrrhetinic acid glycoside; potenlini; Glizigen; glycyrrhizate; glyzyrrhizin",
+          "C42H62O16",
+          "CC1(C2CCC3(C(C2(CCC1OC4C(C(C(C(O4)C(=O)O)O)O)OC5C(C(C(C(O5)C(=O)O)O)O)O)C)C(=O)C=C6C3(CCC7(C6CC(CC7)(C)C(=O)O)C)C)C)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN028191&label=Ingredient",
+            "title": "HBIN028191"
+          },
+          "Glycyrrhizin",
+          "Glycyrrhizic acid; 1405-86-3; Glycyron; Glycyrrhizinic acid; Glycyrrhetinic acid glycoside; potenlini; Glizigen; glycyrrhizate; glyzyrrhizin",
+          "C42H62O16",
+          "CC1(C2CCC3(C(C2(CCC1OC4C(C(C(C(O4)C(=O)O)O)O)OC5C(C(C(C(O5)C(=O)O)O)O)O)C)C(=O)C=C6C3(CCC7(C6CC(CC7)(C)C(=O)O)C)C)C)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN033383&label=Ingredient",
+            "title": "HBIN033383"
+          },
+          "Liquiritin",
+          "551-15-5; Liquiritoside; Likviritin; 7-Hydroxyflavanone 4'-O-glucoside; CHEBI:80845; UNII-T0O79T74CD; T0O79T74CD; 4',7-Dihydroxyflavanone 4'-(beta-D-glucopyranoside); Liquiritigenin-4'-beta-glucoside",
+          "C21H22O9",
+          "C1C(OC2=C(C1=O)C=CC(=C2)O)C3=CC=C(C=C3)OC4C(C(C(C(O4)CO)O)O)O"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN035670&label=Ingredient",
+            "title": "HBIN035670"
+          },
+          "Monoammonium glycyrrhizinate",
+          "AMMONIUM GLYCYRRHIZINATE; Ammonium glycyrrhizate; 53956-04-0; Glycamil; Glycyrram; Monoammonium glycyrrhizate; Ammoniated glycyrrhizin; Glycyrrhizic acid ammonium salt; 1407-03-0",
+          "C42H65NO16",
+          "CC1(C2CCC3(C(C2(CCC1OC4C(C(C(C(O4)C(=O)O)O)O)OC5C(C(C(C(O5)C(=O)O)O)O)O)C)C(=O)C=C6C3(CCC7(C6CC(CC7)(C)C(=O)O)C)C)C)C.N"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN036903&label=Ingredient",
+            "title": "HBIN036903"
+          },
+          "Nicotiflorin",
+          "17650-84-9; Kaempferol-3-O-rutinoside; Nictoflorin; NICOTIFLOROSIDE; Kaempferol-3-rutinoside; Kaempferol 3-Rutinoside; Nicotiflorine; Kaempferol-3-O-beta-rutinoside; Kaempferol 3-O-rutinoside",
+          "C27H30O15",
+          "CC1C(C(C(C(O1)OCC2C(C(C(C(O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)O)C5=CC=C(C=C5)O)O)O)O)O)O)O"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN042670&label=Ingredient",
+            "title": "HBIN042670"
+          },
+          "Rutin",
+          "153-18-4; rutoside; Phytomelin; Birutan; Quercetin 3-rutinoside; Sophorin; Myrticolorin; Eldrin; Globulariacitrin",
+          "C27H30O16",
+          "CC1C(C(C(C(O1)OCC2C(C(C(C(O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)O)C5=CC(=C(C=C5)O)O)O)O)O)O)O)O"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN044062&label=Ingredient",
+            "title": "HBIN044062"
+          },
+          "Sinapic acid",
+          "Sinapinic acid; 530-59-6; 3,5-Dimethoxy-4-hydroxycinnamic acid; trans-sinapic acid; 7362-37-0; SINAPINATE; (E)-Sinapic acid; 4-Hydroxy-3,5-dimethoxycinnamic acid; Sinapate",
+          "C11H12O5",
+          "COC1=CC(=CC(=C1O)OC)C=CC(=O)O"
+        ]
+      ],
+      "formula_herb": [
+        [
+          "Formula id",
+          "Formula pinyin name",
+          "Formula cn name",
+          "Formula en name"
+        ]
+      ],
+      "Merge_diff_gene": {
+        "all_GO_csv#mouse": "NONE.No enriched GO terms",
+        "CMAP_CP_txt#mouse": "None.",
+        "up_kegg_csv#mouse": "NONE.No enriched KEGG terms",
+        "down_kegg_csv#human": "NONE.No enriched KEGG terms",
+        "diff_sig_gene#mouse": "NONE.No significantly different genes",
+        "all_GO_csv#human": "NONE.No enriched GO terms",
+        "drug_experiment": [
+          [
+            "EXP id",
+            "GSE id",
+            "Organism",
+            "Experiment type",
+            "Experiment detail",
+            "Control condition",
+            "Control samples",
+            "Experiment subject detail",
+            "Treatment samples"
+          ]
+        ],
+        "down_GO_csv#mouse": "NONE.No enriched GO terms",
+        "all_kegg_csv#human": "NONE.No enriched KEGG terms",
+        "up_GO_csv#mouse": "NONE.No enriched GO terms",
+        "CMAP_PCL_txt#mouse": "None.",
+        "all_kegg_csv#mouse": "NONE.No enriched KEGG terms",
+        "down_GO_csv#human": "NONE.No enriched GO terms",
+        "CMAP_OE_txt#mouse": "None.",
+        "CMAP_KD_txt#mouse": "NONE.No linked CMAP drugs",
+        "CMAP_draw#human": "",
+        "down_kegg_csv#mouse": "NONE.No enriched KEGG terms",
+        "CMAP_KD_txt#human": "NONE.No linked CMAP drugs",
+        "CMAP_OE_txt#human": "None.",
+        "up_GO_csv#human": "NONE.No enriched GO terms",
+        "CMAP_draw#mouse": "",
+        "CMAP_CP_txt#human": "None.",
+        "diff_sig_gene#human": "NONE.No significantly different genes",
+        "up_kegg_csv#human": "NONE.No enriched KEGG terms",
+        "CMAP_PCL_txt#human": "None."
+      },
+      "herb_disease": [
+        [
+          "Disease id",
+          "Disease name",
+          "Disease alias name",
+          "UMLS disease type",
+          "P value",
+          "FDR BH"
+        ]
+      ],
+      "summary": [
+        [
+          "Herb ID",
+          "Herb pinyin name",
+          "Herb Chinese name",
+          "Herb alias name",
+          "Herb English name",
+          "Herb Latin name",
+          "Property",
+          "Meridian",
+          "Use part",
+          "Function",
+          "Indication",
+          "Toxicity",
+          "Clinical manifestations",
+          "Therapeutic class",
+          "Therapeutic class (Chinese)",
+          "SymMap",
+          "TCMID",
+          "TCMSP",
+          "TCM-ID",
+          "URL"
+        ],
+        [
+          "HERB001780",
+          "Gan Cao Jie",
+          "甘草节",
+          "粉草节",
+          "Glycyrrhiza Uralensis Fisch",
+          "NA",
+          "Sweet; Cool",
+          "Heart; Liver",
+          "The part of the root or rhizome filled with brown-black resin-like substance",
+          "Resolve toxinsdisinhibit the throatharmonize the center",
+          "Carbuncle sore; Sore throat",
+          "NA",
+          "NA",
+          "NA",
+          "NA",
+          "NA",
+          "7070",
+          "NA",
+          {
+            "link": "https://bidd.group/TCMID/herb.php?herb=TCMH634",
+            "title": "634"
+          },
+          "http://47.92.70.12/KnowledgeGraph/?query_node_label=Herb&query_node_name=HERB001780"
+        ]
+      ],
+      "herb_target": [
+        [
+          "Target id",
+          "Gene symbol",
+          "Gene alias name",
+          "Protein name",
+          "Type of gene",
+          "P value",
+          "FDR BH"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR000130&label=Target",
+            "title": "HBTAR000130"
+          },
+          "AKT1",
+          "AKT; CWS6; PKB; PKB-ALPHA; PRKBA; RAC; RAC-ALPHA",
+          "AKT serine/threonine kinase 1",
+          "protein-coding",
+          3.05059e-05,
+          0.00324234
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR000158&label=Target",
+            "title": "HBTAR000158"
+          },
+          "ALPP",
+          "ALP; ALPI; IAP; PALP; PLAP; PLAP-1",
+          "alkaline phosphatase, placental",
+          "protein-coding",
+          2.73188e-05,
+          0.00304878
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR000351&label=Target",
+            "title": "HBTAR000351"
+          },
+          "BAX",
+          "BCL2L4",
+          "BCL2 associated X, apoptosis regulator",
+          "protein-coding",
+          7.60114e-10,
+          4.1367e-07
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR000359&label=Target",
+            "title": "HBTAR000359"
+          },
+          "CCND1",
+          "BCL1; D11S287E; PRAD1; U21B31",
+          "cyclin D1",
+          "protein-coding",
+          9.38971e-05,
+          0.00873243
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR000360&label=Target",
+            "title": "HBTAR000360"
+          },
+          "BCL2",
+          "Bcl-2; PPP1R50",
+          "BCL2 apoptosis regulator",
+          "protein-coding",
+          9.26681e-10,
+          4.1367e-07
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR000517&label=Target",
+            "title": "HBTAR000517"
+          },
+          "CASP3",
+          "CPP32; CPP32B; SCA-1",
+          "caspase 3",
+          "protein-coding",
+          2.89142e-07,
+          8.06705e-05
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR000874&label=Target",
+            "title": "HBTAR000874"
+          },
+          "MAPK14",
+          "CSBP; CSBP1; CSBP2; CSPB1; EXIP; Mxi2; PRKM14; PRKM15; RK; SAPK2A; p38; p38ALPHA",
+          "mitogen-activated protein kinase 14",
+          "protein-coding",
+          1.11241e-05,
+          0.00165526
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR001469&label=Target",
+            "title": "HBTAR001469"
+          },
+          "GABPA",
+          "E4TF1-60; E4TF1A; NFT2; NRF2; NRF2A; RCH04A07",
+          "GA binding protein transcription factor subunit alpha",
+          "protein-coding",
+          1.40615e-05,
+          0.00184619
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR001667&label=Target",
+            "title": "HBTAR001667"
+          },
+          "GPT",
+          "AAT1; ALT1; GPT1",
+          "glutamic--pyruvic transaminase",
+          "protein-coding",
+          1.27402e-05,
+          0.00177726
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR001668&label=Target",
+            "title": "HBTAR001668"
+          },
+          "GPX1",
+          "GPXD; GSHPX1",
+          "glutathione peroxidase 1",
+          "protein-coding",
+          1.2958e-06,
+          0.000271857
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR001851&label=Target",
+            "title": "HBTAR001851"
+          },
+          "HMOX1",
+          "HMOX1D; HO-1; HSP32; bK286B10",
+          "heme oxygenase 1",
+          "protein-coding",
+          5.98428e-08,
+          2.22615e-05
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR002042&label=Target",
+            "title": "HBTAR002042"
+          },
+          "IL1B",
+          "IL-1; IL1-BETA; IL1F2; IL1beta",
+          "interleukin 1 beta",
+          "protein-coding",
+          1.74919e-11,
+          1.39392e-08
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR002051&label=Target",
+            "title": "HBTAR002051"
+          },
+          "IL4",
+          "BCGF-1; BCGF1; BSF-1; BSF1; IL-4",
+          "interleukin 4",
+          "protein-coding",
+          1.36985e-07,
+          4.36786e-05
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR002053&label=Target",
+            "title": "HBTAR002053"
+          },
+          "IL5",
+          "EDF; IL-5; TRF",
+          "interleukin 5",
+          "protein-coding",
+          7.50577e-06,
+          0.00119663
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR002055&label=Target",
+            "title": "HBTAR002055"
+          },
+          "IL6",
+          "BSF-2; BSF2; CDF; HGF; HSF; IFN-beta-2; IFNB2; IL-6",
+          "interleukin 6",
+          "protein-coding",
+          1.87355e-11,
+          1.39392e-08
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR002071&label=Target",
+            "title": "HBTAR002071"
+          },
+          "IL13",
+          "IL-13; P600",
+          "interleukin 13",
+          "protein-coding",
+          1.79149e-05,
+          0.00222144
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR002078&label=Target",
+            "title": "HBTAR002078"
+          },
+          "IL17A",
+          "CTLA-8; CTLA8; IL-17; IL-17A; IL17",
+          "interleukin 17A",
+          "protein-coding",
+          6.73076e-05,
+          0.00653176
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR002705&label=Target",
+            "title": "HBTAR002705"
+          },
+          "NFKB1",
+          "CVID12; EBP-1; KBF1; NF-kB; NF-kB1; NF-kappa-B1; NF-kappaB; NF-kappabeta; NFKB-p105; NFKB-p50; NFkappaB",
+          "nuclear factor kappa B subunit 1",
+          "protein-coding",
+          4.64289e-07,
+          0.000115144
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR003295&label=Target",
+            "title": "HBTAR003295"
+          },
+          "PTGS2",
+          "COX-2; COX2; GRIPGHS; PGG/HS; PGHS-2; PHS-2; hCox-2",
+          "prostaglandin-endoperoxide synthase 2",
+          "protein-coding",
+          4.29912e-06,
+          0.000799637
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR003849&label=Target",
+            "title": "HBTAR003849"
+          },
+          "SOD1",
+          "ALS; ALS1; HEL-S-44; IPOA; SOD; STAHP; hSod1; homodimer",
+          "superoxide dismutase 1",
+          "protein-coding",
+          6.65525e-06,
+          0.00114266
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR004109&label=Target",
+            "title": "HBTAR004109"
+          },
+          "TJP1",
+          "ZO-1",
+          "tight junction protein 1",
+          "protein-coding",
+          4.07745e-05,
+          0.00413676
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR004140&label=Target",
+            "title": "HBTAR004140"
+          },
+          "TNF",
+          "DIF; TNF-alpha; TNFA; TNFSF2; TNLG1F",
+          "tumor necrosis factor",
+          "protein-coding",
+          2.1537e-13,
+          4.80706e-10
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR006670&label=Target",
+            "title": "HBTAR006670"
+          },
+          "SIRT1",
+          "SIR2; SIR2L1; SIR2alpha",
+          "sirtuin 1",
+          "protein-coding",
+          1.3398e-06,
+          0.000271857
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBTAR013038&label=Target",
+            "title": "HBTAR013038"
+          },
+          "MARVELD1",
+          "GB14; MARVD1; MRVLDC1; bA548K23.8",
+          "MARVEL domain containing 1",
+          "protein-coding",
+          2.73188e-05,
+          0.00304878
+        ]
+      ],
+      "drug_paper_target": [
+        [
+          "Target id",
+          "Gene symbol",
+          "Protein name",
+          "Reference"
+        ]
+      ],
+      "meta_herb": [
+        []
+      ],
+      "drug_paper_disease": [
+        [
+          "Disease id",
+          "Disease name",
+          "UMLS disease type",
+          "Reference id",
+          "PubMed id",
+          "Paper title"
+        ]
+      ],
+      "clinical_herb": [
+        []
+      ]
+    },
+    "text": "{\"cmap2_data\": \"None.\", \"herb_ingredient\": [[\"Ingredient id\", \"Ingredient name\", \"Ingredient alias name\", \"Molecular formula\", \"Canonical smiles\"], [{\"link\": \"/Detail/?v=HBIN002087&label=Ingredient\", \"title\": \"HBIN002087\"}, \"18alpha-glycyrrhetinic acid\", \"1449-05-4; 18a-Glycyrrhetic acid; beta-Glycyrrhetinic acid; CCRIS 3963; 18-Isoglycyrrhetinic acid; 18a-glycyrrhetinic acid; EINECS 215-907-9; NSC 35350; BRN 2956366\", \"C30H46O4\", \"CC1(C2CCC3(C(C2(CCC1O)C)C(=O)C=C4C3(CCC5(C4CC(CC5)(C)C(=O)O)C)C)C)C\"], [{\"link\": \"/Detail/?v=HBIN002095&label=Ingredient\", \"title\": \"HBIN002095\"}, \"18beta-glycyrrhetinic acid\", \"enoxolone; 471-53-4; Glycyrrhetic acid; GLYCYRRHETINIC ACID; Uralenic acid; 18-beta-Glycyrrhetinic acid; Rhetinic Acid; Glycyrrhetin; Biosone\", \"C30H46O4\", \"CC1(C2CCC3(C(C2(CCC1O)C)C(=O)C=C4C3(CCC5(C4CC(CC5)(C)C(=O)O)C)C)C)C\"], [{\"link\": \"/Detail/?v=HBIN026662&label=Ingredient\", \"title\": \"HBIN026662\"}, \"Formononetin\", \"485-72-3; Biochanin B; Formononetol; 7-hydroxy-3-(4-methoxyphenyl)-4H-chromen-4-one; 7-Hydroxy-4'-methoxyisoflavone; 7-hydroxy-3-(4-methoxyphenyl)chromen-4-one; Neochanin; 4H-1-Benzopyran-4-one, 7-hydroxy-3-(4-methoxyphenyl)-; Flavosil\", \"C16H12O4\", \"COC1=CC=C(C=C1)C2=COC3=C(C2=O)C=CC(=C3)O\"], [{\"link\": \"/Detail/?v=HBIN028184&label=Ingredient\", \"title\": \"HBIN028184\"}, \"Glycyrrhetinic acid\", \"enoxolone; 471-53-4; Glycyrrhetic acid; Uralenic acid; 18-beta-Glycyrrhetinic acid; 18beta-Glycyrrhetinic acid; Rhetinic Acid; Glycyrrhetin; Biosone\", \"C30H46O4\", \"CC1(C2CCC3(C(C2(CCC1O)C)C(=O)C=C4C3(CCC5(C4CC(CC5)(C)C(=O)O)C)C)C)C\"], [{\"link\": \"/Detail/?v=HBIN028190&label=Ingredient\", \"title\": \"HBIN028190\"}, \"Glycyrrhizic acid\", \"glycyrrhizin; 1405-86-3; Glycyron; Glycyrrhizinic acid; Glycyrrhetinic acid glycoside; potenlini; Glizigen; glycyrrhizate; glyzyrrhizin\", \"C42H62O16\", \"CC1(C2CCC3(C(C2(CCC1OC4C(C(C(C(O4)C(=O)O)O)O)OC5C(C(C(C(O5)C(=O)O)O)O)O)C)C(=O)C=C6C3(CCC7(C6CC(CC7)(C)C(=O)O)C)C)C)C\"], [{\"link\": \"/Detail/?v=HBIN028191&label=Ingredient\", \"title\": \"HBIN028191\"}, \"Glycyrrhizin\", \"Glycyrrhizic acid; 1405-86-3; Glycyron; Glycyrrhizinic acid; Glycyrrhetinic acid glycoside; potenlini; Glizigen; glycyrrhizate; glyzyrrhizin\", \"C42H62O16\", \"CC1(C2CCC3(C(C2(CCC1OC4C(C(C(C(O4)C(=O)O)O)O)OC5C(C(C(C(O5)C(=O)O)O)O)O)C)C(=O)C=C6C3(CCC7(C6CC(CC7)(C)C(=O)O)C)C)C)C\"], [{\"link\": \"/Detail/?v=HBIN033383&label=Ingredient\", \"title\": \"HBIN033383\"}, \"Liquiritin\", \"551-15-5; Liquiritoside; Likviritin; 7-Hydroxyflavanone 4'-O-glucoside; CHEBI:80845; UNII-T0O79T74CD; T0O79T74CD; 4',7-Dihydroxyflavanone 4'-(beta-D-glucopyranoside); Liquiritigenin-4'-beta-glucoside\", \"C21H22O9\", \"C1C(OC2=C(C1=O)C=CC(=C2)O)C3=CC=C(C=C3)OC4C(C(C(C(O4)CO)O)O)O\"], [{\"link\": \"/Detail/?v=HBIN035670&label=Ingredient\", \"title\": \"HBIN035670\"}, \"Monoammonium glycyrrhizinate\", \"AMMONIUM GLYCYRRHIZINATE; Ammonium glycyrrhizate; 53956-04-0; Glycamil; Glycyrram; Monoammonium glycyrrhizate; Ammoniated glycyrrhizin; Glycyrrhizic acid ammonium salt; 1407-03-0\", \"C42H65NO16\", \"CC1(C2CCC3(C(C2(CCC1OC4C(C(C(C(O4)C(=O)O)O)O)OC5C(C(C(C(O5)C(=O)O)O)O)O)C)C(=O)C=C6C3(CCC7(C6CC(CC7)(C)C(=O)O)C)C)C)C.N\"], [{\"link\": \"/Detail/?v=HBIN036903&label=Ingredient\", \"title\": \"HBIN036903\"}, \"Nicotiflorin\", \"17650-84-9; Kaempferol-3-O-rutinoside; Nictoflorin; NICOTIFLOROSIDE; Kaempferol-3-rutinoside; Kaempferol 3-Rutinoside; Nicotiflorine; Kaempferol-3-O-beta-rutinoside; Kaempferol 3-O-rutinoside\", \"C27H30O15\", \"CC1C(C(C(C(O1)OCC2C(C(C(C(O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)O)C5=CC=C(C=C5)O)O)O)O)O)O)O\"], [{\"link\": \"/Detail/?v=HBIN042670&label=Ingredient\", \"title\": \"HBIN042670\"}, \"Rutin\", \"153-18-4; rutoside; Phytomelin; Birutan; Quercetin 3-rutinoside; Sophorin; Myrticolorin; Eldrin; Globulariacitrin\", \"C27H30O16\", \"CC1C(C(C(C(O1)OCC2C(C(C(C(O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)O)C5=CC(=C(C=C5)O)O)O)O)O)O)O)O\"], [{\"link\": \"/Detail/?v=HBIN044062&label=Ingredient\", \"title\": \"HBIN044062\"}, \"Sinapic acid\", \"Sinapinic acid; 530-59-6; 3,5-Dimethoxy-4-hydroxycinnamic acid; trans-sinapic acid; 7362-37-0; SINAPINATE; (E)-Sinapic acid; 4-Hydroxy-3,5-dimethoxycinnamic acid; Sinapate\", \"C11H12O5\", \"COC1=CC(=CC(=C1O)OC)C=CC(=O)O\"]], \"formula_herb\": [[\"Formula id\", \"Formula pinyin name\", \"Formula cn name\", \"Formula en name\"]], \"Merge_diff_gene\": {\"all_GO_csv#mouse\": \"NONE.No enriched GO terms\", \"CMAP_CP_txt#mouse\": \"None.\", \"up_kegg_csv#mouse\": \"NONE.No enriched KEGG terms\", \"down_kegg_csv#human\": \"NONE.No enriched KEGG terms\", \"diff_sig_gene#mouse\": \"NONE.No significantly different genes\", \"all_GO_csv#human\": \"NONE.No enriched GO terms\", \"drug_experiment\": [[\"EXP id\", \"GSE id\", \"Organism\", \"Experiment type\", \"Experiment detail\", \"Control condition\", \"Control samples\", \"Experiment subject detail\", \"Treatment samples\"]], \"down_GO_csv#mouse\": \"NONE.No enriched GO terms\", \"all_kegg_csv#human\": \"NONE.No enriched KEGG terms\", \"up_GO_csv#mouse\": \"NONE.No enriched GO terms\", \"CMAP_PCL_txt#mouse\": \"None.\", \"all_kegg_csv#mouse\": \"NONE.No enriched KEGG terms\", \"down_GO_csv#human\": \"NONE.No enriched GO terms\", \"CMAP_OE_txt#mouse\": \"None.\", \"CMAP_KD_txt#mouse\": \"NONE.No linked CMAP drugs\", \"CMAP_draw#human\": \"\", \"down_kegg_csv#mouse\": \"NONE.No enriched KEGG terms\", \"CMAP_KD_txt#human\": \"NONE.No linked CMAP drugs\", \"CMAP_OE_txt#human\": \"None.\", \"up_GO_csv#human\": \"NONE.No enriched GO terms\", \"CMAP_draw#mouse\": \"\", \"CMAP_CP_txt#human\": \"None.\", \"diff_sig_gene#human\": \"NONE.No significantly different genes\", \"up_kegg_csv#human\": \"NONE.No enriched KEGG terms\", \"CMAP_PCL_txt#human\": \"None.\"}, \"herb_disease\": [[\"Disease id\", \"Disease name\", \"Disease alias name\", \"UMLS disease type\", \"P value\", \"FDR BH\"]], \"summary\": [[\"Herb ID\", \"Herb pinyin name\", \"Herb Chinese name\", \"Herb alias name\", \"Herb English name\", \"Herb Latin name\", \"Property\", \"Meridian\", \"Use part\", \"Function\", \"Indication\", \"Toxicity\", \"Clinical manifestations\", \"Therapeutic class\", \"Therapeutic class (Chinese)\", \"SymMap\", \"TCMID\", \"TCMSP\", \"TCM-ID\", \"URL\"], [\"HERB001780\", \"Gan Cao Jie\", \"\\u7518\\u8349\\u8282\", \"\\u7c89\\u8349\\u8282\", \"Glycyrrhiza Uralensis Fisch\", \"NA\", \"Sweet; Cool\", \"Heart; Liver\", \"The part of the root or rhizome filled with brown-black resin-like substance\", \"Resolve toxinsdisinhibit the throatharmonize the center\", \"Carbuncle sore; Sore throat\", \"NA\", \"NA\", \"NA\", \"NA\", \"NA\", \"7070\", \"NA\", {\"link\": \"https://bidd.group/TCMID/herb.php?herb=TCMH634\", \"title\": \"634\"}, \"http://47.92.70.12/KnowledgeGraph/?query_node_label=Herb&query_node_name=HERB001780\"]], \"herb_target\": [[\"Target id\", \"Gene symbol\", \"Gene alias name\", \"Protein name\", \"Type of gene\", \"P value\", \"FDR BH\"], [{\"link\": \"/Detail/?v=HBTAR000130&label=Target\", \"title\": \"HBTAR000130\"}, \"AKT1\", \"AKT; CWS6; PKB; PKB-ALPHA; PRKBA; RAC; RAC-ALPHA\", \"AKT serine/threonine kinase 1\", \"protein-coding\", 3.05059e-05, 0.00324234], [{\"link\": \"/Detail/?v=HBTAR000158&label=Target\", \"title\": \"HBTAR000158\"}, \"ALPP\", \"ALP; ALPI; IAP; PALP; PLAP; PLAP-1\", \"alkaline phosphatase, placental\", \"protein-coding\", 2.73188e-05, 0.00304878], [{\"link\": \"/Detail/?v=HBTAR000351&label=Target\", \"title\": \"HBTAR000351\"}, \"BAX\", \"BCL2L4\", \"BCL2 associated X, apoptosis regulator\", \"protein-coding\", 7.60114e-10, 4.1367e-07], [{\"link\": \"/Detail/?v=HBTAR000359&label=Target\", \"title\": \"HBTAR000359\"}, \"CCND1\", \"BCL1; D11S287E; PRAD1; U21B31\", \"cyclin D1\", \"protein-coding\", 9.38971e-05, 0.00873243], [{\"link\": \"/Detail/?v=HBTAR000360&label=Target\", \"title\": \"HBTAR000360\"}, \"BCL2\", \"Bcl-2; PPP1R50\", \"BCL2 apoptosis regulator\", \"protein-coding\", 9.26681e-10, 4.1367e-07], [{\"link\": \"/Detail/?v=HBTAR000517&label=Target\", \"title\": \"HBTAR000517\"}, \"CASP3\", \"CPP32; CPP32B; SCA-1\", \"caspase 3\", \"protein-coding\", 2.89142e-07, 8.06705e-05], [{\"link\": \"/Detail/?v=HBTAR000874&label=Target\", \"title\": \"HBTAR000874\"}, \"MAPK14\", \"CSBP; CSBP1; CSBP2; CSPB1; EXIP; Mxi2; PRKM14; PRKM15; RK; SAPK2A; p38; p38ALPHA\", \"mitogen-activated protein kinase 14\", \"protein-coding\", 1.11241e-05, 0.00165526], [{\"link\": \"/Detail/?v=HBTAR001469&label=Target\", \"title\": \"HBTAR001469\"}, \"GABPA\", \"E4TF1-60; E4TF1A; NFT2; NRF2; NRF2A; RCH04A07\", \"GA binding protein transcription factor subunit alpha\", \"protein-coding\", 1.40615e-05, 0.00184619], [{\"link\": \"/Detail/?v=HBTAR001667&label=Target\", \"title\": \"HBTAR001667\"}, \"GPT\", \"AAT1; ALT1; GPT1\", \"glutamic--pyruvic transaminase\", \"protein-coding\", 1.27402e-05, 0.00177726], [{\"link\": \"/Detail/?v=HBTAR001668&label=Target\", \"title\": \"HBTAR001668\"}, \"GPX1\", \"GPXD; GSHPX1\", \"glutathione peroxidase 1\", \"protein-coding\", 1.2958e-06, 0.000271857], [{\"link\": \"/Detail/?v=HBTAR001851&label=Target\", \"title\": \"HBTAR001851\"}, \"HMOX1\", \"HMOX1D; HO-1; HSP32; bK286B10\", \"heme oxygenase 1\", \"protein-coding\", 5.98428e-08, 2.22615e-05], [{\"link\": \"/Detail/?v=HBTAR002042&label=Target\", \"title\": \"HBTAR002042\"}, \"IL1B\", \"IL-1; IL1-BETA; IL1F2; IL1beta\", \"interleukin 1 beta\", \"protein-coding\", 1.74919e-11, 1.39392e-08], [{\"link\": \"/Detail/?v=HBTAR002051&label=Target\", \"title\": \"HBTAR002051\"}, \"IL4\", \"BCGF-1; BCGF1; BSF-1; BSF1; IL-4\", \"interleukin 4\", \"protein-coding\", 1.36985e-07, 4.36786e-05], [{\"link\": \"/Detail/?v=HBTAR002053&label=Target\", \"title\": \"HBTAR002053\"}, \"IL5\", \"EDF; IL-5; TRF\", \"interleukin 5\", \"protein-coding\", 7.50577e-06, 0.00119663], [{\"link\": \"/Detail/?v=HBTAR002055&label=Target\", \"title\": \"HBTAR002055\"}, \"IL6\", \"BSF-2; BSF2; CDF; HGF; HSF; IFN-beta-2; IFNB2; IL-6\", \"interleukin 6\", \"protein-coding\", 1.87355e-11, 1.39392e-08], [{\"link\": \"/Detail/?v=HBTAR002071&label=Target\", \"title\": \"HBTAR002071\"}, \"IL13\", \"IL-13; P600\", \"interleukin 13\", \"protein-coding\", 1.79149e-05, 0.00222144], [{\"link\": \"/Detail/?v=HBTAR002078&label=Target\", \"title\": \"HBTAR002078\"}, \"IL17A\", \"CTLA-8; CTLA8; IL-17; IL-17A; IL17\", \"interleukin 17A\", \"protein-coding\", 6.73076e-05, 0.00653176], [{\"link\": \"/Detail/?v=HBTAR002705&label=Target\", \"title\": \"HBTAR002705\"}, \"NFKB1\", \"CVID12; EBP-1; KBF1; NF-kB; NF-kB1; NF-kappa-B1; NF-kappaB; NF-kappabeta; NFKB-p105; NFKB-p50; NFkappaB\", \"nuclear factor kappa B subunit 1\", \"protein-coding\", 4.64289e-07, 0.000115144], [{\"link\": \"/Detail/?v=HBTAR003295&label=Target\", \"title\": \"HBTAR003295\"}, \"PTGS2\", \"COX-2; COX2; GRIPGHS; PGG/HS; PGHS-2; PHS-2; hCox-2\", \"prostaglandin-endoperoxide synthase 2\", \"protein-coding\", 4.29912e-06, 0.000799637], [{\"link\": \"/Detail/?v=HBTAR003849&label=Target\", \"title\": \"HBTAR003849\"}, \"SOD1\", \"ALS; ALS1; HEL-S-44; IPOA; SOD; STAHP; hSod1; homodimer\", \"superoxide dismutase 1\", \"protein-coding\", 6.65525e-06, 0.00114266], [{\"link\": \"/Detail/?v=HBTAR004109&label=Target\", \"title\": \"HBTAR004109\"}, \"TJP1\", \"ZO-1\", \"tight junction protein 1\", \"protein-coding\", 4.07745e-05, 0.00413676], [{\"link\": \"/Detail/?v=HBTAR004140&label=Target\", \"title\": \"HBTAR004140\"}, \"TNF\", \"DIF; TNF-alpha; TNFA; TNFSF2; TNLG1F\", \"tumor necrosis factor\", \"protein-coding\", 2.1537e-13, 4.80706e-10], [{\"link\": \"/Detail/?v=HBTAR006670&label=Target\", \"title\": \"HBTAR006670\"}, \"SIRT1\", \"SIR2; SIR2L1; SIR2alpha\", \"sirtuin 1\", \"protein-coding\", 1.3398e-06, 0.000271857], [{\"link\": \"/Detail/?v=HBTAR013038&label=Target\", \"title\": \"HBTAR013038\"}, \"MARVELD1\", \"GB14; MARVD1; MRVLDC1; bA548K23.8\", \"MARVEL domain containing 1\", \"protein-coding\", 2.73188e-05, 0.00304878]], \"drug_paper_target\": [[\"Target id\", \"Gene symbol\", \"Protein name\", \"Reference\"]], \"meta_herb\": [[]], \"drug_paper_disease\": [[\"Disease id\", \"Disease name\", \"UMLS disease type\", \"Reference id\", \"PubMed id\", \"Paper title\"]], \"clinical_herb\": [[]]}"
+  },
+  "recorded_at": "2026-05-03T20:46:19.288578+00:00"
+}

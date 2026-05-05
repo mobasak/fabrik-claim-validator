@@ -46,10 +46,12 @@ class NhpidScraper:
         self,
         client: httpx.AsyncClient | None = None,
         rate_per_sec: float = 0.5,
+        max_ingredients: int | None = None,
     ) -> None:
         self._client = client
         self._owns_client = client is None
         self._bucket = TokenBucket(rate_per_sec, capacity=1)
+        self._max_ingredients = max_ingredients
 
     async def __aenter__(self) -> NhpidScraper:
         if self._client is None:
@@ -109,6 +111,8 @@ class NhpidScraper:
         Returns dict with counts: {seen, inserted, updated}.
         """
         ingredients = await self._fetch_ingredient_list(pool)
+        if self._max_ingredients is not None:
+            ingredients = ingredients[: self._max_ingredients]
         logger.info("nhpid.ingredients_found", count=len(ingredients))
 
         upserted = 0

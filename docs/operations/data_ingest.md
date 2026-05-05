@@ -9,7 +9,7 @@
 > | Source | WSL dev env | VPS network | /opt/proxy needed | Working environment |
 > |--------|-------------|-----------|-----------------|-------------------|
 > | Zenodo (WFO) | ❌ SSL timeout | ✅ | ❌ | Windows PowerShell or VPS |
-> | herb.ac.cn | ❌ Connection refused | ✅ | ✅ mandatory | VPS with /opt/proxy |
+> | HERB 2.0 (`47.92.70.12`) | ✅ Direct | ✅ | ❌ | WSL or VPS (JSON API, no proxy) |
 > | ema.europa.eu | ❌ 404/blocked | ✅ | ✅ as fallback | VPS (preferred) or WSL+proxy |
 > | health-products.canada.ca (LNHPD) | ⚠️ returns [] | ⚠️ same | ❌ | **Broken** - pivot to NHPID web UI |
 > | webprod.hc-sc.gc.ca (NHPID UI) | ✅ 200 OK | ✅ | ❌ | WSL or VPS (no proxy needed) |
@@ -67,23 +67,36 @@ If failure rate exceeds 1%, inspect the TSV header and compare against
 
 ---
 
-## FCV-253: HERB Live Cassette Refresh
+## FCV-253: HERB 2.0 Live Cassette Refresh
 
 ### Prerequisites
-- Proxy infrastructure configured (`proxy_client` with Webshare.io)
+
 - `CASSETTE_MODE=record` in environment
+- **No proxy needed** — HERB 2.0 JSON API at `http://47.92.70.12/chedi/api/` is callable directly
+- `HERB_BASE_URL` env var (optional, default: `http://47.92.70.12`)
+
+### Architecture
+
+HERB 2.0 is a React SPA backed by a JSON-RPC endpoint at `POST /chedi/api/`.
+Two `func_name` values: `search_api` (keyword → herb IDs) and `detail_api` (herb ID → full data).
+The resolver calls these directly with `httpx` — no Browserless or proxy in the loop.
+
+**Key finding:** HERB 2.0 indexes by Chinese/Pinyin names. Latin binomials (e.g.
+`Astragalus membranaceus`) often return empty. The resolver has a `_PINYIN_ALIASES` dict
+that maps Latin names to Pinyin search terms (e.g. `Huang Qi`).
 
 ### Steps
 
 ```bash
 cd /opt/fabrik-claim-validator
 
-# 1. Record cassettes for 10-herb corpus
+# 1. Record cassettes for 10-herb corpus (+ 2 short-name test herbs)
 CASSETTE_MODE=record python3 -c "
 import asyncio
-from fabrik_claim_validator.resolvers.herb_ac_cn import HerbResolver
+from fabrik_claim_validator.resolvers.herb_ac_cn import HerbAcCnResolver
 
 HERBS = [
+    'Ginseng', 'Astragalus',  # simple names for unit tests
     'Panax ginseng', 'Astragalus membranaceus', 'Glycyrrhiza uralensis',
     'Bupleurum chinense', 'Salvia miltiorrhiza', 'Rehmannia glutinosa',
     'Angelica sinensis', 'Atractylodes macrocephala', 'Codonopsis pilosula',
@@ -91,28 +104,49 @@ HERBS = [
 ]
 
 async def run():
-    resolver = HerbResolver(worker_id=10)
-    for herb in HERBS:
-        print(f'Resolving: {herb}')
-        result = await resolver.resolve(herb)
-        print(f'  targets={len(result.get(\"targets\", []))}, '
-              f'ingredients={len(result.get(\"ingredients\", []))}')
-    stats = resolver.client_stats()
-    print(f'Stats: {stats}')
+    async with HerbAcCnResolver() as resolver:
+        for herb in HERBS:
+            result = await resolver.fetch_detail(herb)
+            if result:
+                print(f'OK  {herb}: id={result[\"herb_id\"]} '
+                      f'ingr={len(result[\"ingredients\"])} '
+                      f'tgt={len(result[\"targets\"])} '
+                      f'dis={len(result.get(\"diseases\", []))}')
+            else:
+                print(f'FAIL {herb}')
 
 asyncio.run(run())
-" 2>&1 | tee logs/herb_cassette_refresh.$(date +%Y%m%d_%H%M%S).log
+" 2>&1 | tee logs/herb_cassette_refresh.\$(date +%Y%m%d_%H%M%S).log
 
-# 2. Verify cassettes were written
+# 2. Verify cassettes were written (expect ~24 files: 12 search + 12 detail)
 ls -la tests/cassettes/herb_ac_cn/
 
-# 3. Spot-check 3 herbs against live HERB UI
-# Visit https://herb.ac.cn/ and search for:
-# - Panax ginseng: verify target count matches
-# - Glycyrrhiza uralensis: verify ingredient count matches
-# - Salvia miltiorrhiza: verify paper PMIDs match
-# Document results in docs/operations/sprint_2_5_herb_spotcheck.md
+# 3. Run tests in replay mode
+CASSETTE_MODE=replay pytest tests/test_resolvers.py -v -k herb
+
+# 4. Spot-check — see docs/operations/sprint_2_5_herb_discovery.md for full results
 ```
+
+### Environment Matrix Update
+
+| Source | WSL dev env | VPS network | Proxy needed | Working environment |
+|--------|-------------|-------------|--------------|---------------------|
+| HERB 2.0 (`47.92.70.12`) | ✅ Direct | ✅ Direct | ❌ No | WSL or VPS (both work) |
+
+### Verified Corpus (2026-05-03, 10/10 OK)
+
+| Herb | HERB ID | Ingredients | Targets | Diseases |
+|------|---------|-------------|---------|----------|
+| Panax ginseng | HERB004615 | 11 | 0 | 0 |
+| Astragalus membranaceus | HERB002560 | 162 | 52 | 228 |
+| Glycyrrhiza uralensis | HERB001780 | 11 | 24 | 0 |
+| Bupleurum chinense | HERB000638 | 419 | 44 | 2 |
+| Salvia miltiorrhiza | HERB001193 | 306 | 119 | 124 |
+| Rehmannia glutinosa | HERB005974 | 10 | 0 | 269 |
+| Angelica sinensis | HERB001210 | 251 | 0 | 0 |
+| Atractylodes macrocephala | HERB000309 | 142 | 0 | 0 |
+| Codonopsis pilosula | HERB005809 | 26 | 0 | 0 |
+| Schisandra chinensis | HERB005762 | 158 | 0 | 164 |
 
 ---
 

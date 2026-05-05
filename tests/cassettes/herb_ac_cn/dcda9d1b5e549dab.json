@@ -1,0 +1,445 @@
+{
+  "scraper_id": "herb_ac_cn",
+  "request": {
+    "method": "POST",
+    "url": "http://47.92.70.12/chedi/api/",
+    "body": {
+      "keyword": "Chai Hu",
+      "label": "Herb",
+      "func_name": "search_api"
+    }
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "res_data": [
+        [
+          "Herb ID",
+          "Herb PinYin Name",
+          "Herb Chinese name",
+          "Herb Alias Name",
+          "Herb English Name",
+          "Herb Latin Name"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000638&label=Herb",
+            "title": "HERB000638"
+          },
+          "Chai Hu",
+          "柴胡",
+          "地熏; 茈胡; 山菜; 茹草; 柴草",
+          "Chinese Thorowax Root; Root of Chinese Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Radix Bupleuri; Bupleuri Radix"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001972&label=Herb",
+            "title": "HERB001972"
+          },
+          "Mu Chai Hu",
+          "木柴胡",
+          "NA",
+          "Shrub Thoroughwax (Shrubby Hare’S-Ear)",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Fruticosum"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004012&label=Herb",
+            "title": "HERB004012"
+          },
+          "Mu Chai Hu",
+          "木柴胡",
+          "NA",
+          "Fruticose Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Fruticescens"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006585&label=Herb",
+            "title": "HERB006585"
+          },
+          "Yin Chai Hu",
+          "银柴胡",
+          "银夏柴胡; 银胡; 牛肚根; 沙参儿; 白根子; 土参",
+          "Starwort Root",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Stellariae Radix; Radix Stellariae"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002201&label=Herb",
+            "title": "HERB002201"
+          },
+          "Hei Chai Hu",
+          "黑柴胡",
+          "NA",
+          "Black Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Smithii"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002257&label=Herb",
+            "title": "HERB002257"
+          },
+          "Hong Chai Hu",
+          "红柴胡",
+          "NA",
+          "NA",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Scorzonerifolium"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001492&label=Herb",
+            "title": "HERB001492"
+          },
+          "Ci Ye Chai Hu",
+          "刺叶柴胡",
+          "NA",
+          "Spiny Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Spinosum"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004823&label=Herb",
+            "title": "HERB004823"
+          },
+          "Sang Chai Hui",
+          "桑柴灰",
+          "桑灰; 桑薪灰",
+          "Pulvis Lignum Mori",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Pulvis Fumi Mori Albae"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001121&label=Herb",
+            "title": "HERB001121"
+          },
+          "Da Ye Chai Hu",
+          "大叶柴胡",
+          "NA",
+          "Bigleaf Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Longiradiatum"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003212&label=Herb",
+            "title": "HERB003212"
+          },
+          "Jiu Ye Chai Hu",
+          "韭叶柴胡",
+          "NA",
+          "Kunming Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Kunmingense"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB007129&label=Herb",
+            "title": "HERB007129"
+          },
+          "Zhu Ye Chai Hu",
+          "竹叶柴胡",
+          "NA",
+          "Bambooleaf Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Marginatum"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006000&label=Herb",
+            "title": "HERB006000"
+          },
+          "Xian Ye Chai Hu",
+          "线叶柴胡",
+          "NA",
+          "Linearleaf Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Angustissimum"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001542&label=Herb",
+            "title": "HERB001542"
+          },
+          "Duo Zhi Chai Hu",
+          "多枝柴胡",
+          "NA",
+          "Ramose Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Polyclonum"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000034&label=Herb",
+            "title": "HERB000034"
+          },
+          "Zhui Ye Chai Hu",
+          "锥叶柴胡",
+          "NA",
+          "NA",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Bicaule"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006788&label=Herb",
+            "title": "HERB006788"
+          },
+          "Yuan Ye Chai Hu",
+          "圆叶柴胡",
+          "NA",
+          "Roundleaf Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Rotundifolium"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006232&label=Herb",
+            "title": "HERB006232"
+          },
+          "Xing An Chai Hu",
+          "兴安柴胡",
+          "NA",
+          "Siberia Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Sibiricum"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006637&label=Herb",
+            "title": "HERB006637"
+          },
+          "Yin Zhou Chai Hu",
+          "银州柴胡",
+          "NA",
+          "Yinchow Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Yinchowense"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000641&label=Herb",
+            "title": "HERB000641"
+          },
+          "Chai Huang Jiang",
+          "柴黄姜",
+          "NA",
+          "Rosthorn Yam",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Dioscorea Nipponica Subsp. Rosthornii"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004940&label=Herb",
+            "title": "HERB004940"
+          },
+          "Shan Yin Chai Hu",
+          "山银柴胡",
+          "NA",
+          "Pacific Gypsophila Equivalent Plant: Silene Jenisseensis , Arenaria Juncea",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Radix Gypsophilae Oldhaminae; Raidx Gypsophilae Paniculatae; Radix Arenariae Junceae; Radix Silenis Jenisseensis"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003315&label=Herb",
+            "title": "HERB003315"
+          },
+          "Li Jiang Chai Hu",
+          "丽江柴胡",
+          "NA",
+          "Rock Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Rockii"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002827&label=Herb",
+            "title": "HERB002827"
+          },
+          "Jian Ying Chai Hu",
+          "剑影柴胡",
+          "NA",
+          "Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Rigidum"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005674&label=Herb",
+            "title": "HERB005674"
+          },
+          "Wen Chuan Chai Hu",
+          "汶川柴胡",
+          "NA",
+          "Wenchuan Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Wenchuanense"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002909&label=Herb",
+            "title": "HERB002909"
+          },
+          "Jin Huang Chai Hu",
+          "金黄柴胡",
+          "NA",
+          "Goldenyellow Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Aureum"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006167&label=Herb",
+            "title": "HERB006167"
+          },
+          "Xiao Ye Hei Chai Hu",
+          "小叶黑柴胡",
+          "NA",
+          "Smallleaf Black Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Smithii Var. Parvifolium"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006915&label=Herb",
+            "title": "HERB006915"
+          },
+          "Zhai Zhu Ye Chai Hu",
+          "窄竹叶柴胡",
+          "NA",
+          "Narrowbambooleaf Thorowax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Bupleurum Marginatum Var. Stenophyllum"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000639&label=Herb",
+            "title": "HERB000639"
+          },
+          "Chai Hu Zhuang Qian Li Guang",
+          "柴胡状千里光",
+          "NA",
+          "Thorowax-Like Groundsel",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Senecio Bupleuroides"
+          }
+        ]
+      ]
+    },
+    "text": "{\"res_data\": [[\"Herb ID\", \"Herb PinYin Name\", \"Herb Chinese name\", \"Herb Alias Name\", \"Herb English Name\", \"Herb Latin Name\"], [{\"link\": \"/Detail/?v=HERB000638&label=Herb\", \"title\": \"HERB000638\"}, \"Chai Hu\", \"\\u67f4\\u80e1\", \"\\u5730\\u718f; \\u8308\\u80e1; \\u5c71\\u83dc; \\u8339\\u8349; \\u67f4\\u8349\", \"Chinese Thorowax Root; Root of Chinese Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Radix Bupleuri; Bupleuri Radix\"}], [{\"link\": \"/Detail/?v=HERB001972&label=Herb\", \"title\": \"HERB001972\"}, \"Mu Chai Hu\", \"\\u6728\\u67f4\\u80e1\", \"NA\", \"Shrub Thoroughwax (Shrubby Hare\\u2019S-Ear)\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Fruticosum\"}], [{\"link\": \"/Detail/?v=HERB004012&label=Herb\", \"title\": \"HERB004012\"}, \"Mu Chai Hu\", \"\\u6728\\u67f4\\u80e1\", \"NA\", \"Fruticose Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Fruticescens\"}], [{\"link\": \"/Detail/?v=HERB006585&label=Herb\", \"title\": \"HERB006585\"}, \"Yin Chai Hu\", \"\\u94f6\\u67f4\\u80e1\", \"\\u94f6\\u590f\\u67f4\\u80e1; \\u94f6\\u80e1; \\u725b\\u809a\\u6839; \\u6c99\\u53c2\\u513f; \\u767d\\u6839\\u5b50; \\u571f\\u53c2\", \"Starwort Root\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Stellariae Radix; Radix Stellariae\"}], [{\"link\": \"/Detail/?v=HERB002201&label=Herb\", \"title\": \"HERB002201\"}, \"Hei Chai Hu\", \"\\u9ed1\\u67f4\\u80e1\", \"NA\", \"Black Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Smithii\"}], [{\"link\": \"/Detail/?v=HERB002257&label=Herb\", \"title\": \"HERB002257\"}, \"Hong Chai Hu\", \"\\u7ea2\\u67f4\\u80e1\", \"NA\", \"NA\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Scorzonerifolium\"}], [{\"link\": \"/Detail/?v=HERB001492&label=Herb\", \"title\": \"HERB001492\"}, \"Ci Ye Chai Hu\", \"\\u523a\\u53f6\\u67f4\\u80e1\", \"NA\", \"Spiny Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Spinosum\"}], [{\"link\": \"/Detail/?v=HERB004823&label=Herb\", \"title\": \"HERB004823\"}, \"Sang Chai Hui\", \"\\u6851\\u67f4\\u7070\", \"\\u6851\\u7070; \\u6851\\u85aa\\u7070\", \"Pulvis Lignum Mori\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Pulvis Fumi Mori Albae\"}], [{\"link\": \"/Detail/?v=HERB001121&label=Herb\", \"title\": \"HERB001121\"}, \"Da Ye Chai Hu\", \"\\u5927\\u53f6\\u67f4\\u80e1\", \"NA\", \"Bigleaf Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Longiradiatum\"}], [{\"link\": \"/Detail/?v=HERB003212&label=Herb\", \"title\": \"HERB003212\"}, \"Jiu Ye Chai Hu\", \"\\u97ed\\u53f6\\u67f4\\u80e1\", \"NA\", \"Kunming Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Kunmingense\"}], [{\"link\": \"/Detail/?v=HERB007129&label=Herb\", \"title\": \"HERB007129\"}, \"Zhu Ye Chai Hu\", \"\\u7af9\\u53f6\\u67f4\\u80e1\", \"NA\", \"Bambooleaf Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Marginatum\"}], [{\"link\": \"/Detail/?v=HERB006000&label=Herb\", \"title\": \"HERB006000\"}, \"Xian Ye Chai Hu\", \"\\u7ebf\\u53f6\\u67f4\\u80e1\", \"NA\", \"Linearleaf Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Angustissimum\"}], [{\"link\": \"/Detail/?v=HERB001542&label=Herb\", \"title\": \"HERB001542\"}, \"Duo Zhi Chai Hu\", \"\\u591a\\u679d\\u67f4\\u80e1\", \"NA\", \"Ramose Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Polyclonum\"}], [{\"link\": \"/Detail/?v=HERB000034&label=Herb\", \"title\": \"HERB000034\"}, \"Zhui Ye Chai Hu\", \"\\u9525\\u53f6\\u67f4\\u80e1\", \"NA\", \"NA\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Bicaule\"}], [{\"link\": \"/Detail/?v=HERB006788&label=Herb\", \"title\": \"HERB006788\"}, \"Yuan Ye Chai Hu\", \"\\u5706\\u53f6\\u67f4\\u80e1\", \"NA\", \"Roundleaf Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Rotundifolium\"}], [{\"link\": \"/Detail/?v=HERB006232&label=Herb\", \"title\": \"HERB006232\"}, \"Xing An Chai Hu\", \"\\u5174\\u5b89\\u67f4\\u80e1\", \"NA\", \"Siberia Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Sibiricum\"}], [{\"link\": \"/Detail/?v=HERB006637&label=Herb\", \"title\": \"HERB006637\"}, \"Yin Zhou Chai Hu\", \"\\u94f6\\u5dde\\u67f4\\u80e1\", \"NA\", \"Yinchow Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Yinchowense\"}], [{\"link\": \"/Detail/?v=HERB000641&label=Herb\", \"title\": \"HERB000641\"}, \"Chai Huang Jiang\", \"\\u67f4\\u9ec4\\u59dc\", \"NA\", \"Rosthorn Yam\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Dioscorea Nipponica Subsp. Rosthornii\"}], [{\"link\": \"/Detail/?v=HERB004940&label=Herb\", \"title\": \"HERB004940\"}, \"Shan Yin Chai Hu\", \"\\u5c71\\u94f6\\u67f4\\u80e1\", \"NA\", \"Pacific Gypsophila Equivalent Plant: Silene Jenisseensis , Arenaria Juncea\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Radix Gypsophilae Oldhaminae; Raidx Gypsophilae Paniculatae; Radix Arenariae Junceae; Radix Silenis Jenisseensis\"}], [{\"link\": \"/Detail/?v=HERB003315&label=Herb\", \"title\": \"HERB003315\"}, \"Li Jiang Chai Hu\", \"\\u4e3d\\u6c5f\\u67f4\\u80e1\", \"NA\", \"Rock Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Rockii\"}], [{\"link\": \"/Detail/?v=HERB002827&label=Herb\", \"title\": \"HERB002827\"}, \"Jian Ying Chai Hu\", \"\\u5251\\u5f71\\u67f4\\u80e1\", \"NA\", \"Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Rigidum\"}], [{\"link\": \"/Detail/?v=HERB005674&label=Herb\", \"title\": \"HERB005674\"}, \"Wen Chuan Chai Hu\", \"\\u6c76\\u5ddd\\u67f4\\u80e1\", \"NA\", \"Wenchuan Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Wenchuanense\"}], [{\"link\": \"/Detail/?v=HERB002909&label=Herb\", \"title\": \"HERB002909\"}, \"Jin Huang Chai Hu\", \"\\u91d1\\u9ec4\\u67f4\\u80e1\", \"NA\", \"Goldenyellow Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Aureum\"}], [{\"link\": \"/Detail/?v=HERB006167&label=Herb\", \"title\": \"HERB006167\"}, \"Xiao Ye Hei Chai Hu\", \"\\u5c0f\\u53f6\\u9ed1\\u67f4\\u80e1\", \"NA\", \"Smallleaf Black Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Smithii Var. Parvifolium\"}], [{\"link\": \"/Detail/?v=HERB006915&label=Herb\", \"title\": \"HERB006915\"}, \"Zhai Zhu Ye Chai Hu\", \"\\u7a84\\u7af9\\u53f6\\u67f4\\u80e1\", \"NA\", \"Narrowbambooleaf Thorowax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Bupleurum Marginatum Var. Stenophyllum\"}], [{\"link\": \"/Detail/?v=HERB000639&label=Herb\", \"title\": \"HERB000639\"}, \"Chai Hu Zhuang Qian Li Guang\", \"\\u67f4\\u80e1\\u72b6\\u5343\\u91cc\\u5149\", \"NA\", \"Thorowax-Like Groundsel\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Senecio Bupleuroides\"}]]}"
+  },
+  "recorded_at": "2026-05-03T20:46:23.249699+00:00"
+}

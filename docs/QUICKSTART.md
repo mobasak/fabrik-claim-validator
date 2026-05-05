@@ -1,12 +1,12 @@
-# QUICKSTART.md — {PROJECT_NAME}
+# QUICKSTART.md — fabrik-claim-validator
 
 **Last Updated:** 2026-05-03
 
 > **Purpose:** INTEGRATION CONTRACT — ENDPOINTS, SDKS, DOCKER WIRING. START HERE FOR INTEGRATION AND SETUP.
-> **One-liner:** {What this project does in one sentence — who it's for and what problem it solves.}
-> **Type:** {python-api | node-api | saas-skeleton | chrome-extension | mobile-app | desktop-app | static-site}
-> **Owner:** {Team or person responsible.}
-> **Last verified:** {2026-05-03}
+> **One-liner:** Multi-tradition herbal medicine claim validator — ingests evidence from 11 traditions, normalises it, and exposes a discovery API for convergent therapeutic substances.
+> **Type:** python-api
+> **Owner:** Özgür Başak
+> **Last verified:** 2026-05-03
 
 ---
 
@@ -14,29 +14,22 @@
 
 | Key | Value |
 |-----|-------|
-| **Project** | `{fabrik-claim-validator}` |
+| **Project** | `fabrik-claim-validator` |
 | **Port** | `8002` |
-| **Production URL** | `https://{project}.vps1.ocoron.com` |
+| **Production URL** | `https://claim-validator.vps1.ocoron.com` |
 | **Local dev URL** | `http://localhost:8002` |
 | **Health endpoint** | `GET /health` |
-| **Depends on** | `{postgres, redis, minio, external-api-name, none}` |
-
-<!-- For services called by other services, add these rows: -->
-<!-- | **Docker-internal URL** | `http://{fabrik-claim-validator}:8002` | -->
-<!-- | **OpenAPI docs** | `{BASE_URL}/docs` | -->
-<!-- | **Called by** | `{list of consuming services}` | -->
+| **OpenAPI docs** | `http://localhost:8002/docs` |
+| **Depends on** | PostgreSQL (`postgres-main:5432`) |
 
 ---
 
 ## Prerequisites
 
-<!-- What must be installed/configured before this project can run. Delete items that don't apply. -->
-
-- [ ] Docker + Docker Compose
-- [ ] Python 3.12+ with project venv at `/opt/{project}/.venv`
-- [ ] Node 22+ (for frontend/extension projects)
+- [ ] Python 3.12+ with project venv at `/opt/fabrik-claim-validator/.venv`
+- [ ] PostgreSQL (local dev via peer auth as `ozgur`, VPS via `postgres-main`)
 - [ ] `.env` file configured (copy from `.env.example`)
-- [ ] Access to required services: {postgres-main, redis, etc.}
+- [ ] Docker + Docker Compose (for VPS deployment only)
 
 ---
 
@@ -46,41 +39,45 @@
 
 ### Database Setup
 
-This project uses PostgreSQL for local development. The database was auto-created during scaffold if `--db` flag was used.
+**Database name:** `fabrik_claim_validator_dev`
+**Connection:** `postgresql://ozgur@localhost:5432/fabrik_claim_validator_dev` (peer auth)
 
-**Database name:** `{project_name}_dev`
-**Connection:** `postgresql://postgres@localhost:5432/{project_name}_dev`
-
-**If database was not auto-created:**
 ```bash
-sudo -u postgres psql -c "CREATE DATABASE {project_name}_dev;"
+sudo -u postgres psql -c "CREATE DATABASE fabrik_claim_validator_dev OWNER ozgur;"
 ```
 
 ### Running Locally
 
 ```bash
-cd /opt/{fabrik-claim-validator}
+cd /opt/fabrik-claim-validator
+source .venv/bin/activate
 
 # Use local development config
 cp .env.local .env
 
-# Run migrations (if using Alembic)
-.venv/bin/alembic upgrade head
+# Apply schema migrations (13 through Sprint 2.5)
+set -a && source .env.local && set +a
+alembic upgrade head
+
+# Run tests (cassette replay, no network)
+pytest
 
 # Start development server
-.venv/bin/uvicorn src.{package}.main:app --reload --port 8002
+uvicorn fabrik_claim_validator.main:app --port 8002 --reload
 ```
 
 ### Database Access
 
 ```bash
-# Connect with psql
-psql -U postgres -d {project_name}_dev
+psql fabrik_claim_validator_dev
 
-# Useful commands
-\dt              # List tables
-\d table_name    # Describe table
-\q               # Quit
+# Key tables
+\dt              # List all tables
+\d compounds     # 449K+ botanical taxa from WFO
+\d monographs    # EMA HMPC + NHPID monographs
+\d taxa_aliases  # Cross-tradition name mappings
+\d cache_entries # Upstream API response cache (90d TTL)
+\d scrape_queue  # Batch scraping job queue
 ```
 
 ---
@@ -134,89 +131,85 @@ curl -sf http://localhost:8002/health
 
 ## Primary Workflows
 
-<!-- 3–5 most important things a user or caller does with this project.
-     Adapt to project type:
-     - API/service: curl examples with full request/response bodies
-     - SaaS: user flows (signup → configure → use core feature)
-     - Chrome extension: install → configure → usage
-     - Static site: content editing → build → deploy
+### 1. Resolve a herb via HERB 2.0 API
 
-     Each workflow MUST include enough detail that someone can execute it without opening another doc. -->
+```python
+import asyncio
+from fabrik_claim_validator.resolvers.herb_ac_cn import HerbAcCnResolver
 
-### 1. {Primary workflow — the #1 thing users/callers do}
+async def main():
+    async with HerbAcCnResolver() as resolver:
+        result = await resolver.fetch_detail("Salvia miltiorrhiza")
+        print(f"ID: {result['herb_id']}")
+        print(f"Ingredients: {len(result['ingredients'])}")
+        print(f"Targets: {len(result['targets'])}")
+        print(f"Diseases: {len(result['diseases'])}")
 
-<!-- For APIs: full curl with request body, field table, response -->
-<!-- For apps: step-by-step user flow -->
+asyncio.run(main())
+```
+
+Returns: `herb_id`, `targets` (gene symbols), `ingredients`, `diseases`, `clinical_trials` (NCT IDs), `related_papers` (PMIDs), `summary`.
+
+### 2. Resolve a compound via PubChem
+
+```python
+import asyncio
+from fabrik_claim_validator.resolvers.pubchem import PubChemResolver
+
+async def main():
+    async with PubChemResolver() as resolver:
+        result = await resolver.name_to_properties("aspirin")
+        print(result)  # CID, formula, CAS, SMILES, etc.
+
+asyncio.run(main())
+```
+
+### 3. Run the EMA monograph scraper
 
 ```bash
-curl -X POST http://localhost:8002/api/v1/{resource} \
-  -H "Content-Type: application/json" \
-  -d '{
-    "field_1": "value",
-    "field_2": 123
-  }'
+cd /opt/fabrik-claim-validator
+# See docs/operations/data_ingest.md § FCV-254 for full runbook
+python scripts/ema_spotcheck.py
 ```
 
-| Field | Type | Required | Default | Description |
-|-------|------|----------|---------|-------------|
-| `field_1` | string | Yes | — | {Description} |
-| `field_2` | int | No | `100` | {Description} |
-
-**Response (200):**
-```json
-{
-  "success": true,
-  "id": "abc-123",
-  "result": "..."
-}
-```
-
-> **Idempotent:** {Yes / No}
-
-### 2. {Second workflow}
+### 4. Record fresh cassettes
 
 ```bash
-# Example workflow 2
-curl -X GET http://localhost:8002/api/v1/{resource}
+CASSETTE_MODE=record python -c "
+import asyncio
+from fabrik_claim_validator.resolvers.herb_ac_cn import HerbAcCnResolver
+
+async def main():
+    async with HerbAcCnResolver() as r:
+        await r.fetch_detail('Ginseng')
+
+asyncio.run(main())
+"
+# Cassettes written to tests/cassettes/herb_ac_cn/
 ```
-
-### 3. {Third workflow}
-
-```bash
-# Example workflow 3
-curl -X DELETE http://localhost:8002/api/v1/{resource}/:id
-```
-
-### 4. {Optional fourth workflow}
-
-### 5. {Optional fifth workflow}
-
-<!-- Delete unused slots. -->
 
 ---
 
 ## API Reference (Compact)
 
-<!-- For API/service projects: list every endpoint with inline request body shapes.
-     For non-API projects: replace this section with "Key Commands" or "Feature Reference"
-     or delete entirely if not applicable. -->
-
-### {Domain Group 1}
-
-| Method | Path | Request Body | Purpose |
-|--------|------|-------------|---------|
-| `GET` | `/api/v1/{resource}` | — | List all |
-| `POST` | `/api/v1/{resource}` | `{"field_1","field_2"}` | Create (see Workflow 1) |
-| `GET` | `/api/v1/{resource}/:id` | — | Get by ID |
-| `DELETE` | `/api/v1/{resource}/:id` | — | Delete |
-
 ### Health & Diagnostics
 
 | Method | Path | Purpose |
 |--------|------|---------|
-| `GET` | `/health` | Service health (200 / 503) |
+| `GET` | `/health` | Service health — checks PostgreSQL connectivity (200 / 503) |
 
-<!-- For full request/response shapes: see docs/reference/REST_API_REFERENCE.md -->
+### Data Ingestion (Python API — not HTTP endpoints yet)
+
+| Module | Class/Function | Purpose |
+|--------|---------------|---------|
+| `resolvers.herb_ac_cn` | `HerbAcCnResolver.fetch_detail(name)` | HERB 2.0 herb lookup (search + detail) |
+| `resolvers.herb_ac_cn` | `HerbAcCnResolver.search_herb(keyword)` | HERB 2.0 keyword search |
+| `resolvers.pubchem` | `PubChemResolver.name_to_properties(name)` | PubChem compound lookup |
+| `scrapers.ema_hmpc` | `EmaHmpcScraper.process_queue(pool)` | EMA monograph batch processor |
+| `scrapers.nhpid` | `NhpidScraper.scrape(pool)` | NHPID ingredient scraper |
+| `loaders.wfo_seed` | CLI: `python -m ...wfo_seed --file <path>` | WFO botanical taxonomy bulk loader |
+
+**Note:** HTTP API endpoints for discovery (`/api/v1/discover`) are planned for Sprint 5.
 
 ---
 

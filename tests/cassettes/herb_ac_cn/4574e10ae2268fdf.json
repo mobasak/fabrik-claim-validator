@@ -1,0 +1,285 @@
+{
+  "scraper_id": "herb_ac_cn",
+  "request": {
+    "method": "POST",
+    "url": "http://47.92.70.12/chedi/api/",
+    "body": {
+      "keyword": "Wu Wei Zi",
+      "label": "Herb",
+      "func_name": "search_api"
+    }
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "res_data": [
+        [
+          "Herb ID",
+          "Herb PinYin Name",
+          "Herb Chinese name",
+          "Herb Alias Name",
+          "Herb English Name",
+          "Herb Latin Name"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005762&label=Herb",
+            "title": "HERB005762"
+          },
+          "Wu Wei Zi",
+          "五味子",
+          "（艹味）; （艹至）（艹猪）; 玄及; 会及; 五梅子; 山花椒",
+          "Schisandrae Chinensis Fructus; Chinese Magnoliavine Fruit",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Fructus Schisandrae Chinensis; Schisandrae Chinensis Fructus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004118&label=Herb",
+            "title": "HERB004118"
+          },
+          "Nan Wu Wei Zi",
+          "南五味子",
+          "NA",
+          "Southern Magnoliavine Fruit; Schisandrae Sphentherae Fructus",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Schisandrae Sphentherae Fructus; Fructus Schisandrae Sphenantherae"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000409&label=Herb",
+            "title": "HERB000409"
+          },
+          "Bei Wu Wei Zi",
+          "北五味子",
+          "NA",
+          "Schisandrae Chinensis Fructus",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Schisandrae Chinensis Fructus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001060&label=Herb",
+            "title": "HERB001060"
+          },
+          "Da Hua Wu Wei Zi",
+          "大花五味子",
+          "NA",
+          "Bigflower Magnoliavine",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Schisandra Grandiflora"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005966&label=Herb",
+            "title": "HERB005966"
+          },
+          "Xia Ye Wu Wei Zi",
+          "狭叶五味子",
+          "NA",
+          "Narrowleaf Magnoliavine",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Schisandra Lancifolia"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002137&label=Herb",
+            "title": "HERB002137"
+          },
+          "Han Rui Wu Wei Zi",
+          "含蕊五味子",
+          "NA",
+          "Angletwig Magnoliavine",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Schisandra Propinqua"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006518&label=Herb",
+            "title": "HERB006518"
+          },
+          "Yi Geng Wu Wei Zi",
+          "翼梗五味子",
+          "NA",
+          "Henry Magnoliavine",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Schisandra Henryi"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004556&label=Herb",
+            "title": "HERB004556"
+          },
+          "Qiu Rui Wu Wei Zi",
+          "球蕊五味子",
+          "NA",
+          "Ballander Magnoliavine",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Schisandra Sphaerandra"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002288&label=Herb",
+            "title": "HERB002288"
+          },
+          "Hong Hua Wu Wei Zi",
+          "红花五味子",
+          "NA",
+          "Redflower Magnoliavine",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Schisandra Rubriflora"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002465&label=Herb",
+            "title": "HERB002465"
+          },
+          "Hua Zhong Wu Wei Zi",
+          "华中五味子",
+          "NA",
+          "Orange Magnoliavine",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Schisandra Sphenanthera"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000022&label=Herb",
+            "title": "HERB000022"
+          },
+          "A Li Shan Wu Wei Zi",
+          "阿里山五味子",
+          "NA",
+          "Taiwan Magnoliavine",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Schisandra Arisanensis"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB007077&label=Herb",
+            "title": "HERB007077"
+          },
+          "Zhong Jian Wu Wei Zi",
+          "中间五味子",
+          "NA",
+          "Intermediate Magnoliavine",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Schisandra Propinqua Subsp. Intermedia"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004656&label=Herb",
+            "title": "HERB004656"
+          },
+          "Ri Ben Nan Wu Wei Zi",
+          "日本南五味子",
+          "NA",
+          "Japanese Kadsura",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Kadsura Japonica"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005947&label=Herb",
+            "title": "HERB005947"
+          },
+          "Xia Ye Nan Wu Wei Zi",
+          "狭叶南五味子",
+          "NA",
+          "Narrowleaf Kadsura",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Kadsura Angustifolia"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006552&label=Herb",
+            "title": "HERB006552"
+          },
+          "Yi Xing Nan Wu Wei Zi",
+          "异形南五味子",
+          "NA",
+          "Curious Kadsura",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Kadsura Heteroclita"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004359&label=Herb",
+            "title": "HERB004359"
+          },
+          "Pi Zhen Ye Nan Wu Wei Zi",
+          "披针叶南五味子",
+          "NA",
+          "Lanceolate Kadsura",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Kadsura Lancilimba"
+          }
+        ]
+      ]
+    },
+    "text": "{\"res_data\": [[\"Herb ID\", \"Herb PinYin Name\", \"Herb Chinese name\", \"Herb Alias Name\", \"Herb English Name\", \"Herb Latin Name\"], [{\"link\": \"/Detail/?v=HERB005762&label=Herb\", \"title\": \"HERB005762\"}, \"Wu Wei Zi\", \"\\u4e94\\u5473\\u5b50\", \"\\uff08\\u8279\\u5473\\uff09; \\uff08\\u8279\\u81f3\\uff09\\uff08\\u8279\\u732a\\uff09; \\u7384\\u53ca; \\u4f1a\\u53ca; \\u4e94\\u6885\\u5b50; \\u5c71\\u82b1\\u6912\", \"Schisandrae Chinensis Fructus; Chinese Magnoliavine Fruit\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Fructus Schisandrae Chinensis; Schisandrae Chinensis Fructus\"}], [{\"link\": \"/Detail/?v=HERB004118&label=Herb\", \"title\": \"HERB004118\"}, \"Nan Wu Wei Zi\", \"\\u5357\\u4e94\\u5473\\u5b50\", \"NA\", \"Southern Magnoliavine Fruit; Schisandrae Sphentherae Fructus\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Schisandrae Sphentherae Fructus; Fructus Schisandrae Sphenantherae\"}], [{\"link\": \"/Detail/?v=HERB000409&label=Herb\", \"title\": \"HERB000409\"}, \"Bei Wu Wei Zi\", \"\\u5317\\u4e94\\u5473\\u5b50\", \"NA\", \"Schisandrae Chinensis Fructus\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Schisandrae Chinensis Fructus\"}], [{\"link\": \"/Detail/?v=HERB001060&label=Herb\", \"title\": \"HERB001060\"}, \"Da Hua Wu Wei Zi\", \"\\u5927\\u82b1\\u4e94\\u5473\\u5b50\", \"NA\", \"Bigflower Magnoliavine\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Schisandra Grandiflora\"}], [{\"link\": \"/Detail/?v=HERB005966&label=Herb\", \"title\": \"HERB005966\"}, \"Xia Ye Wu Wei Zi\", \"\\u72ed\\u53f6\\u4e94\\u5473\\u5b50\", \"NA\", \"Narrowleaf Magnoliavine\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Schisandra Lancifolia\"}], [{\"link\": \"/Detail/?v=HERB002137&label=Herb\", \"title\": \"HERB002137\"}, \"Han Rui Wu Wei Zi\", \"\\u542b\\u854a\\u4e94\\u5473\\u5b50\", \"NA\", \"Angletwig Magnoliavine\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Schisandra Propinqua\"}], [{\"link\": \"/Detail/?v=HERB006518&label=Herb\", \"title\": \"HERB006518\"}, \"Yi Geng Wu Wei Zi\", \"\\u7ffc\\u6897\\u4e94\\u5473\\u5b50\", \"NA\", \"Henry Magnoliavine\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Schisandra Henryi\"}], [{\"link\": \"/Detail/?v=HERB004556&label=Herb\", \"title\": \"HERB004556\"}, \"Qiu Rui Wu Wei Zi\", \"\\u7403\\u854a\\u4e94\\u5473\\u5b50\", \"NA\", \"Ballander Magnoliavine\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Schisandra Sphaerandra\"}], [{\"link\": \"/Detail/?v=HERB002288&label=Herb\", \"title\": \"HERB002288\"}, \"Hong Hua Wu Wei Zi\", \"\\u7ea2\\u82b1\\u4e94\\u5473\\u5b50\", \"NA\", \"Redflower Magnoliavine\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Schisandra Rubriflora\"}], [{\"link\": \"/Detail/?v=HERB002465&label=Herb\", \"title\": \"HERB002465\"}, \"Hua Zhong Wu Wei Zi\", \"\\u534e\\u4e2d\\u4e94\\u5473\\u5b50\", \"NA\", \"Orange Magnoliavine\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Schisandra Sphenanthera\"}], [{\"link\": \"/Detail/?v=HERB000022&label=Herb\", \"title\": \"HERB000022\"}, \"A Li Shan Wu Wei Zi\", \"\\u963f\\u91cc\\u5c71\\u4e94\\u5473\\u5b50\", \"NA\", \"Taiwan Magnoliavine\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Schisandra Arisanensis\"}], [{\"link\": \"/Detail/?v=HERB007077&label=Herb\", \"title\": \"HERB007077\"}, \"Zhong Jian Wu Wei Zi\", \"\\u4e2d\\u95f4\\u4e94\\u5473\\u5b50\", \"NA\", \"Intermediate Magnoliavine\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Schisandra Propinqua Subsp. Intermedia\"}], [{\"link\": \"/Detail/?v=HERB004656&label=Herb\", \"title\": \"HERB004656\"}, \"Ri Ben Nan Wu Wei Zi\", \"\\u65e5\\u672c\\u5357\\u4e94\\u5473\\u5b50\", \"NA\", \"Japanese Kadsura\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Kadsura Japonica\"}], [{\"link\": \"/Detail/?v=HERB005947&label=Herb\", \"title\": \"HERB005947\"}, \"Xia Ye Nan Wu Wei Zi\", \"\\u72ed\\u53f6\\u5357\\u4e94\\u5473\\u5b50\", \"NA\", \"Narrowleaf Kadsura\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Kadsura Angustifolia\"}], [{\"link\": \"/Detail/?v=HERB006552&label=Herb\", \"title\": \"HERB006552\"}, \"Yi Xing Nan Wu Wei Zi\", \"\\u5f02\\u5f62\\u5357\\u4e94\\u5473\\u5b50\", \"NA\", \"Curious Kadsura\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Kadsura Heteroclita\"}], [{\"link\": \"/Detail/?v=HERB004359&label=Herb\", \"title\": \"HERB004359\"}, \"Pi Zhen Ye Nan Wu Wei Zi\", \"\\u62ab\\u9488\\u53f6\\u5357\\u4e94\\u5473\\u5b50\", \"NA\", \"Lanceolate Kadsura\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Kadsura Lancilimba\"}]]}"
+  },
+  "recorded_at": "2026-05-03T20:46:55.578179+00:00"
+}

@@ -37,21 +37,23 @@ VPS prod is Coolify-managed; see `compose.yaml`.
 
 ## Overview
 
-<!-- 2–3 sentences: what this project does, who it's for, what problem it solves. -->
+Multi-tradition herbal medicine claim validator. Ingests substance, indication, and evidence data from 11 medical traditions (EMA, NHPID, HERB/TCM, Ayurveda, Kampo, etc.), normalises it into a common schema, and exposes a discovery API that surfaces convergent substances — herbs where multiple independent traditions agree on the same therapeutic use.
+
+**Current data sources (Sprint 2.5):** WFO botanical taxonomy (449K+ taxa), EMA HMPC monographs (PDF-parsed), Health Canada NHPID ingredients, HERB 2.0 (TCM herbs via JSON API — ingredients, gene targets, diseases, clinical trials).
 
 ## Tech Stack
 
-<!-- Replace with actual stack. Delete lines that don't apply. -->
-
-- **Runtime:** Python 3.12 / Node 22
-- **Framework:** FastAPI / Next.js / Hono
-- **Database:** PostgreSQL (shared `postgres-main:5432`)
-- **Cache:** Redis (`redis:6379`)
-- **Deployment:** Docker → Coolify → VPS
+- **Runtime:** Python 3.12
+- **Framework:** FastAPI + Uvicorn
+- **Database:** PostgreSQL 16 (shared `postgres-main:5432`, schema via Alembic migrations)
+- **HTTP client:** httpx (async) with cassette-based test recording/replay
+- **PDF parsing:** pdfplumber + custom `PdfMonographParser`
+- **Deployment:** Docker → Coolify → VPS (amd64, bookworm-slim base)
 
 ## Requirements
 
-- Docker + Docker Compose
+- Python 3.12+ with venv
+- PostgreSQL (local dev via peer auth, VPS via `postgres-main`)
 - `.env` configured from `.env.example`
 
 ## Documentation

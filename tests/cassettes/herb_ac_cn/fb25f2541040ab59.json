@@ -1,0 +1,141 @@
+{
+  "scraper_id": "herb_ac_cn",
+  "request": {
+    "method": "POST",
+    "url": "http://47.92.70.12/chedi/api/",
+    "body": {
+      "keyword": "Bai Zhu",
+      "label": "Herb",
+      "func_name": "search_api"
+    }
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "res_data": [
+        [
+          "Herb ID",
+          "Herb PinYin Name",
+          "Herb Chinese name",
+          "Herb Alias Name",
+          "Herb English Name",
+          "Herb Latin Name"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000309&label=Herb",
+            "title": "HERB000309"
+          },
+          "Bai Zhu",
+          "白术",
+          "山蓟; 杨枹蓟; 术; 山芥; 天蓟; 山姜; 山连; 山精; 乞力伽; 冬白术",
+          "Rhizome of Largehead Atractylodes; Largehead Atractylodes Rruzome",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Rhizoma Atractylodis Macrocephalae; Atractylodis Macrocephalae Rhizoma"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000310&label=Herb",
+            "title": "HERB000310"
+          },
+          "Bai Zhu Shu",
+          "白珠树",
+          " 老虎尿; 老虎面; 满山香; 牛头药",
+          "Commongaultheria",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Gaultheria Leucocarpa Var. Cumingiana"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005670&label=Herb",
+            "title": "HERB005670"
+          },
+          "Wei Ye Bai Zhu",
+          "尾叶白珠",
+          "NA",
+          "Long Acuminate Leaves Gaultheria",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Gaultheria Griffithiana"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005237&label=Herb",
+            "title": "HERB005237"
+          },
+          "Si Lie Bai Zhu",
+          "四裂白珠",
+          "NA",
+          "Four Sepals Gaultheria",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Gaultheria Tetramera"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001279&label=Herb",
+            "title": "HERB001279"
+          },
+          "Dian Bai Zhu Shu",
+          "滇白珠树",
+          "NA",
+          "Yunnan Gaultheria",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Gaultheria Leucocarpa Var. Yunnanensis"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001628&label=Herb",
+            "title": "HERB001628"
+          },
+          "Fang Xiang Bai Zhu",
+          "芳香白珠",
+          "NA",
+          "Fragrant Gaultheria",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Gaultheria Fragrantissima"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004790&label=Herb",
+            "title": "HERB004790"
+          },
+          "San Se Bai Zhuang Gu",
+          "三色白桩菇",
+          "NA",
+          "Tricolor Leucopaxillus",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Leucopaxillus Tricolor"
+          }
+        ]
+      ]
+    },
+    "text": "{\"res_data\": [[\"Herb ID\", \"Herb PinYin Name\", \"Herb Chinese name\", \"Herb Alias Name\", \"Herb English Name\", \"Herb Latin Name\"], [{\"link\": \"/Detail/?v=HERB000309&label=Herb\", \"title\": \"HERB000309\"}, \"Bai Zhu\", \"\\u767d\\u672f\", \"\\u5c71\\u84df; \\u6768\\u67b9\\u84df; \\u672f; \\u5c71\\u82a5; \\u5929\\u84df; \\u5c71\\u59dc; \\u5c71\\u8fde; \\u5c71\\u7cbe; \\u4e5e\\u529b\\u4f3d; \\u51ac\\u767d\\u672f\", \"Rhizome of Largehead Atractylodes; Largehead Atractylodes Rruzome\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Rhizoma Atractylodis Macrocephalae; Atractylodis Macrocephalae Rhizoma\"}], [{\"link\": \"/Detail/?v=HERB000310&label=Herb\", \"title\": \"HERB000310\"}, \"Bai Zhu Shu\", \"\\u767d\\u73e0\\u6811\", \" \\u8001\\u864e\\u5c3f; \\u8001\\u864e\\u9762; \\u6ee1\\u5c71\\u9999; \\u725b\\u5934\\u836f\", \"Commongaultheria\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Gaultheria Leucocarpa Var. Cumingiana\"}], [{\"link\": \"/Detail/?v=HERB005670&label=Herb\", \"title\": \"HERB005670\"}, \"Wei Ye Bai Zhu\", \"\\u5c3e\\u53f6\\u767d\\u73e0\", \"NA\", \"Long Acuminate Leaves Gaultheria\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Gaultheria Griffithiana\"}], [{\"link\": \"/Detail/?v=HERB005237&label=Herb\", \"title\": \"HERB005237\"}, \"Si Lie Bai Zhu\", \"\\u56db\\u88c2\\u767d\\u73e0\", \"NA\", \"Four Sepals Gaultheria\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Gaultheria Tetramera\"}], [{\"link\": \"/Detail/?v=HERB001279&label=Herb\", \"title\": \"HERB001279\"}, \"Dian Bai Zhu Shu\", \"\\u6ec7\\u767d\\u73e0\\u6811\", \"NA\", \"Yunnan Gaultheria\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Gaultheria Leucocarpa Var. Yunnanensis\"}], [{\"link\": \"/Detail/?v=HERB001628&label=Herb\", \"title\": \"HERB001628\"}, \"Fang Xiang Bai Zhu\", \"\\u82b3\\u9999\\u767d\\u73e0\", \"NA\", \"Fragrant Gaultheria\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Gaultheria Fragrantissima\"}], [{\"link\": \"/Detail/?v=HERB004790&label=Herb\", \"title\": \"HERB004790\"}, \"San Se Bai Zhuang Gu\", \"\\u4e09\\u8272\\u767d\\u6869\\u83c7\", \"NA\", \"Tricolor Leucopaxillus\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Leucopaxillus Tricolor\"}]]}"
+  },
+  "recorded_at": "2026-05-03T20:46:45.596830+00:00"
+}

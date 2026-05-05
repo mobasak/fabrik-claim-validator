@@ -13,6 +13,7 @@ import pytest
 from fabrik_claim_validator.resolvers.herb_ac_cn import (
     HerbAcCnResolver,
     parse_detail_html,
+    parse_detail_json,
 )
 from fabrik_claim_validator.resolvers.pubchem import PubChemResolver
 
@@ -70,29 +71,46 @@ async def test_pubchem_upsert_persists_to_compounds(pool):
     assert stored["cas_number"] == "50-78-2"
 
 
-# ─── FCV-104: HERB.ac.cn resolver — parse detail page ──────────────────
+# ─── FCV-104/253: HERB 2.0 resolver — JSON API via cassettes ─────────
 async def test_herb_ac_cn_fetch_detail_ginseng():
     async with HerbAcCnResolver() as resolver:
         result = await resolver.fetch_detail("Ginseng")
     assert result is not None
     assert result["herb_name"] == "Ginseng"
-    assert "AKT1" in result["targets"]
-    assert "TP53" in result["targets"]
-    assert any("Ginsenoside Rb1" in i for i in result["ingredients"])
-    assert "12345678" in result["related_papers"]
-    assert len(result["related_papers"]) == 3
+    assert result["herb_id"] == "HERB002319"
+    assert len(result["targets"]) >= 1
+    assert len(result["ingredients"]) >= 50  # HERB 2.0: 104 ingredients for Red Ginseng
+    assert len(result.get("diseases", [])) >= 100  # HERB 2.0: 431 diseases
+    assert len(result.get("clinical_trials", [])) >= 10  # HERB 2.0: 34 trials
 
 
 async def test_herb_ac_cn_fetch_detail_astragalus():
     async with HerbAcCnResolver() as resolver:
         result = await resolver.fetch_detail("Astragalus")
     assert result is not None
-    assert "TNF" in result["targets"]
-    assert "Astragaloside IV" in result["ingredients"]
-    assert set(result["related_papers"]) == {"11111111", "22222222"}
+    assert result["herb_id"] == "HERB007236"
+    assert len(result["ingredients"]) >= 1
 
 
-# ─── FCV-104: detail parser is pure — test directly on a hand-rolled doc ──
+# ─── FCV-253: parse_detail_json pure function test ────────────────────
+def test_parse_detail_json_extracts_fields():
+    raw = {
+        "herb_target": [["Target id", "Gene symbol"], [{}, "TP53"], [{}, "AKT1"]],
+        "herb_ingredient": [["Ingredient id", "Ingredient name"], [{}, "Ginsenoside Rb1"]],
+        "herb_disease": [["Disease id", "Disease name"], [{}, "Diabetes"]],
+        "drug_paper_disease": [["Disease id", "Disease name", "UMLS disease type", "Reference id", "PubMed id"], [{}, "D", "T", "R", "12345678"]],
+        "clinical_herb": [["Clinical trial id", "NCT id"], [{}, "NCT001"]],
+        "summary": [["Herb ID", "Herb English name"], [{"link": "/", "title": "HERB999"}, "Test"]],
+    }
+    result = parse_detail_json(raw, herb_name="Test", herb_id="HERB999")
+    assert result["targets"] == ["TP53", "AKT1"]
+    assert result["ingredients"] == ["Ginsenoside Rb1"]
+    assert result["diseases"] == ["Diabetes"]
+    assert "12345678" in result["related_papers"]
+    assert result["clinical_trials"] == ["NCT001"]
+
+
+# ─── FCV-104: legacy HTML parser — test directly on a hand-rolled doc ──
 def test_herb_parser_handles_missing_sections():
     empty = parse_detail_html("<html><body>no sections</body></html>", herb_name="Foo")
     assert empty == {

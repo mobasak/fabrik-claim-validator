@@ -29,12 +29,12 @@
    - Epic Closure: `python scripts/final_gate.py --systemic --json`
 3. **CHANGELOG** — One entry under `## [Unreleased]` (gate-enforced).
 4. **LESSONS LEARNT** — Fill the ticket's `Lessons Learnt:` line with `none` OR a structured entry appended to `docs/LESSONS_LEARNT.md`. Silence = failure.
-5. **EXIT** — Gate auto-stages on success. Do not commit, do not stage manually.
+5. **EXIT** — Gate auto-stages on success. STOP. Do NOT run `git commit` or `git push` unless the user explicitly says "commit" or "push" in this turn. Manual `git add` is allowed.
 
 ## HARD STOPS — Cascade mechanics
 | Rule | Instead |
 |:--|:--|
-| `git commit` / `git add` | Gate auto-stages on success |
+| `git commit` / `git push` (unless user explicitly said "commit" or "push" this turn) | gate auto-stages — your task ends there |
 | edit files outside ticket Scope | stay strictly in ticket Scope |
 | modify `pyproject.toml` / `requirements.txt` / `package.json` / `uv.lock` / `package-lock.json` | only if the ticket explicitly authorises a deps change |
 | create files outside the project tree | use local project paths only |
@@ -82,3 +82,23 @@ WSL Ubuntu only — Linux paths, never Windows tooling. Code must work in WSL de
 | n8n / automation | `.windsurf/rules/90-automation.md` |
 | Multi-tenant / RLS | `.windsurf/rules/95-multi-tenant-saas.md` |
 | Visual + verbal identity (UI) | `.windsurf/rules/ocoron-design-system.md` |
+
+## ⚠️ MANDATORY FINAL OUTPUT
+
+Last 4 lines of every implementation response:
+
+```
+GATE: <command run> → success|failure
+DOCS UPDATED: <files | none>
+CHANGELOG: <entry title | n/a>
+LESSONS LEARNT: <none | docs/LESSONS_LEARNT.md entry title>
+```
+
+Gate command per ticket type:
+
+- Standard ticket → `python scripts/final_gate.py --lean --json`
+- Milestone / multi-component / schema / auth → `python scripts/final_gate.py --json`
+- Epic closure → `python scripts/final_gate.py --systemic --json`
+
+Run gate. If `failure`, fix and re-run until `success`. Then output the 4 lines.
+Missing any line = task failure.

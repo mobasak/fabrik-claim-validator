@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "valerianae-radix",
+    "url": "https://www.ema.europa.eu/en/medicines/herbal/valerianae-radix",
+    "herb": "Valeriana officinalis",
+    "expected_tier": "A",
+    "note": "well-established use"
+  },
+  {
+    "slug": "hederae-helicis-folium",
+    "url": "https://www.ema.europa.eu/en/medicines/herbal/hederae-helicis-folium",
+    "herb": "Hedera helix",
+    "expected_tier": "A",
+    "note": "well-established use"
+  },
+  {
+    "slug": "echinaceae-purpureae-herba",
+    "url": "https://www.ema.europa.eu/en/medicines/herbal/echinaceae-purpureae-herba",
+    "herb": "Echinacea purpurea",
+    "expected_tier": "A",
+    "note": "traditional use but PDF has dual well-established/traditional columns → parser detects A"
+  },
+  {
+    "slug": "passiflorae-herba",
+    "url": "https://www.ema.europa.eu/en/medicines/herbal/passiflorae-herba",
+    "herb": "Passiflora incarnata",
+    "expected_tier": "A",
+    "note": "traditional use but PDF has dual well-established/traditional columns → parser detects A"
+  },
+  {
+    "slug": "crataegi-folium-cum-flore",
+    "url": "https://www.ema.europa.eu/en/medicines/herbal/crataegi-folium-cum-flore",
+    "herb": "Crataegus monogyna",
+    "expected_tier": "A",
+    "note": "well-established use; image-heavy assessment report"
+  }
+]

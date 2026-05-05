@@ -1,0 +1,40 @@
+{
+  "scraper_id": "herb_ac_cn",
+  "request": {
+    "method": "POST",
+    "url": "http://47.92.70.12/chedi/api/",
+    "body": {
+      "keyword": "Glycyrrhiza uralensis",
+      "label": "Herb",
+      "func_name": "search_api"
+    }
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "res_data": [
+        [
+          "Herb ID",
+          "Herb PinYin Name",
+          "Herb Chinese name",
+          "Herb Alias Name",
+          "Herb English Name",
+          "Herb Latin Name"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001780&label=Herb",
+            "title": "HERB001780"
+          },
+          "Gan Cao Jie",
+          "甘草节",
+          "粉草节",
+          "Glycyrrhiza Uralensis Fisch",
+          "NA"
+        ]
+      ]
+    },
+    "text": "{\"res_data\": [[\"Herb ID\", \"Herb PinYin Name\", \"Herb Chinese name\", \"Herb Alias Name\", \"Herb English Name\", \"Herb Latin Name\"], [{\"link\": \"/Detail/?v=HERB001780&label=Herb\", \"title\": \"HERB001780\"}, \"Gan Cao Jie\", \"\\u7518\\u8349\\u8282\", \"\\u7c89\\u8349\\u8282\", \"Glycyrrhiza Uralensis Fisch\", \"NA\"]]}"
+  },
+  "recorded_at": "2026-05-03T20:46:17.344687+00:00"
+}

@@ -1,0 +1,304 @@
+{
+  "scraper_id": "herb_ac_cn",
+  "request": {
+    "method": "POST",
+    "url": "http://47.92.70.12/chedi/api/",
+    "body": {
+      "v": "HERB004615",
+      "label": "Herb",
+      "key_id": "HERB004615",
+      "func_name": "detail_api"
+    }
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "cmap2_data": "None.",
+      "herb_ingredient": [
+        [
+          "Ingredient id",
+          "Ingredient name",
+          "Ingredient alias name",
+          "Molecular formula",
+          "Canonical smiles"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN003510&label=Ingredient",
+            "title": "HBIN003510"
+          },
+          "20(s)-protopanaxadiol",
+          "(20S)-Protopanaxadiol; 30636-90-9; 20-Epiprotopanaxadiol; Protopanaxadiol; 20(S)-APPD; MR8AEF5T1N; Dammar-24-ene-3,12,20-triol, (3beta,12beta)-; CHEBI:75950; (20S)-Protopanaxdiol",
+          "C30H52O3",
+          "CC(=CCCC(C)(C1CCC2(C1C(CC3C2(CCC4C3(CCC(C4(C)C)O)C)C)O)C)O)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN027737&label=Ingredient",
+            "title": "HBIN027737"
+          },
+          "Ginsenoside rc",
+          "11021-14-0; Panaxoside RC; ginsenoside-Rc; NSC 310104; UNII-0K83B0L786; CHEBI:77154; EINECS 234-253-5; MFCD00133368; 0K83B0L786",
+          "C53H90O22",
+          "CC(=CCCC(C)(C1CCC2(C1C(CC3C2(CCC4C3(CCC(C4(C)C)OC5C(C(C(C(O5)CO)O)O)OC6C(C(C(C(O6)CO)O)O)O)C)C)O)C)OC7C(C(C(C(O7)COC8C(C(C(O8)CO)O)O)O)O)O)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN027739&label=Ingredient",
+            "title": "HBIN027739"
+          },
+          "Ginsenoside rd",
+          "52705-93-8; Chikusetsusaponin FK7; Gypenoside VIII; UNII-WB232T95AV; WB232T95AV; GS-Rd; CHEBI:67988; G-Rd; (20S)-ginsenoside Rd",
+          "C48H82O18",
+          "CC(=CCCC(C)(C1CCC2(C1C(CC3C2(CCC4C3(CCC(C4(C)C)OC5C(C(C(C(O5)CO)O)O)OC6C(C(C(C(O6)CO)O)O)O)C)C)O)C)OC7C(C(C(C(O7)CO)O)O)O)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN027742&label=Ingredient",
+            "title": "HBIN027742"
+          },
+          "Ginsenoside re",
+          "52286-59-6; Ginsenoside B2; Panaxoside RE; ginsenoside-Re; Sanchinoside Re; Chikusetsusaponin IVc; UNII-46F3R0BL3I; NSC 308877; NSC-308877",
+          "C48H82O18",
+          "CC1C(C(C(C(O1)OC2C(C(C(OC2OC3CC4(C(CC(C5C4(CCC5C(C)(CCC=C(C)C)OC6C(C(C(C(O6)CO)O)O)O)C)O)C7(C3C(C(CC7)O)(C)C)C)C)CO)O)O)O)O)O"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN027746&label=Ingredient",
+            "title": "HBIN027746"
+          },
+          "Ginsenoside rg1",
+          "22427-39-0; Sanchinoside C1; Panaxoside A; Ginsenoside A2; Panaxoside Rg1; Sanchinoside Rg1; Ginsenoside g1; (20S)-ginsenoside Rg1; (3beta,6alpha,12beta)-3,12-Dihydroxydammar-24-ene-6,20-diyl bis-beta-D-Glucopyranoside",
+          "C42H72O14",
+          "CC(=CCCC(C)(C1CCC2(C1C(CC3C2(CC(C4C3(CCC(C4(C)C)O)C)OC5C(C(C(C(O5)CO)O)O)O)C)O)C)OC6C(C(C(C(O6)CO)O)O)O)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN027751&label=Ingredient",
+            "title": "HBIN027751"
+          },
+          "Ginsenoside rg3",
+          "14197-60-5; 20(S)-Ginsenoside Rg3; (20S)-ginsenoside Rg3; (20S)-Propanaxadiol; 20S-propanaxadiol; 20s-ginsenoside rg3; 20(S)-Propanaxidiol; ginsenoside rg3, (s)-; ginsenoside rg3, (+)-",
+          "C42H72O13",
+          "CC(=CCCC(C)(C1CCC2(C1C(CC3C2(CCC4C3(CCC(C4(C)C)OC5C(C(C(C(O5)CO)O)O)OC6C(C(C(C(O6)CO)O)O)O)C)C)O)C)O)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN027764&label=Ingredient",
+            "title": "HBIN027764"
+          },
+          "Ginsenoside rh2",
+          "78214-33-2; 20(S)-Ginsenoside Rh2; (20S)-ginsenoside Rh2; 20(S)-Ginsenoside; Ginsenoside-Rh2; CHEBI:77147; 0JU44A5KWG; (2R,3R,4S,5S,6R)-2-[[(3S,5R,8R,9R,10R,12R,13R,14R,17S)-12-hydroxy-17-[(2S)-2-hydroxy-6-methylhept-5-en-2-yl]-4,4,8,10,14-pentamethyl-2,3,5,6,7,9,11,12,13,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-yl]oxy]-6-(hydroxymethyl)oxane-3,4,5-triol; (20R)-Ginsenoside Rh2",
+          "C36H62O8",
+          "CC(=CCCC(C)(C1CCC2(C1C(CC3C2(CCC4C3(CCC(C4(C)C)OC5C(C(C(C(O5)CO)O)O)O)C)C)O)C)O)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN038739&label=Ingredient",
+            "title": "HBIN038739"
+          },
+          "Panaxadiol",
+          "19666-76-3; 20(R)-Panaxadiol; (3S,5R,8R,9R,10R,12R,13R,14R,17S)-4,4,8,10,14-pentamethyl-17-[(2R)-2,6,6-trimethyloxan-2-yl]-2,3,5,6,7,9,11,12,13,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthrene-3,12-diol; NSC 308879; F84BLM3L74; (3beta,12beta,20R)-20,25-Epoxydammarane-3,12-diol; Panaxol; Ginsengenin II; NSC-308879",
+          "C30H52O3",
+          "CC1(CCCC(O1)(C)C2CCC3(C2C(CC4C3(CCC5C4(CCC(C5(C)C)O)C)C)O)C)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN038740&label=Ingredient",
+            "title": "HBIN038740"
+          },
+          "Panaxatriol",
+          "32791-84-7; UNII-9F5B25FDDG; 9F5B25FDDG; NSC 308880; NSC-308880; (3beta,6alpha,12beta,20R)-20,25-Epoxydammarane-3,6,12-triol; (3S,5R,6R,8R,9R,10R,12R,13R,14R,17S)-4,4,8,10,14-pentamethyl-17-[(2R)-2,6,6-trimethyloxan-2-yl]-2,3,5,6,7,9,11,12,13,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthrene-3,6,12-triol; Panaxtriol; (20R)-20,25-EPOXYDAMMARANE-3.BETA.,6.BETA.,12.BETA.-TRIOL",
+          "C30H52O4",
+          "CC1(CCCC(O1)(C)C2CCC3(C2C(CC4C3(CC(C5C4(CCC(C5(C)C)O)C)O)C)O)C)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN038749&label=Ingredient",
+            "title": "HBIN038749"
+          },
+          "Panaxydol",
+          "72800-72-7; (3R)-8-[(2R,3S)-3-heptyloxiran-2-yl]oct-1-en-4,6-diyn-3-ol; (3r)-8-[(2r,3s)-3-heptyloxiran-2-yl]oct-1-ene-4,6-diyn-3-ol; Panaxydol, (-)-; 1-Octene-4,6-diyn-3-ol, 8-(3-heptyloxiranyl)-; P3VHC8ZL8G; (3R, 9R, 10S)-panaxydol; CHEBI:66723; DTXSID40993604",
+          "C17H24O2",
+          "CCCCCCCC1C(O1)CC#CC#CC(C=C)O"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN038752&label=Ingredient",
+            "title": "HBIN038752"
+          },
+          "Panaxynol",
+          "81203-57-8; (S)-Falcarinol; Falcarinol; (+)-Falcarinol; (3S,9Z)-heptadeca-1,9-dien-4,6-diyn-3-ol; 1,9-Heptadecadiene-4,6-diyn-3-ol, (3S,9Z)-; (S,Z)-Heptadeca-1,9-dien-4,6-diyn-3-ol; CHEBI:81095; (3S,9Z)-1,9-Heptadecadiene-4,6-diyn-3-ol",
+          "C17H24O",
+          "CCCCCCCC=CCC#CC#CC(C=C)O"
+        ]
+      ],
+      "formula_herb": [
+        [
+          "Formula id",
+          "Formula pinyin name",
+          "Formula cn name",
+          "Formula en name"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBFO004770&label=Formula",
+            "title": "HBFO004770"
+          },
+          "Wu She Zhi Yang Wan",
+          "乌蛇止痒丸",
+          "Wushe Zhiyang Pill; Wu She Zhi Yang Pill"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBFO006597&label=Formula",
+            "title": "HBFO006597"
+          },
+          "Yi Qi Sheng Jin Jiang Tang Jiao Nang",
+          "益气生津降糖胶囊",
+          "Yi Qi Sheng Jin Jiang Tang Capsule"
+        ]
+      ],
+      "Merge_diff_gene": {
+        "all_GO_csv#mouse": "NONE.No enriched GO terms",
+        "CMAP_CP_txt#mouse": "None.",
+        "up_kegg_csv#mouse": "NONE.No enriched KEGG terms",
+        "down_kegg_csv#human": "NONE.No enriched KEGG terms",
+        "diff_sig_gene#mouse": "NONE.No significantly different genes",
+        "all_GO_csv#human": "NONE.No enriched GO terms",
+        "drug_experiment": [
+          [
+            "EXP id",
+            "GSE id",
+            "Organism",
+            "Experiment type",
+            "Experiment detail",
+            "Control condition",
+            "Control samples",
+            "Experiment subject detail",
+            "Treatment samples"
+          ]
+        ],
+        "down_GO_csv#mouse": "NONE.No enriched GO terms",
+        "all_kegg_csv#human": "NONE.No enriched KEGG terms",
+        "up_GO_csv#mouse": "NONE.No enriched GO terms",
+        "CMAP_PCL_txt#mouse": "None.",
+        "all_kegg_csv#mouse": "NONE.No enriched KEGG terms",
+        "down_GO_csv#human": "NONE.No enriched GO terms",
+        "CMAP_OE_txt#mouse": "None.",
+        "CMAP_KD_txt#mouse": "NONE.No linked CMAP drugs",
+        "CMAP_draw#human": "",
+        "down_kegg_csv#mouse": "NONE.No enriched KEGG terms",
+        "CMAP_KD_txt#human": "NONE.No linked CMAP drugs",
+        "CMAP_OE_txt#human": "None.",
+        "up_GO_csv#human": "NONE.No enriched GO terms",
+        "CMAP_draw#mouse": "",
+        "CMAP_CP_txt#human": "None.",
+        "diff_sig_gene#human": "NONE.No significantly different genes",
+        "up_kegg_csv#human": "NONE.No enriched KEGG terms",
+        "CMAP_PCL_txt#human": "None."
+      },
+      "herb_disease": [
+        [
+          "Disease id",
+          "Disease name",
+          "Disease alias name",
+          "UMLS disease type",
+          "P value",
+          "FDR BH"
+        ]
+      ],
+      "summary": [
+        [
+          "Herb ID",
+          "Herb pinyin name",
+          "Herb Chinese name",
+          "Herb alias name",
+          "Herb English name",
+          "Herb Latin name",
+          "Property",
+          "Meridian",
+          "Use part",
+          "Function",
+          "Indication",
+          "Toxicity",
+          "Clinical manifestations",
+          "Therapeutic class",
+          "Therapeutic class (Chinese)",
+          "SymMap",
+          "TCMID",
+          "TCMSP",
+          "TCM-ID",
+          "URL"
+        ],
+        [
+          "HERB004615",
+          "Ren Shen Xu",
+          "人参须",
+          "NA",
+          "NA",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Panax Ginseng"
+          },
+          "Sweet; Bitter; Neutral",
+          "Lung; Stomach",
+          "Fine roots",
+          "Boost qiengender liquidallay thirst",
+          "Coughing up blood; Thirst; Vomiting",
+          "NA",
+          "NA",
+          "NA",
+          "NA",
+          "NA",
+          "3770",
+          "NA",
+          {
+            "link": "https://bidd.group/TCMID/herb.php?herb=TCMH1727",
+            "title": "1727"
+          },
+          "http://47.92.70.12/KnowledgeGraph/?query_node_label=Herb&query_node_name=HERB004615"
+        ]
+      ],
+      "herb_target": [
+        [
+          "Target id",
+          "Gene symbol",
+          "Gene alias name",
+          "Protein name",
+          "Type of gene",
+          "P value",
+          "FDR BH"
+        ]
+      ],
+      "drug_paper_target": [
+        [
+          "Target id",
+          "Gene symbol",
+          "Protein name",
+          "Reference"
+        ]
+      ],
+      "meta_herb": [
+        []
+      ],
+      "drug_paper_disease": [
+        [
+          "Disease id",
+          "Disease name",
+          "UMLS disease type",
+          "Reference id",
+          "PubMed id",
+          "Paper title"
+        ]
+      ],
+      "clinical_herb": [
+        []
+      ]
+    },
+    "text": "{\"cmap2_data\": \"None.\", \"herb_ingredient\": [[\"Ingredient id\", \"Ingredient name\", \"Ingredient alias name\", \"Molecular formula\", \"Canonical smiles\"], [{\"link\": \"/Detail/?v=HBIN003510&label=Ingredient\", \"title\": \"HBIN003510\"}, \"20(s)-protopanaxadiol\", \"(20S)-Protopanaxadiol; 30636-90-9; 20-Epiprotopanaxadiol; Protopanaxadiol; 20(S)-APPD; MR8AEF5T1N; Dammar-24-ene-3,12,20-triol, (3beta,12beta)-; CHEBI:75950; (20S)-Protopanaxdiol\", \"C30H52O3\", \"CC(=CCCC(C)(C1CCC2(C1C(CC3C2(CCC4C3(CCC(C4(C)C)O)C)C)O)C)O)C\"], [{\"link\": \"/Detail/?v=HBIN027737&label=Ingredient\", \"title\": \"HBIN027737\"}, \"Ginsenoside rc\", \"11021-14-0; Panaxoside RC; ginsenoside-Rc; NSC 310104; UNII-0K83B0L786; CHEBI:77154; EINECS 234-253-5; MFCD00133368; 0K83B0L786\", \"C53H90O22\", \"CC(=CCCC(C)(C1CCC2(C1C(CC3C2(CCC4C3(CCC(C4(C)C)OC5C(C(C(C(O5)CO)O)O)OC6C(C(C(C(O6)CO)O)O)O)C)C)O)C)OC7C(C(C(C(O7)COC8C(C(C(O8)CO)O)O)O)O)O)C\"], [{\"link\": \"/Detail/?v=HBIN027739&label=Ingredient\", \"title\": \"HBIN027739\"}, \"Ginsenoside rd\", \"52705-93-8; Chikusetsusaponin FK7; Gypenoside VIII; UNII-WB232T95AV; WB232T95AV; GS-Rd; CHEBI:67988; G-Rd; (20S)-ginsenoside Rd\", \"C48H82O18\", \"CC(=CCCC(C)(C1CCC2(C1C(CC3C2(CCC4C3(CCC(C4(C)C)OC5C(C(C(C(O5)CO)O)O)OC6C(C(C(C(O6)CO)O)O)O)C)C)O)C)OC7C(C(C(C(O7)CO)O)O)O)C\"], [{\"link\": \"/Detail/?v=HBIN027742&label=Ingredient\", \"title\": \"HBIN027742\"}, \"Ginsenoside re\", \"52286-59-6; Ginsenoside B2; Panaxoside RE; ginsenoside-Re; Sanchinoside Re; Chikusetsusaponin IVc; UNII-46F3R0BL3I; NSC 308877; NSC-308877\", \"C48H82O18\", \"CC1C(C(C(C(O1)OC2C(C(C(OC2OC3CC4(C(CC(C5C4(CCC5C(C)(CCC=C(C)C)OC6C(C(C(C(O6)CO)O)O)O)C)O)C7(C3C(C(CC7)O)(C)C)C)C)CO)O)O)O)O)O\"], [{\"link\": \"/Detail/?v=HBIN027746&label=Ingredient\", \"title\": \"HBIN027746\"}, \"Ginsenoside rg1\", \"22427-39-0; Sanchinoside C1; Panaxoside A; Ginsenoside A2; Panaxoside Rg1; Sanchinoside Rg1; Ginsenoside g1; (20S)-ginsenoside Rg1; (3beta,6alpha,12beta)-3,12-Dihydroxydammar-24-ene-6,20-diyl bis-beta-D-Glucopyranoside\", \"C42H72O14\", \"CC(=CCCC(C)(C1CCC2(C1C(CC3C2(CC(C4C3(CCC(C4(C)C)O)C)OC5C(C(C(C(O5)CO)O)O)O)C)O)C)OC6C(C(C(C(O6)CO)O)O)O)C\"], [{\"link\": \"/Detail/?v=HBIN027751&label=Ingredient\", \"title\": \"HBIN027751\"}, \"Ginsenoside rg3\", \"14197-60-5; 20(S)-Ginsenoside Rg3; (20S)-ginsenoside Rg3; (20S)-Propanaxadiol; 20S-propanaxadiol; 20s-ginsenoside rg3; 20(S)-Propanaxidiol; ginsenoside rg3, (s)-; ginsenoside rg3, (+)-\", \"C42H72O13\", \"CC(=CCCC(C)(C1CCC2(C1C(CC3C2(CCC4C3(CCC(C4(C)C)OC5C(C(C(C(O5)CO)O)O)OC6C(C(C(C(O6)CO)O)O)O)C)C)O)C)O)C\"], [{\"link\": \"/Detail/?v=HBIN027764&label=Ingredient\", \"title\": \"HBIN027764\"}, \"Ginsenoside rh2\", \"78214-33-2; 20(S)-Ginsenoside Rh2; (20S)-ginsenoside Rh2; 20(S)-Ginsenoside; Ginsenoside-Rh2; CHEBI:77147; 0JU44A5KWG; (2R,3R,4S,5S,6R)-2-[[(3S,5R,8R,9R,10R,12R,13R,14R,17S)-12-hydroxy-17-[(2S)-2-hydroxy-6-methylhept-5-en-2-yl]-4,4,8,10,14-pentamethyl-2,3,5,6,7,9,11,12,13,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-yl]oxy]-6-(hydroxymethyl)oxane-3,4,5-triol; (20R)-Ginsenoside Rh2\", \"C36H62O8\", \"CC(=CCCC(C)(C1CCC2(C1C(CC3C2(CCC4C3(CCC(C4(C)C)OC5C(C(C(C(O5)CO)O)O)O)C)C)O)C)O)C\"], [{\"link\": \"/Detail/?v=HBIN038739&label=Ingredient\", \"title\": \"HBIN038739\"}, \"Panaxadiol\", \"19666-76-3; 20(R)-Panaxadiol; (3S,5R,8R,9R,10R,12R,13R,14R,17S)-4,4,8,10,14-pentamethyl-17-[(2R)-2,6,6-trimethyloxan-2-yl]-2,3,5,6,7,9,11,12,13,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthrene-3,12-diol; NSC 308879; F84BLM3L74; (3beta,12beta,20R)-20,25-Epoxydammarane-3,12-diol; Panaxol; Ginsengenin II; NSC-308879\", \"C30H52O3\", \"CC1(CCCC(O1)(C)C2CCC3(C2C(CC4C3(CCC5C4(CCC(C5(C)C)O)C)C)O)C)C\"], [{\"link\": \"/Detail/?v=HBIN038740&label=Ingredient\", \"title\": \"HBIN038740\"}, \"Panaxatriol\", \"32791-84-7; UNII-9F5B25FDDG; 9F5B25FDDG; NSC 308880; NSC-308880; (3beta,6alpha,12beta,20R)-20,25-Epoxydammarane-3,6,12-triol; (3S,5R,6R,8R,9R,10R,12R,13R,14R,17S)-4,4,8,10,14-pentamethyl-17-[(2R)-2,6,6-trimethyloxan-2-yl]-2,3,5,6,7,9,11,12,13,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthrene-3,6,12-triol; Panaxtriol; (20R)-20,25-EPOXYDAMMARANE-3.BETA.,6.BETA.,12.BETA.-TRIOL\", \"C30H52O4\", \"CC1(CCCC(O1)(C)C2CCC3(C2C(CC4C3(CC(C5C4(CCC(C5(C)C)O)C)O)C)O)C)C\"], [{\"link\": \"/Detail/?v=HBIN038749&label=Ingredient\", \"title\": \"HBIN038749\"}, \"Panaxydol\", \"72800-72-7; (3R)-8-[(2R,3S)-3-heptyloxiran-2-yl]oct-1-en-4,6-diyn-3-ol; (3r)-8-[(2r,3s)-3-heptyloxiran-2-yl]oct-1-ene-4,6-diyn-3-ol; Panaxydol, (-)-; 1-Octene-4,6-diyn-3-ol, 8-(3-heptyloxiranyl)-; P3VHC8ZL8G; (3R, 9R, 10S)-panaxydol; CHEBI:66723; DTXSID40993604\", \"C17H24O2\", \"CCCCCCCC1C(O1)CC#CC#CC(C=C)O\"], [{\"link\": \"/Detail/?v=HBIN038752&label=Ingredient\", \"title\": \"HBIN038752\"}, \"Panaxynol\", \"81203-57-8; (S)-Falcarinol; Falcarinol; (+)-Falcarinol; (3S,9Z)-heptadeca-1,9-dien-4,6-diyn-3-ol; 1,9-Heptadecadiene-4,6-diyn-3-ol, (3S,9Z)-; (S,Z)-Heptadeca-1,9-dien-4,6-diyn-3-ol; CHEBI:81095; (3S,9Z)-1,9-Heptadecadiene-4,6-diyn-3-ol\", \"C17H24O\", \"CCCCCCCC=CCC#CC#CC(C=C)O\"]], \"formula_herb\": [[\"Formula id\", \"Formula pinyin name\", \"Formula cn name\", \"Formula en name\"], [{\"link\": \"/Detail/?v=HBFO004770&label=Formula\", \"title\": \"HBFO004770\"}, \"Wu She Zhi Yang Wan\", \"\\u4e4c\\u86c7\\u6b62\\u75d2\\u4e38\", \"Wushe Zhiyang Pill; Wu She Zhi Yang Pill\"], [{\"link\": \"/Detail/?v=HBFO006597&label=Formula\", \"title\": \"HBFO006597\"}, \"Yi Qi Sheng Jin Jiang Tang Jiao Nang\", \"\\u76ca\\u6c14\\u751f\\u6d25\\u964d\\u7cd6\\u80f6\\u56ca\", \"Yi Qi Sheng Jin Jiang Tang Capsule\"]], \"Merge_diff_gene\": {\"all_GO_csv#mouse\": \"NONE.No enriched GO terms\", \"CMAP_CP_txt#mouse\": \"None.\", \"up_kegg_csv#mouse\": \"NONE.No enriched KEGG terms\", \"down_kegg_csv#human\": \"NONE.No enriched KEGG terms\", \"diff_sig_gene#mouse\": \"NONE.No significantly different genes\", \"all_GO_csv#human\": \"NONE.No enriched GO terms\", \"drug_experiment\": [[\"EXP id\", \"GSE id\", \"Organism\", \"Experiment type\", \"Experiment detail\", \"Control condition\", \"Control samples\", \"Experiment subject detail\", \"Treatment samples\"]], \"down_GO_csv#mouse\": \"NONE.No enriched GO terms\", \"all_kegg_csv#human\": \"NONE.No enriched KEGG terms\", \"up_GO_csv#mouse\": \"NONE.No enriched GO terms\", \"CMAP_PCL_txt#mouse\": \"None.\", \"all_kegg_csv#mouse\": \"NONE.No enriched KEGG terms\", \"down_GO_csv#human\": \"NONE.No enriched GO terms\", \"CMAP_OE_txt#mouse\": \"None.\", \"CMAP_KD_txt#mouse\": \"NONE.No linked CMAP drugs\", \"CMAP_draw#human\": \"\", \"down_kegg_csv#mouse\": \"NONE.No enriched KEGG terms\", \"CMAP_KD_txt#human\": \"NONE.No linked CMAP drugs\", \"CMAP_OE_txt#human\": \"None.\", \"up_GO_csv#human\": \"NONE.No enriched GO terms\", \"CMAP_draw#mouse\": \"\", \"CMAP_CP_txt#human\": \"None.\", \"diff_sig_gene#human\": \"NONE.No significantly different genes\", \"up_kegg_csv#human\": \"NONE.No enriched KEGG terms\", \"CMAP_PCL_txt#human\": \"None.\"}, \"herb_disease\": [[\"Disease id\", \"Disease name\", \"Disease alias name\", \"UMLS disease type\", \"P value\", \"FDR BH\"]], \"summary\": [[\"Herb ID\", \"Herb pinyin name\", \"Herb Chinese name\", \"Herb alias name\", \"Herb English name\", \"Herb Latin name\", \"Property\", \"Meridian\", \"Use part\", \"Function\", \"Indication\", \"Toxicity\", \"Clinical manifestations\", \"Therapeutic class\", \"Therapeutic class (Chinese)\", \"SymMap\", \"TCMID\", \"TCMSP\", \"TCM-ID\", \"URL\"], [\"HERB004615\", \"Ren Shen Xu\", \"\\u4eba\\u53c2\\u987b\", \"NA\", \"NA\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Panax Ginseng\"}, \"Sweet; Bitter; Neutral\", \"Lung; Stomach\", \"Fine roots\", \"Boost qiengender liquidallay thirst\", \"Coughing up blood; Thirst; Vomiting\", \"NA\", \"NA\", \"NA\", \"NA\", \"NA\", \"3770\", \"NA\", {\"link\": \"https://bidd.group/TCMID/herb.php?herb=TCMH1727\", \"title\": \"1727\"}, \"http://47.92.70.12/KnowledgeGraph/?query_node_label=Herb&query_node_name=HERB004615\"]], \"herb_target\": [[\"Target id\", \"Gene symbol\", \"Gene alias name\", \"Protein name\", \"Type of gene\", \"P value\", \"FDR BH\"]], \"drug_paper_target\": [[\"Target id\", \"Gene symbol\", \"Protein name\", \"Reference\"]], \"meta_herb\": [[]], \"drug_paper_disease\": [[\"Disease id\", \"Disease name\", \"UMLS disease type\", \"Reference id\", \"PubMed id\", \"Paper title\"]], \"clinical_herb\": [[]]}"
+  },
+  "recorded_at": "2026-05-03T20:46:09.050459+00:00"
+}

@@ -1,0 +1,125 @@
+{
+  "scraper_id": "herb_ac_cn",
+  "request": {
+    "method": "POST",
+    "url": "http://47.92.70.12/chedi/api/",
+    "body": {
+      "keyword": "Dan Shen",
+      "label": "Herb",
+      "func_name": "search_api"
+    }
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "res_data": [
+        [
+          "Herb ID",
+          "Herb PinYin Name",
+          "Herb Chinese name",
+          "Herb Alias Name",
+          "Herb English Name",
+          "Herb Latin Name"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001193&label=Herb",
+            "title": "HERB001193"
+          },
+          "Dan Shen",
+          "丹参",
+          "郄蝉草; 赤参; 木羊乳; 逐马; 奔马草; 山参; 紫丹参; 红根; 山红萝卜; 活血根; 靠山红; 红参; 精选酒壶根; 野苏子根; 山苏子根; 大红袍; 蜜罐头; 血参根; 朵朵花根; 蜂糖罐; 红丹参",
+          "Danshen Root; Root of Ligulilobe Sage",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Radix et Rhizoma Salviae Miltiorrhizae; Salviae Miltiorrhizae Radix et Rhizoma"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002663&label=Herb",
+            "title": "HERB002663"
+          },
+          "Ji Dan Shen",
+          "鸡蛋参",
+          "金线吊壶芦; 山鸡蛋; 牛尾参; 补血草; 鸡嗉子; 鸡腰子",
+          "Convolvulate Asiabell",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Codonopsis Convolvulacea"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004148&label=Herb",
+            "title": "HERB004148"
+          },
+          "Ni Dan Shen",
+          "拟丹参",
+          "NA",
+          "Chinese Sage",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Salvia Sinica"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004081&label=Herb",
+            "title": "HERB004081"
+          },
+          "Nan Dan Shen",
+          "南丹参",
+          "土丹参; 丹参; 赤参; 紫丹参; 八莲麻; 七里麻; 七里蕉; 紫根; 木羊乳; 红根; 奔马草; 鼠尾草",
+          "Bowley Sage",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Radix Salviae Bowleyanae"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004100&label=Herb",
+            "title": "HERB004100"
+          },
+          "Nan Ou Dan Shen ",
+          "南欧丹参",
+          "NA",
+          "Clary",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Salvia Sclarea"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003077&label=Herb",
+            "title": "HERB003077"
+          },
+          "Ka La Ba Dan Shen",
+          "卡拉巴丹参",
+          "NA",
+          "Karaba Sage",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Salvia Karabachensis"
+          }
+        ]
+      ]
+    },
+    "text": "{\"res_data\": [[\"Herb ID\", \"Herb PinYin Name\", \"Herb Chinese name\", \"Herb Alias Name\", \"Herb English Name\", \"Herb Latin Name\"], [{\"link\": \"/Detail/?v=HERB001193&label=Herb\", \"title\": \"HERB001193\"}, \"Dan Shen\", \"\\u4e39\\u53c2\", \"\\u90c4\\u8749\\u8349; \\u8d64\\u53c2; \\u6728\\u7f8a\\u4e73; \\u9010\\u9a6c; \\u5954\\u9a6c\\u8349; \\u5c71\\u53c2; \\u7d2b\\u4e39\\u53c2; \\u7ea2\\u6839; \\u5c71\\u7ea2\\u841d\\u535c; \\u6d3b\\u8840\\u6839; \\u9760\\u5c71\\u7ea2; \\u7ea2\\u53c2; \\u7cbe\\u9009\\u9152\\u58f6\\u6839; \\u91ce\\u82cf\\u5b50\\u6839; \\u5c71\\u82cf\\u5b50\\u6839; \\u5927\\u7ea2\\u888d; \\u871c\\u7f50\\u5934; \\u8840\\u53c2\\u6839; \\u6735\\u6735\\u82b1\\u6839; \\u8702\\u7cd6\\u7f50; \\u7ea2\\u4e39\\u53c2\", \"Danshen Root; Root of Ligulilobe Sage\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Radix et Rhizoma Salviae Miltiorrhizae; Salviae Miltiorrhizae Radix et Rhizoma\"}], [{\"link\": \"/Detail/?v=HERB002663&label=Herb\", \"title\": \"HERB002663\"}, \"Ji Dan Shen\", \"\\u9e21\\u86cb\\u53c2\", \"\\u91d1\\u7ebf\\u540a\\u58f6\\u82a6; \\u5c71\\u9e21\\u86cb; \\u725b\\u5c3e\\u53c2; \\u8865\\u8840\\u8349; \\u9e21\\u55c9\\u5b50; \\u9e21\\u8170\\u5b50\", \"Convolvulate Asiabell\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Codonopsis Convolvulacea\"}], [{\"link\": \"/Detail/?v=HERB004148&label=Herb\", \"title\": \"HERB004148\"}, \"Ni Dan Shen\", \"\\u62df\\u4e39\\u53c2\", \"NA\", \"Chinese Sage\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Salvia Sinica\"}], [{\"link\": \"/Detail/?v=HERB004081&label=Herb\", \"title\": \"HERB004081\"}, \"Nan Dan Shen\", \"\\u5357\\u4e39\\u53c2\", \"\\u571f\\u4e39\\u53c2; \\u4e39\\u53c2; \\u8d64\\u53c2; \\u7d2b\\u4e39\\u53c2; \\u516b\\u83b2\\u9ebb; \\u4e03\\u91cc\\u9ebb; \\u4e03\\u91cc\\u8549; \\u7d2b\\u6839; \\u6728\\u7f8a\\u4e73; \\u7ea2\\u6839; \\u5954\\u9a6c\\u8349; \\u9f20\\u5c3e\\u8349\", \"Bowley Sage\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Radix Salviae Bowleyanae\"}], [{\"link\": \"/Detail/?v=HERB004100&label=Herb\", \"title\": \"HERB004100\"}, \"Nan Ou Dan Shen \", \"\\u5357\\u6b27\\u4e39\\u53c2\", \"NA\", \"Clary\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Salvia Sclarea\"}], [{\"link\": \"/Detail/?v=HERB003077&label=Herb\", \"title\": \"HERB003077\"}, \"Ka La Ba Dan Shen\", \"\\u5361\\u62c9\\u5df4\\u4e39\\u53c2\", \"NA\", \"Karaba Sage\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Salvia Karabachensis\"}]]}"
+  },
+  "recorded_at": "2026-05-03T20:46:29.166468+00:00"
+}

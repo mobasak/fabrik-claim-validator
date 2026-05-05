@@ -1,0 +1,365 @@
+{
+  "scraper_id": "herb_ac_cn",
+  "request": {
+    "method": "POST",
+    "url": "http://47.92.70.12/chedi/api/",
+    "body": {
+      "keyword": "Astragalus",
+      "label": "Herb",
+      "func_name": "search_api"
+    }
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "res_data": [
+        [
+          "Herb ID",
+          "Herb PinYin Name",
+          "Herb Chinese name",
+          "Herb Alias Name",
+          "Herb English Name",
+          "Herb Latin Name"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB007236&label=Herb",
+            "title": "HERB007236"
+          },
+          "Zi Yun Ying",
+          "紫云英",
+          "NA",
+          "Chinese Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Sinicus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005332&label=Herb",
+            "title": "HERB005332"
+          },
+          "Suo Guo Huang Qi",
+          "梭果黄芪",
+          "NA",
+          "Ernest Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Ernestii"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005104&label=Herb",
+            "title": "HERB005104"
+          },
+          "Shi Yong Huang Qi",
+          "食用黄芪",
+          "NA",
+          "Edible Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Cibarius"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005418&label=Herb",
+            "title": "HERB005418"
+          },
+          "Te Luo Yi Huang Qi",
+          "特洛伊黄芪",
+          "NA",
+          "Trojan Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Trojanus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003368&label=Herb",
+            "title": "HERB003368"
+          },
+          "Lian Xing Huang Qi",
+          "NA",
+          "NA",
+          "Falcate Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Falcatus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004935&label=Herb",
+            "title": "HERB004935"
+          },
+          "Shan Yang Huang Qi",
+          "山羊黄漆",
+          "NA",
+          "NA",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Caprinus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003092&label=Herb",
+            "title": "HERB003092"
+          },
+          "Kai Luo Huang Qi",
+          "开罗黄芪",
+          "NA",
+          "Cairo Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Kahiricus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005633&label=Herb",
+            "title": "HERB005633"
+          },
+          "Wan Ye Huang Qi",
+          "弯叶黄芪",
+          "NA",
+          "Flexuous Milkvetch ",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Flexuosus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001588&label=Herb",
+            "title": "HERB001588"
+          },
+          "Er Gou Huang Qi",
+          "二沟黄芪",
+          "NA",
+          "Bisulcate Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Bisulcatus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006698&label=Herb",
+            "title": "HERB006698"
+          },
+          "You Ye Huang Qi",
+          "优野黄秋葵",
+          "NA",
+          "Oily-Leaf Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Oleifolius"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000461&label=Herb",
+            "title": "HERB000461"
+          },
+          "Bian Jing Huang Qi",
+          "扁茎黄芪",
+          "NA",
+          "Flatstem Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Complanatus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000796&label=Herb",
+            "title": "HERB000796"
+          },
+          "Chi Guo Huang Qi",
+          "翅果黄芪",
+          "NA",
+          "Wingfruit Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Pterocarpus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005212&label=Herb",
+            "title": "HERB005212"
+          },
+          "Si Chi Huang Qi",
+          "四翅黄芪",
+          "NA",
+          "Fourwing Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Tetraplerus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005224&label=Herb",
+            "title": "HERB005224"
+          },
+          "Si Guo Huang Qi",
+          "四国黄芪",
+          "NA",
+          "Siko Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Shikokianus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003908&label=Herb",
+            "title": "HERB003908"
+          },
+          "Meng Gu Huang Qi",
+          "蒙古黄芪",
+          "NA",
+          "Mongolian Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Mongholicus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003964&label=Herb",
+            "title": "HERB003964"
+          },
+          "Jin Guo Huang Qi",
+          "锦果黄芪",
+          "NA",
+          "Sieversia Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Sieversianus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002961&label=Herb",
+            "title": "HERB002961"
+          },
+          "Jin Yi Huang Qi",
+          "金翼黄芪",
+          "NA",
+          "Golden-Wing Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Chrysopterus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004703&label=Herb",
+            "title": "HERB004703"
+          },
+          "Rou Mao Huang Qi",
+          "柔毛黄芪",
+          "NA",
+          "Darkhairy Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Atropubescens"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003057&label=Herb",
+            "title": "HERB003057"
+          },
+          "Ju Yuan Ye Huang Qi",
+          "巨圆叶黄耆",
+          "NA",
+          "Oblongleaf Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Miser Var. Oblongifolia"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002763&label=Herb",
+            "title": "HERB002763"
+          },
+          "Jia Na Da Huang Qi",
+          "加拿大黄芪",
+          "NA",
+          "Canadian Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Canadensis Var. Mortonii"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001418&label=Herb",
+            "title": "HERB001418"
+          },
+          "Duan Chi Huang Qi",
+          "断翅黄芪",
+          "NA",
+          "Shorttooth Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Canadensis Var. Brevidens"
+          }
+        ]
+      ]
+    },
+    "text": "{\"res_data\": [[\"Herb ID\", \"Herb PinYin Name\", \"Herb Chinese name\", \"Herb Alias Name\", \"Herb English Name\", \"Herb Latin Name\"], [{\"link\": \"/Detail/?v=HERB007236&label=Herb\", \"title\": \"HERB007236\"}, \"Zi Yun Ying\", \"\\u7d2b\\u4e91\\u82f1\", \"NA\", \"Chinese Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Sinicus\"}], [{\"link\": \"/Detail/?v=HERB005332&label=Herb\", \"title\": \"HERB005332\"}, \"Suo Guo Huang Qi\", \"\\u68ad\\u679c\\u9ec4\\u82aa\", \"NA\", \"Ernest Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Ernestii\"}], [{\"link\": \"/Detail/?v=HERB005104&label=Herb\", \"title\": \"HERB005104\"}, \"Shi Yong Huang Qi\", \"\\u98df\\u7528\\u9ec4\\u82aa\", \"NA\", \"Edible Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Cibarius\"}], [{\"link\": \"/Detail/?v=HERB005418&label=Herb\", \"title\": \"HERB005418\"}, \"Te Luo Yi Huang Qi\", \"\\u7279\\u6d1b\\u4f0a\\u9ec4\\u82aa\", \"NA\", \"Trojan Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Trojanus\"}], [{\"link\": \"/Detail/?v=HERB003368&label=Herb\", \"title\": \"HERB003368\"}, \"Lian Xing Huang Qi\", \"NA\", \"NA\", \"Falcate Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Falcatus\"}], [{\"link\": \"/Detail/?v=HERB004935&label=Herb\", \"title\": \"HERB004935\"}, \"Shan Yang Huang Qi\", \"\\u5c71\\u7f8a\\u9ec4\\u6f06\", \"NA\", \"NA\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Caprinus\"}], [{\"link\": \"/Detail/?v=HERB003092&label=Herb\", \"title\": \"HERB003092\"}, \"Kai Luo Huang Qi\", \"\\u5f00\\u7f57\\u9ec4\\u82aa\", \"NA\", \"Cairo Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Kahiricus\"}], [{\"link\": \"/Detail/?v=HERB005633&label=Herb\", \"title\": \"HERB005633\"}, \"Wan Ye Huang Qi\", \"\\u5f2f\\u53f6\\u9ec4\\u82aa\", \"NA\", \"Flexuous Milkvetch \", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Flexuosus\"}], [{\"link\": \"/Detail/?v=HERB001588&label=Herb\", \"title\": \"HERB001588\"}, \"Er Gou Huang Qi\", \"\\u4e8c\\u6c9f\\u9ec4\\u82aa\", \"NA\", \"Bisulcate Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Bisulcatus\"}], [{\"link\": \"/Detail/?v=HERB006698&label=Herb\", \"title\": \"HERB006698\"}, \"You Ye Huang Qi\", \"\\u4f18\\u91ce\\u9ec4\\u79cb\\u8475\", \"NA\", \"Oily-Leaf Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Oleifolius\"}], [{\"link\": \"/Detail/?v=HERB000461&label=Herb\", \"title\": \"HERB000461\"}, \"Bian Jing Huang Qi\", \"\\u6241\\u830e\\u9ec4\\u82aa\", \"NA\", \"Flatstem Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Complanatus\"}], [{\"link\": \"/Detail/?v=HERB000796&label=Herb\", \"title\": \"HERB000796\"}, \"Chi Guo Huang Qi\", \"\\u7fc5\\u679c\\u9ec4\\u82aa\", \"NA\", \"Wingfruit Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Pterocarpus\"}], [{\"link\": \"/Detail/?v=HERB005212&label=Herb\", \"title\": \"HERB005212\"}, \"Si Chi Huang Qi\", \"\\u56db\\u7fc5\\u9ec4\\u82aa\", \"NA\", \"Fourwing Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Tetraplerus\"}], [{\"link\": \"/Detail/?v=HERB005224&label=Herb\", \"title\": \"HERB005224\"}, \"Si Guo Huang Qi\", \"\\u56db\\u56fd\\u9ec4\\u82aa\", \"NA\", \"Siko Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Shikokianus\"}], [{\"link\": \"/Detail/?v=HERB003908&label=Herb\", \"title\": \"HERB003908\"}, \"Meng Gu Huang Qi\", \"\\u8499\\u53e4\\u9ec4\\u82aa\", \"NA\", \"Mongolian Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Mongholicus\"}], [{\"link\": \"/Detail/?v=HERB003964&label=Herb\", \"title\": \"HERB003964\"}, \"Jin Guo Huang Qi\", \"\\u9526\\u679c\\u9ec4\\u82aa\", \"NA\", \"Sieversia Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Sieversianus\"}], [{\"link\": \"/Detail/?v=HERB002961&label=Herb\", \"title\": \"HERB002961\"}, \"Jin Yi Huang Qi\", \"\\u91d1\\u7ffc\\u9ec4\\u82aa\", \"NA\", \"Golden-Wing Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Chrysopterus\"}], [{\"link\": \"/Detail/?v=HERB004703&label=Herb\", \"title\": \"HERB004703\"}, \"Rou Mao Huang Qi\", \"\\u67d4\\u6bdb\\u9ec4\\u82aa\", \"NA\", \"Darkhairy Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Atropubescens\"}], [{\"link\": \"/Detail/?v=HERB003057&label=Herb\", \"title\": \"HERB003057\"}, \"Ju Yuan Ye Huang Qi\", \"\\u5de8\\u5706\\u53f6\\u9ec4\\u8006\", \"NA\", \"Oblongleaf Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Miser Var. Oblongifolia\"}], [{\"link\": \"/Detail/?v=HERB002763&label=Herb\", \"title\": \"HERB002763\"}, \"Jia Na Da Huang Qi\", \"\\u52a0\\u62ff\\u5927\\u9ec4\\u82aa\", \"NA\", \"Canadian Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Canadensis Var. Mortonii\"}], [{\"link\": \"/Detail/?v=HERB001418&label=Herb\", \"title\": \"HERB001418\"}, \"Duan Chi Huang Qi\", \"\\u65ad\\u7fc5\\u9ec4\\u82aa\", \"NA\", \"Shorttooth Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Canadensis Var. Brevidens\"}]]}"
+  },
+  "recorded_at": "2026-05-03T20:46:03.203562+00:00"
+}

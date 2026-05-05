@@ -1,0 +1,445 @@
+{
+  "scraper_id": "herb_ac_cn",
+  "request": {
+    "method": "POST",
+    "url": "http://47.92.70.12/chedi/api/",
+    "body": {
+      "keyword": "Ginseng",
+      "label": "Herb",
+      "func_name": "search_api"
+    }
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "res_data": [
+        [
+          "Herb ID",
+          "Herb PinYin Name",
+          "Herb Chinese name",
+          "Herb Alias Name",
+          "Herb English Name",
+          "Herb Latin Name"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002319&label=Herb",
+            "title": "HERB002319"
+          },
+          "Hong Shen",
+          "红参",
+          "NA",
+          "Red Ginseng",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Radix et Rhizoma Ginseng Rubra; Ginseng Radix et Rhizoma Rubra"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004611&label=Herb",
+            "title": "HERB004611"
+          },
+          "Ren Shen Hua Lei",
+          "人参花蕾",
+          "NA",
+          "Ginseng Buds",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Panax Ginseng"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004612&label=Herb",
+            "title": "HERB004612"
+          },
+          "Ren Shen Lu",
+          "人参芦",
+          "参芦; 竹节参",
+          "Ginseng Reed",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Rhizoma Ginseng"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004616&label=Herb",
+            "title": "HERB004616"
+          },
+          "Ren Shen Ye",
+          "人参叶",
+          "人参苗; 参叶",
+          "Ginseng Leaf",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Folium Ginseng; Ginseng Folium"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006879&label=Herb",
+            "title": "HERB006879"
+          },
+          "Zang San Qi",
+          "藏三七",
+          "NA",
+          "Tibet Ginseng",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Padix Panacis Pseudoginseng"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001850&label=Herb",
+            "title": "HERB001850"
+          },
+          "Gao Li Shen",
+          "高丽参",
+          "NA",
+          "Korea Ginseng",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Radix Ginseng Korea"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004615&label=Herb",
+            "title": "HERB004615"
+          },
+          "Ren Shen Xu",
+          "人参须",
+          "NA",
+          "NA",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Panax Ginseng"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB007107&label=Herb",
+            "title": "HERB007107"
+          },
+          "Xia Ye Zhu Jie Shen ",
+          "狭叶竹节参",
+          "竹根七; 野三七; 鸡头七; 土三七; 藏三七; 三七; 扣子七; 竹节三七; 峨三七; 峨眉三七; 芋儿七; 白三七; 明七; 竹根七; 萝卜参; 大竹根七",
+          "Japanese Ginseng",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Panax Pseudo - Ginseng Var. Japonicus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004609&label=Herb",
+            "title": "HERB004609"
+          },
+          "Ren Shen",
+          "人参",
+          "人街; 鬼盖; 黄参; 玉精; 血参; 土精; 地精; 金井玉阑; 孩儿参; 棒锤",
+          "Ginseng ; Ginseng",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Radix et Rhizoma Ginseng; Ginseng Radix et Rhizoma"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005900&label=Herb",
+            "title": "HERB005900"
+          },
+          "Xi Yang Shen",
+          "西洋参",
+          "西洋人参; 洋参; 西参; 花旗参; 广东人参",
+          "American Ginseng",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Panacis Quinquefolii Radix; Radix Panacis Quinquefolii"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004785&label=Herb",
+            "title": "HERB004785"
+          },
+          "San Qi Hua",
+          "三七花",
+          "田七花",
+          "Notoginseng Flos",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Notoginseng Flos"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004610&label=Herb",
+            "title": "HERB004610"
+          },
+          "Ren Shen Hua",
+          "人参花",
+          "NA",
+          "Spica Panax Ginseng",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Flos Ginseng"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB007061&label=Herb",
+            "title": "HERB007061"
+          },
+          "Zhong Guo Hong Shen",
+          "中国红参",
+          "NA",
+          "Red Halloysite",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Radix Ginseng Rubra"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004613&label=Herb",
+            "title": "HERB004613"
+          },
+          "Ren Shen San Qi",
+          "人参三七",
+          "NA",
+          "NA",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Panax Pseudoginseng"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006747&label=Herb",
+            "title": "HERB006747"
+          },
+          "Yu Ye San Qi",
+          "羽叶三七",
+          "纽子三七; 黄连三七; 花叶扭子七; 花叶三七; 土三七; 疙瘩七",
+          "Bipinnatifid Ginseng",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Rhizoma Panacis Bipinnatifidi"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003881&label=Herb",
+            "title": "HERB003881"
+          },
+          "Bei Mei Ci Shen",
+          "北美刺参",
+          "NA",
+          "American Spineginseng",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Oplopanax Horridus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004617&label=Herb",
+            "title": "HERB004617"
+          },
+          "Ren Shen Zi",
+          "人参子",
+          "NA",
+          "Fructus Panax Ginseng",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Fructus Ginseng"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004787&label=Herb",
+            "title": "HERB004787"
+          },
+          "San Qi Ye",
+          "三七叶",
+          "NA",
+          "Folium Panax Notoginseng",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Folium Notoginseng"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005901&label=Herb",
+            "title": "HERB005901"
+          },
+          "Xi Yang Shen Jing Ye",
+          "西洋参茎叶",
+          "NA",
+          "American Ginseng Stem-Leaf",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Panax Quinquefolius"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004614&label=Herb",
+            "title": "HERB004614"
+          },
+          "Ren Shen Xi Yang Shen Za Jiao Zhong",
+          "人参西洋参杂交种",
+          "NA",
+          "NA",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Panax Ginseng X P. Quinquefolium"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004786&label=Herb",
+            "title": "HERB004786"
+          },
+          "San Qi Hua Lei",
+          "三七花蕾",
+          "NA",
+          "Sanchi Buds",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Panax Pseudo-Ginseng Var. Notoginseng"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001321&label=Herb",
+            "title": "HERB001321"
+          },
+          "Ci Ren Shen",
+          "刺人参",
+          "东北刺人参",
+          "Northeast Spineginseng, Tall Oplopanax",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Radix Oplopanacis Elati"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB007108&label=Herb",
+            "title": "HERB007108"
+          },
+          "Zhu Jie Shen",
+          "竹节参",
+          "土参; 土精; 血参; 竹节三七; 甜七; 竹根七; ; 竹节人参; 竹鞭三七; 罗汉三七; 竹节七; 竹七; 萝卜七; 白三七; 水三七; 明七; 野三七; 鸡头七; 野田七; ; 蜈蚣七; 七叶子; 大竹根七",
+          "Pacis Japonici Rhizoma; Japanese Ginseng",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Rhizoma Panacis Japonici; Panacis Japonici Rhizoma"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005957&label=Herb",
+            "title": "HERB005957"
+          },
+          "Xia Ye Jia Ren Shen",
+          "狭叶假人参",
+          "NA",
+          "Panax Pseudo-Ginseng Wall. Var. Angustifolius",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Panax Pseudo-Ginseng Var. Angustifolius"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004783&label=Herb",
+            "title": "HERB004783"
+          },
+          "San Qi",
+          "三七",
+          "山漆; 金不换; 血参; 人参三七; 佛手山漆山漆; 参三七; 田七; 滇三七[盘龙七",
+          "Sanchi",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Notoginseng Radix et Rhizoma; Radix et Rhizoma Notoginseng"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004512&label=Herb",
+            "title": "HERB004512"
+          },
+          "Zhu Zi Shen",
+          "珠子参",
+          "鸡腰参; 大金线吊葫芦; 珠儿参; 白地瓜",
+          "Largeleaf Japanese Ginseng Rhizome; Largeleaf Japanese Ginseng",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Rhizoma Panacis Majoris; Panax Japonicus Var. Major"
+          }
+        ]
+      ]
+    },
+    "text": "{\"res_data\": [[\"Herb ID\", \"Herb PinYin Name\", \"Herb Chinese name\", \"Herb Alias Name\", \"Herb English Name\", \"Herb Latin Name\"], [{\"link\": \"/Detail/?v=HERB002319&label=Herb\", \"title\": \"HERB002319\"}, \"Hong Shen\", \"\\u7ea2\\u53c2\", \"NA\", \"Red Ginseng\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Radix et Rhizoma Ginseng Rubra; Ginseng Radix et Rhizoma Rubra\"}], [{\"link\": \"/Detail/?v=HERB004611&label=Herb\", \"title\": \"HERB004611\"}, \"Ren Shen Hua Lei\", \"\\u4eba\\u53c2\\u82b1\\u857e\", \"NA\", \"Ginseng Buds\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Panax Ginseng\"}], [{\"link\": \"/Detail/?v=HERB004612&label=Herb\", \"title\": \"HERB004612\"}, \"Ren Shen Lu\", \"\\u4eba\\u53c2\\u82a6\", \"\\u53c2\\u82a6; \\u7af9\\u8282\\u53c2\", \"Ginseng Reed\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Rhizoma Ginseng\"}], [{\"link\": \"/Detail/?v=HERB004616&label=Herb\", \"title\": \"HERB004616\"}, \"Ren Shen Ye\", \"\\u4eba\\u53c2\\u53f6\", \"\\u4eba\\u53c2\\u82d7; \\u53c2\\u53f6\", \"Ginseng Leaf\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Folium Ginseng; Ginseng Folium\"}], [{\"link\": \"/Detail/?v=HERB006879&label=Herb\", \"title\": \"HERB006879\"}, \"Zang San Qi\", \"\\u85cf\\u4e09\\u4e03\", \"NA\", \"Tibet Ginseng\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Padix Panacis Pseudoginseng\"}], [{\"link\": \"/Detail/?v=HERB001850&label=Herb\", \"title\": \"HERB001850\"}, \"Gao Li Shen\", \"\\u9ad8\\u4e3d\\u53c2\", \"NA\", \"Korea Ginseng\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Radix Ginseng Korea\"}], [{\"link\": \"/Detail/?v=HERB004615&label=Herb\", \"title\": \"HERB004615\"}, \"Ren Shen Xu\", \"\\u4eba\\u53c2\\u987b\", \"NA\", \"NA\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Panax Ginseng\"}], [{\"link\": \"/Detail/?v=HERB007107&label=Herb\", \"title\": \"HERB007107\"}, \"Xia Ye Zhu Jie Shen \", \"\\u72ed\\u53f6\\u7af9\\u8282\\u53c2\", \"\\u7af9\\u6839\\u4e03; \\u91ce\\u4e09\\u4e03; \\u9e21\\u5934\\u4e03; \\u571f\\u4e09\\u4e03; \\u85cf\\u4e09\\u4e03; \\u4e09\\u4e03; \\u6263\\u5b50\\u4e03; \\u7af9\\u8282\\u4e09\\u4e03; \\u5ce8\\u4e09\\u4e03; \\u5ce8\\u7709\\u4e09\\u4e03; \\u828b\\u513f\\u4e03; \\u767d\\u4e09\\u4e03; \\u660e\\u4e03; \\u7af9\\u6839\\u4e03; \\u841d\\u535c\\u53c2; \\u5927\\u7af9\\u6839\\u4e03\", \"Japanese Ginseng\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Panax Pseudo - Ginseng Var. Japonicus\"}], [{\"link\": \"/Detail/?v=HERB004609&label=Herb\", \"title\": \"HERB004609\"}, \"Ren Shen\", \"\\u4eba\\u53c2\", \"\\u4eba\\u8857; \\u9b3c\\u76d6; \\u9ec4\\u53c2; \\u7389\\u7cbe; \\u8840\\u53c2; \\u571f\\u7cbe; \\u5730\\u7cbe; \\u91d1\\u4e95\\u7389\\u9611; \\u5b69\\u513f\\u53c2; \\u68d2\\u9524\", \"Ginseng ; Ginseng\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Radix et Rhizoma Ginseng; Ginseng Radix et Rhizoma\"}], [{\"link\": \"/Detail/?v=HERB005900&label=Herb\", \"title\": \"HERB005900\"}, \"Xi Yang Shen\", \"\\u897f\\u6d0b\\u53c2\", \"\\u897f\\u6d0b\\u4eba\\u53c2; \\u6d0b\\u53c2; \\u897f\\u53c2; \\u82b1\\u65d7\\u53c2; \\u5e7f\\u4e1c\\u4eba\\u53c2\", \"American Ginseng\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Panacis Quinquefolii Radix; Radix Panacis Quinquefolii\"}], [{\"link\": \"/Detail/?v=HERB004785&label=Herb\", \"title\": \"HERB004785\"}, \"San Qi Hua\", \"\\u4e09\\u4e03\\u82b1\", \"\\u7530\\u4e03\\u82b1\", \"Notoginseng Flos\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Notoginseng Flos\"}], [{\"link\": \"/Detail/?v=HERB004610&label=Herb\", \"title\": \"HERB004610\"}, \"Ren Shen Hua\", \"\\u4eba\\u53c2\\u82b1\", \"NA\", \"Spica Panax Ginseng\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Flos Ginseng\"}], [{\"link\": \"/Detail/?v=HERB007061&label=Herb\", \"title\": \"HERB007061\"}, \"Zhong Guo Hong Shen\", \"\\u4e2d\\u56fd\\u7ea2\\u53c2\", \"NA\", \"Red Halloysite\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Radix Ginseng Rubra\"}], [{\"link\": \"/Detail/?v=HERB004613&label=Herb\", \"title\": \"HERB004613\"}, \"Ren Shen San Qi\", \"\\u4eba\\u53c2\\u4e09\\u4e03\", \"NA\", \"NA\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Panax Pseudoginseng\"}], [{\"link\": \"/Detail/?v=HERB006747&label=Herb\", \"title\": \"HERB006747\"}, \"Yu Ye San Qi\", \"\\u7fbd\\u53f6\\u4e09\\u4e03\", \"\\u7ebd\\u5b50\\u4e09\\u4e03; \\u9ec4\\u8fde\\u4e09\\u4e03; \\u82b1\\u53f6\\u626d\\u5b50\\u4e03; \\u82b1\\u53f6\\u4e09\\u4e03; \\u571f\\u4e09\\u4e03; \\u7599\\u7629\\u4e03\", \"Bipinnatifid Ginseng\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Rhizoma Panacis Bipinnatifidi\"}], [{\"link\": \"/Detail/?v=HERB003881&label=Herb\", \"title\": \"HERB003881\"}, \"Bei Mei Ci Shen\", \"\\u5317\\u7f8e\\u523a\\u53c2\", \"NA\", \"American Spineginseng\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Oplopanax Horridus\"}], [{\"link\": \"/Detail/?v=HERB004617&label=Herb\", \"title\": \"HERB004617\"}, \"Ren Shen Zi\", \"\\u4eba\\u53c2\\u5b50\", \"NA\", \"Fructus Panax Ginseng\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Fructus Ginseng\"}], [{\"link\": \"/Detail/?v=HERB004787&label=Herb\", \"title\": \"HERB004787\"}, \"San Qi Ye\", \"\\u4e09\\u4e03\\u53f6\", \"NA\", \"Folium Panax Notoginseng\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Folium Notoginseng\"}], [{\"link\": \"/Detail/?v=HERB005901&label=Herb\", \"title\": \"HERB005901\"}, \"Xi Yang Shen Jing Ye\", \"\\u897f\\u6d0b\\u53c2\\u830e\\u53f6\", \"NA\", \"American Ginseng Stem-Leaf\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Panax Quinquefolius\"}], [{\"link\": \"/Detail/?v=HERB004614&label=Herb\", \"title\": \"HERB004614\"}, \"Ren Shen Xi Yang Shen Za Jiao Zhong\", \"\\u4eba\\u53c2\\u897f\\u6d0b\\u53c2\\u6742\\u4ea4\\u79cd\", \"NA\", \"NA\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Panax Ginseng X P. Quinquefolium\"}], [{\"link\": \"/Detail/?v=HERB004786&label=Herb\", \"title\": \"HERB004786\"}, \"San Qi Hua Lei\", \"\\u4e09\\u4e03\\u82b1\\u857e\", \"NA\", \"Sanchi Buds\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Panax Pseudo-Ginseng Var. Notoginseng\"}], [{\"link\": \"/Detail/?v=HERB001321&label=Herb\", \"title\": \"HERB001321\"}, \"Ci Ren Shen\", \"\\u523a\\u4eba\\u53c2\", \"\\u4e1c\\u5317\\u523a\\u4eba\\u53c2\", \"Northeast Spineginseng, Tall Oplopanax\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Radix Oplopanacis Elati\"}], [{\"link\": \"/Detail/?v=HERB007108&label=Herb\", \"title\": \"HERB007108\"}, \"Zhu Jie Shen\", \"\\u7af9\\u8282\\u53c2\", \"\\u571f\\u53c2; \\u571f\\u7cbe; \\u8840\\u53c2; \\u7af9\\u8282\\u4e09\\u4e03; \\u751c\\u4e03; \\u7af9\\u6839\\u4e03; ; \\u7af9\\u8282\\u4eba\\u53c2; \\u7af9\\u97ad\\u4e09\\u4e03; \\u7f57\\u6c49\\u4e09\\u4e03; \\u7af9\\u8282\\u4e03; \\u7af9\\u4e03; \\u841d\\u535c\\u4e03; \\u767d\\u4e09\\u4e03; \\u6c34\\u4e09\\u4e03; \\u660e\\u4e03; \\u91ce\\u4e09\\u4e03; \\u9e21\\u5934\\u4e03; \\u91ce\\u7530\\u4e03; ; \\u8708\\u86a3\\u4e03; \\u4e03\\u53f6\\u5b50; \\u5927\\u7af9\\u6839\\u4e03\", \"Pacis Japonici Rhizoma; Japanese Ginseng\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Rhizoma Panacis Japonici; Panacis Japonici Rhizoma\"}], [{\"link\": \"/Detail/?v=HERB005957&label=Herb\", \"title\": \"HERB005957\"}, \"Xia Ye Jia Ren Shen\", \"\\u72ed\\u53f6\\u5047\\u4eba\\u53c2\", \"NA\", \"Panax Pseudo-Ginseng Wall. Var. Angustifolius\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Panax Pseudo-Ginseng Var. Angustifolius\"}], [{\"link\": \"/Detail/?v=HERB004783&label=Herb\", \"title\": \"HERB004783\"}, \"San Qi\", \"\\u4e09\\u4e03\", \"\\u5c71\\u6f06; \\u91d1\\u4e0d\\u6362; \\u8840\\u53c2; \\u4eba\\u53c2\\u4e09\\u4e03; \\u4f5b\\u624b\\u5c71\\u6f06\\u5c71\\u6f06; \\u53c2\\u4e09\\u4e03; \\u7530\\u4e03; \\u6ec7\\u4e09\\u4e03[\\u76d8\\u9f99\\u4e03\", \"Sanchi\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Notoginseng Radix et Rhizoma; Radix et Rhizoma Notoginseng\"}], [{\"link\": \"/Detail/?v=HERB004512&label=Herb\", \"title\": \"HERB004512\"}, \"Zhu Zi Shen\", \"\\u73e0\\u5b50\\u53c2\", \"\\u9e21\\u8170\\u53c2; \\u5927\\u91d1\\u7ebf\\u540a\\u846b\\u82a6; \\u73e0\\u513f\\u53c2; \\u767d\\u5730\\u74dc\", \"Largeleaf Japanese Ginseng Rhizome; Largeleaf Japanese Ginseng\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Rhizoma Panacis Majoris; Panax Japonicus Var. Major\"}]]}"
+  },
+  "recorded_at": "2026-05-03T20:45:59.594926+00:00"
+}

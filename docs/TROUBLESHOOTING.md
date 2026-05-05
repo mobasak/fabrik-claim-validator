@@ -111,9 +111,10 @@ df -h /
 
 ## Project-Specific Issues
 
-<!-- Add issues specific to this project as they surface.
-     Format: symptom → cause → fix. Keep it scannable. -->
-
 | Symptom | Cause | Fix |
 |---------|-------|-----|
-| *(none yet)* | — | — |
+| HERB search returns empty for Latin names | HERB 2.0 indexes by Chinese/Pinyin names | Use `_PINYIN_ALIASES` or search by English common name (e.g. "Ginseng" not "Panax ginseng") |
+| `CassetteMissError` in tests | Cassettes not recorded for this request | Run with `CASSETTE_MODE=record` first, then switch back to `replay` |
+| EMA `scrape_listing` returns 404 | EMA listing route broken since 2026-05-03 | Use hardcoded monograph URLs (FCV-254 pattern). Fix tracked as FCV-202c |
+| NHPID scraper stalls | Full 15K ingredient import takes ~8h | Use `max_ingredients=N` for test runs; full import is overnight VPS job |
+| `herb.cuilab.cn` connection refused | Old HERB domain is defunct | Use `HERB_BASE_URL=http://47.92.70.12` (HERB 2.0, default) |

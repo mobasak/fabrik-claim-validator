@@ -48,11 +48,20 @@ See [docs/README.md](docs/README.md) for documentation index with purposes.
 | File | Purpose |
 |------|---------|
 | **docs/README.md** | Documentation index — entry point into all docs |
-| **docs/development/PLAN.md** | v2 build plan — 7 sprints, 54 tickets, status legend |
-| **docs/development/PLANS.md** | (deleted, superseded by `PLAN.md`) |
-| **docs/reference/AFCL.md** | Agentic Friction & Constraint Log scaffold |
+| **docs/FEATURES.md** | Feature inventory — data ingestion, normalisation, infrastructure |
+| **docs/CONFIGURATION.md** | Environment variables and settings reference |
+| **docs/QUICKSTART.md** | Integration contract — endpoints, SDKs, Docker wiring |
+| **docs/TROUBLESHOOTING.md** | Common issues and fixes |
+| **docs/BUSINESS_MODEL.md** | Monetisation and positioning (draft) |
 | **docs/LESSONS_LEARNT.md** | Per-ticket lessons-learnt log (gate-required when triggered) |
 | **docs/STRATEGIC_BACKLOG.md** | Cross-cutting backlog feeding sprint planning |
+| **docs/development/PLAN.md** | v2 build plan — 7 sprints, 54 tickets, status legend |
+| **docs/reference/AFCL.md** | Agentic Friction & Constraint Log scaffold |
+| **docs/operations/data_ingest.md** | Operator runbooks for FCV-252..255 live data loads |
+| **docs/operations/nhpid_filter_criteria.md** | NHPID ingredient filter logic documentation |
+| **docs/operations/sprint_2_5_ema_spotcheck.md** | EMA 5-monograph spot-check results |
+| **docs/operations/sprint_2_5_herb_discovery.md** | HERB 2.0 discovery report — API endpoints, corpus results |
+| **docs/operations/sprint_2_5_indication_norm_eval.md** | 5-language indication normaliser evaluation |
 
 ---
 
@@ -138,18 +147,6 @@ See [docs/README.md](docs/README.md) for documentation index with purposes.
 ├── project.yaml                # Project metadata
 ├── .env.example                # Env var template
 └── .gitignore                  # Git exclusions
-│   ├── operations/         # Runbooks
-│   ├── development/        # Plans and specs
-│   │   └── PLANS.md        # Plans index
-│   └── archive/            # Archived docs
-├── tests/                  # Test suite
-├── scripts/                # Automation scripts
-├── config/                 # Configuration files
-├── data/                   # Data files
-├── logs/                   # Log files
-├── output/                 # Output files
-├── .tmp/                   # Temporary files
-└── .cache/                 # Cache files
 ```
 
 ---
@@ -160,18 +157,26 @@ See [docs/README.md](docs/README.md) for documentation index with purposes.
 <!-- Run `python scripts/docs_updater.py --sync` to regenerate this section -->
 ```text
 docs/
+├── README.md
 ├── QUICKSTART.md
 ├── CONFIGURATION.md
+├── FEATURES.md
 ├── TROUBLESHOOTING.md
 ├── BUSINESS_MODEL.md
-├── FEATURES.md
-├── README.md
-├── archive
-├── development
-│   └── PLANS.md
-├── guides
-├── operations
-└── reference
+├── LESSONS_LEARNT.md
+├── STRATEGIC_BACKLOG.md
+├── archive/
+├── development/
+│   └── PLAN.md
+├── guides/
+├── operations/
+│   ├── data_ingest.md
+│   ├── nhpid_filter_criteria.md
+│   ├── sprint_2_5_ema_spotcheck.md
+│   ├── sprint_2_5_herb_discovery.md
+│   └── sprint_2_5_indication_norm_eval.md
+└── reference/
+    └── AFCL.md
 ```
 <!-- AUTO-GENERATED:STRUCTURE:END -->
 

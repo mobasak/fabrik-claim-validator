@@ -1,0 +1,701 @@
+{
+  "scraper_id": "herb_ac_cn",
+  "request": {
+    "method": "POST",
+    "url": "http://47.92.70.12/chedi/api/",
+    "body": {
+      "keyword": "Huang Qi",
+      "label": "Herb",
+      "func_name": "search_api"
+    }
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "res_data": [
+        [
+          "Herb ID",
+          "Herb PinYin Name",
+          "Herb Chinese name",
+          "Herb Alias Name",
+          "Herb English Name",
+          "Herb Latin Name"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002560&label=Herb",
+            "title": "HERB002560"
+          },
+          "Huang Qi",
+          "黄芪",
+          "NA",
+          "Root of Membranous Milkvetch; Milkvetch Root",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Radix Astragali; Astragali Radix"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002561&label=Herb",
+            "title": "HERB002561"
+          },
+          "Huang Qi",
+          "黄杞",
+          "NA",
+          "Ｒoxburgh Engelhardtia Root",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Engelhardia Roxburghiana"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002563&label=Herb",
+            "title": "HERB002563"
+          },
+          "Huang Qin",
+          "黄芩",
+          "腐肠; 黄文; 妒妇; 虹胜; 经芩; 印头; 内虚; 空肠; 子芩; 宿芩; 条芩; 元芩; 土金茶根; 山茶根; 黄金条根",
+          "Baical Skullcap Root; Root of Baikal Skullcap",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Radix Scutellariae; Scutellariae Radix"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002566&label=Herb",
+            "title": "HERB002566"
+          },
+          "Huang Qin Zi",
+          "黄芩子",
+          "NA",
+          "Fructus Scutellariae Baicalensis",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Fructus Scutellariae Baicalensis"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006998&label=Herb",
+            "title": "HERB006998"
+          },
+          "Zhi Huang Qi",
+          "炙黄芪",
+          "NA",
+          "Prepared Milkvetch Root",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Radix Astragali Praeparata cum Melle; Astragali Radix Praeparata Cum Melle"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001840&label=Herb",
+            "title": "HERB001840"
+          },
+          "Gao Huang Qin",
+          "高黄芩",
+          "NA",
+          "Tall Skullcap",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Scutellaria Altissima"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001285&label=Herb",
+            "title": "HERB001285"
+          },
+          "Dian Huang Qin",
+          "滇黄芩",
+          "NA",
+          "Yunnan Skullcap",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Scutellaria Amoena"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002565&label=Herb",
+            "title": "HERB002565"
+          },
+          "Huang Qin Jiao",
+          "黄秦艽",
+          "金不换; 滇黄芩; 丽江金不换; 大苦参; 黄龙胆",
+          "Baillon Veratrilla",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Veratrilla Baillonii"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000863&label=Herb",
+            "title": "HERB000863"
+          },
+          "Chuan Huang Qin",
+          "川黄芩",
+          "NA",
+          "St Johnswortleaf Skullcap",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Scutellaria Hypericifolia"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006698&label=Herb",
+            "title": "HERB006698"
+          },
+          "You Ye Huang Qi",
+          "优野黄秋葵",
+          "NA",
+          "Oily-Leaf Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Oleifolius"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001588&label=Herb",
+            "title": "HERB001588"
+          },
+          "Er Gou Huang Qi",
+          "二沟黄芪",
+          "NA",
+          "Bisulcate Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Bisulcatus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005212&label=Herb",
+            "title": "HERB005212"
+          },
+          "Si Chi Huang Qi",
+          "四翅黄芪",
+          "NA",
+          "Fourwing Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Tetraplerus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003103&label=Herb",
+            "title": "HERB003103"
+          },
+          "Ke Ai Huang Qin",
+          "NA",
+          "NA",
+          "Delightful Skullcap",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Scutellaria Amabilis"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002961&label=Herb",
+            "title": "HERB002961"
+          },
+          "Jin Yi Huang Qi",
+          "金翼黄芪",
+          "NA",
+          "Golden-Wing Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Chrysopterus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005633&label=Herb",
+            "title": "HERB005633"
+          },
+          "Wan Ye Huang Qi",
+          "弯叶黄芪",
+          "NA",
+          "Flexuous Milkvetch ",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Flexuosus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005224&label=Herb",
+            "title": "HERB005224"
+          },
+          "Si Guo Huang Qi",
+          "四国黄芪",
+          "NA",
+          "Siko Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Shikokianus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB007153&label=Herb",
+            "title": "HERB007153"
+          },
+          "Yi Se Huang Qin",
+          "异色黄芩",
+          "NA",
+          "Discolored Skullcap",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Scutellaria Discolor"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005332&label=Herb",
+            "title": "HERB005332"
+          },
+          "Suo Guo Huang Qi",
+          "梭果黄芪",
+          "NA",
+          "Ernest Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Ernestii"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003964&label=Herb",
+            "title": "HERB003964"
+          },
+          "Jin Guo Huang Qi",
+          "锦果黄芪",
+          "NA",
+          "Sieversia Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Sieversianus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003092&label=Herb",
+            "title": "HERB003092"
+          },
+          "Kai Luo Huang Qi",
+          "开罗黄芪",
+          "NA",
+          "Cairo Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Kahiricus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004703&label=Herb",
+            "title": "HERB004703"
+          },
+          "Rou Mao Huang Qi",
+          "柔毛黄芪",
+          "NA",
+          "Darkhairy Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Atropubescens"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001804&label=Herb",
+            "title": "HERB001804"
+          },
+          "Gan Su Huang Qin",
+          "甘肃黄芩",
+          "NA",
+          "Rehder Skullcap",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Scutellaria Rehderiana"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000796&label=Herb",
+            "title": "HERB000796"
+          },
+          "Chi Guo Huang Qi",
+          "翅果黄芪",
+          "NA",
+          "Wingfruit Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Pterocarpus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003908&label=Herb",
+            "title": "HERB003908"
+          },
+          "Meng Gu Huang Qi",
+          "蒙古黄芪",
+          "NA",
+          "Mongolian Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Mongholicus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005104&label=Herb",
+            "title": "HERB005104"
+          },
+          "Shi Yong Huang Qi",
+          "食用黄芪",
+          "NA",
+          "Edible Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Cibarius"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001418&label=Herb",
+            "title": "HERB001418"
+          },
+          "Duan Chi Huang Qi",
+          "断翅黄芪",
+          "NA",
+          "Shorttooth Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Canadensis Var. Brevidens"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000502&label=Herb",
+            "title": "HERB000502"
+          },
+          "Bing Tou Huang Qin",
+          "并头黄芩",
+          "NA",
+          "Twinflower Skullcap",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Scutellaria Scordifolia"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002562&label=Herb",
+            "title": "HERB002562"
+          },
+          "Huang Qiao Rui Hua",
+          "黄鞘蕊花",
+          "NA",
+          "Yellowflower Coleus",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Coleus Xanthanthus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003368&label=Herb",
+            "title": "HERB003368"
+          },
+          "Lian Xing Huang Qi",
+          "NA",
+          "NA",
+          "Falcate Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Falcatus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB006920&label=Herb",
+            "title": "HERB006920"
+          },
+          "Zhan Mao Huang Qin",
+          "粘毛黄芩",
+          "NA",
+          "Viscidhair Skullcap",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Scutellaria Viscidula"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002763&label=Herb",
+            "title": "HERB002763"
+          },
+          "Jia Na Da Huang Qi",
+          "加拿大黄芪",
+          "NA",
+          "Canadian Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Canadensis Var. Mortonii"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005418&label=Herb",
+            "title": "HERB005418"
+          },
+          "Te Luo Yi Huang Qi",
+          "特洛伊黄芪",
+          "NA",
+          "Trojan Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Trojanus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000461&label=Herb",
+            "title": "HERB000461"
+          },
+          "Bian Jing Huang Qi",
+          "扁茎黄芪",
+          "NA",
+          "Flatstem Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Complanatus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB004935&label=Herb",
+            "title": "HERB004935"
+          },
+          "Shan Yang Huang Qi",
+          "山羊黄漆",
+          "NA",
+          "NA",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Caprinus"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003316&label=Herb",
+            "title": "HERB003316"
+          },
+          "Li Jiang Huang Qin",
+          "丽江黄芩",
+          "NA",
+          "Likiang Skullcap",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Scutellaria Likiangensis"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003057&label=Herb",
+            "title": "HERB003057"
+          },
+          "Ju Yuan Ye Huang Qi",
+          "巨圆叶黄耆",
+          "NA",
+          "Oblongleaf Milkvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Astragalus Miser Var. Oblongifolia"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB001537&label=Herb",
+            "title": "HERB001537"
+          },
+          "Duo Xu Yan Huang Qi",
+          "多序岩黄芪",
+          "NA",
+          "Manyraceme Sweetvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Hedysarum Polybotrys"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB003467&label=Herb",
+            "title": "HERB003467"
+          },
+          "Liu Ye Cai Huang Qin",
+          "柳叶菜黄芩",
+          "NA",
+          "Willowweedleaf Skullcap",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Scutellaria Epilobifolia"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000501&label=Herb",
+            "title": "HERB000501"
+          },
+          "Kui Zhuang Huang Qin",
+          "盔状黄芩",
+          "NA",
+          "NA",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Scutellaria Galericulata"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000067&label=Herb",
+            "title": "HERB000067"
+          },
+          "Shen Lie Ye Huang Qin",
+          "深裂叶黄芩",
+          "NA",
+          "Przewalsk Skullcap",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Scutellaria Przewalskii"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB002289&label=Herb",
+            "title": "HERB002289"
+          },
+          "Hong Hua Yan Huang Qi",
+          "红花岩黄芪",
+          "红黄芪; 黄芪",
+          "Redflower Sweetvetch",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Hedysarum Multijugum"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB000639&label=Herb",
+            "title": "HERB000639"
+          },
+          "Chai Hu Zhuang Qian Li Guang",
+          "柴胡状千里光",
+          "NA",
+          "Thorowax-Like Groundsel",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Senecio Bupleuroides"
+          }
+        ]
+      ]
+    },
+    "text": "{\"res_data\": [[\"Herb ID\", \"Herb PinYin Name\", \"Herb Chinese name\", \"Herb Alias Name\", \"Herb English Name\", \"Herb Latin Name\"], [{\"link\": \"/Detail/?v=HERB002560&label=Herb\", \"title\": \"HERB002560\"}, \"Huang Qi\", \"\\u9ec4\\u82aa\", \"NA\", \"Root of Membranous Milkvetch; Milkvetch Root\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Radix Astragali; Astragali Radix\"}], [{\"link\": \"/Detail/?v=HERB002561&label=Herb\", \"title\": \"HERB002561\"}, \"Huang Qi\", \"\\u9ec4\\u675e\", \"NA\", \"\\uff32oxburgh Engelhardtia Root\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Engelhardia Roxburghiana\"}], [{\"link\": \"/Detail/?v=HERB002563&label=Herb\", \"title\": \"HERB002563\"}, \"Huang Qin\", \"\\u9ec4\\u82a9\", \"\\u8150\\u80a0; \\u9ec4\\u6587; \\u5992\\u5987; \\u8679\\u80dc; \\u7ecf\\u82a9; \\u5370\\u5934; \\u5185\\u865a; \\u7a7a\\u80a0; \\u5b50\\u82a9; \\u5bbf\\u82a9; \\u6761\\u82a9; \\u5143\\u82a9; \\u571f\\u91d1\\u8336\\u6839; \\u5c71\\u8336\\u6839; \\u9ec4\\u91d1\\u6761\\u6839\", \"Baical Skullcap Root; Root of Baikal Skullcap\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Radix Scutellariae; Scutellariae Radix\"}], [{\"link\": \"/Detail/?v=HERB002566&label=Herb\", \"title\": \"HERB002566\"}, \"Huang Qin Zi\", \"\\u9ec4\\u82a9\\u5b50\", \"NA\", \"Fructus Scutellariae Baicalensis\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Fructus Scutellariae Baicalensis\"}], [{\"link\": \"/Detail/?v=HERB006998&label=Herb\", \"title\": \"HERB006998\"}, \"Zhi Huang Qi\", \"\\u7099\\u9ec4\\u82aa\", \"NA\", \"Prepared Milkvetch Root\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Radix Astragali Praeparata cum Melle; Astragali Radix Praeparata Cum Melle\"}], [{\"link\": \"/Detail/?v=HERB001840&label=Herb\", \"title\": \"HERB001840\"}, \"Gao Huang Qin\", \"\\u9ad8\\u9ec4\\u82a9\", \"NA\", \"Tall Skullcap\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Scutellaria Altissima\"}], [{\"link\": \"/Detail/?v=HERB001285&label=Herb\", \"title\": \"HERB001285\"}, \"Dian Huang Qin\", \"\\u6ec7\\u9ec4\\u82a9\", \"NA\", \"Yunnan Skullcap\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Scutellaria Amoena\"}], [{\"link\": \"/Detail/?v=HERB002565&label=Herb\", \"title\": \"HERB002565\"}, \"Huang Qin Jiao\", \"\\u9ec4\\u79e6\\u827d\", \"\\u91d1\\u4e0d\\u6362; \\u6ec7\\u9ec4\\u82a9; \\u4e3d\\u6c5f\\u91d1\\u4e0d\\u6362; \\u5927\\u82e6\\u53c2; \\u9ec4\\u9f99\\u80c6\", \"Baillon Veratrilla\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Veratrilla Baillonii\"}], [{\"link\": \"/Detail/?v=HERB000863&label=Herb\", \"title\": \"HERB000863\"}, \"Chuan Huang Qin\", \"\\u5ddd\\u9ec4\\u82a9\", \"NA\", \"St Johnswortleaf Skullcap\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Scutellaria Hypericifolia\"}], [{\"link\": \"/Detail/?v=HERB006698&label=Herb\", \"title\": \"HERB006698\"}, \"You Ye Huang Qi\", \"\\u4f18\\u91ce\\u9ec4\\u79cb\\u8475\", \"NA\", \"Oily-Leaf Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Oleifolius\"}], [{\"link\": \"/Detail/?v=HERB001588&label=Herb\", \"title\": \"HERB001588\"}, \"Er Gou Huang Qi\", \"\\u4e8c\\u6c9f\\u9ec4\\u82aa\", \"NA\", \"Bisulcate Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Bisulcatus\"}], [{\"link\": \"/Detail/?v=HERB005212&label=Herb\", \"title\": \"HERB005212\"}, \"Si Chi Huang Qi\", \"\\u56db\\u7fc5\\u9ec4\\u82aa\", \"NA\", \"Fourwing Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Tetraplerus\"}], [{\"link\": \"/Detail/?v=HERB003103&label=Herb\", \"title\": \"HERB003103\"}, \"Ke Ai Huang Qin\", \"NA\", \"NA\", \"Delightful Skullcap\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Scutellaria Amabilis\"}], [{\"link\": \"/Detail/?v=HERB002961&label=Herb\", \"title\": \"HERB002961\"}, \"Jin Yi Huang Qi\", \"\\u91d1\\u7ffc\\u9ec4\\u82aa\", \"NA\", \"Golden-Wing Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Chrysopterus\"}], [{\"link\": \"/Detail/?v=HERB005633&label=Herb\", \"title\": \"HERB005633\"}, \"Wan Ye Huang Qi\", \"\\u5f2f\\u53f6\\u9ec4\\u82aa\", \"NA\", \"Flexuous Milkvetch \", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Flexuosus\"}], [{\"link\": \"/Detail/?v=HERB005224&label=Herb\", \"title\": \"HERB005224\"}, \"Si Guo Huang Qi\", \"\\u56db\\u56fd\\u9ec4\\u82aa\", \"NA\", \"Siko Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Shikokianus\"}], [{\"link\": \"/Detail/?v=HERB007153&label=Herb\", \"title\": \"HERB007153\"}, \"Yi Se Huang Qin\", \"\\u5f02\\u8272\\u9ec4\\u82a9\", \"NA\", \"Discolored Skullcap\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Scutellaria Discolor\"}], [{\"link\": \"/Detail/?v=HERB005332&label=Herb\", \"title\": \"HERB005332\"}, \"Suo Guo Huang Qi\", \"\\u68ad\\u679c\\u9ec4\\u82aa\", \"NA\", \"Ernest Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Ernestii\"}], [{\"link\": \"/Detail/?v=HERB003964&label=Herb\", \"title\": \"HERB003964\"}, \"Jin Guo Huang Qi\", \"\\u9526\\u679c\\u9ec4\\u82aa\", \"NA\", \"Sieversia Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Sieversianus\"}], [{\"link\": \"/Detail/?v=HERB003092&label=Herb\", \"title\": \"HERB003092\"}, \"Kai Luo Huang Qi\", \"\\u5f00\\u7f57\\u9ec4\\u82aa\", \"NA\", \"Cairo Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Kahiricus\"}], [{\"link\": \"/Detail/?v=HERB004703&label=Herb\", \"title\": \"HERB004703\"}, \"Rou Mao Huang Qi\", \"\\u67d4\\u6bdb\\u9ec4\\u82aa\", \"NA\", \"Darkhairy Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Atropubescens\"}], [{\"link\": \"/Detail/?v=HERB001804&label=Herb\", \"title\": \"HERB001804\"}, \"Gan Su Huang Qin\", \"\\u7518\\u8083\\u9ec4\\u82a9\", \"NA\", \"Rehder Skullcap\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Scutellaria Rehderiana\"}], [{\"link\": \"/Detail/?v=HERB000796&label=Herb\", \"title\": \"HERB000796\"}, \"Chi Guo Huang Qi\", \"\\u7fc5\\u679c\\u9ec4\\u82aa\", \"NA\", \"Wingfruit Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Pterocarpus\"}], [{\"link\": \"/Detail/?v=HERB003908&label=Herb\", \"title\": \"HERB003908\"}, \"Meng Gu Huang Qi\", \"\\u8499\\u53e4\\u9ec4\\u82aa\", \"NA\", \"Mongolian Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Mongholicus\"}], [{\"link\": \"/Detail/?v=HERB005104&label=Herb\", \"title\": \"HERB005104\"}, \"Shi Yong Huang Qi\", \"\\u98df\\u7528\\u9ec4\\u82aa\", \"NA\", \"Edible Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Cibarius\"}], [{\"link\": \"/Detail/?v=HERB001418&label=Herb\", \"title\": \"HERB001418\"}, \"Duan Chi Huang Qi\", \"\\u65ad\\u7fc5\\u9ec4\\u82aa\", \"NA\", \"Shorttooth Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Canadensis Var. Brevidens\"}], [{\"link\": \"/Detail/?v=HERB000502&label=Herb\", \"title\": \"HERB000502\"}, \"Bing Tou Huang Qin\", \"\\u5e76\\u5934\\u9ec4\\u82a9\", \"NA\", \"Twinflower Skullcap\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Scutellaria Scordifolia\"}], [{\"link\": \"/Detail/?v=HERB002562&label=Herb\", \"title\": \"HERB002562\"}, \"Huang Qiao Rui Hua\", \"\\u9ec4\\u9798\\u854a\\u82b1\", \"NA\", \"Yellowflower Coleus\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Coleus Xanthanthus\"}], [{\"link\": \"/Detail/?v=HERB003368&label=Herb\", \"title\": \"HERB003368\"}, \"Lian Xing Huang Qi\", \"NA\", \"NA\", \"Falcate Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Falcatus\"}], [{\"link\": \"/Detail/?v=HERB006920&label=Herb\", \"title\": \"HERB006920\"}, \"Zhan Mao Huang Qin\", \"\\u7c98\\u6bdb\\u9ec4\\u82a9\", \"NA\", \"Viscidhair Skullcap\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Scutellaria Viscidula\"}], [{\"link\": \"/Detail/?v=HERB002763&label=Herb\", \"title\": \"HERB002763\"}, \"Jia Na Da Huang Qi\", \"\\u52a0\\u62ff\\u5927\\u9ec4\\u82aa\", \"NA\", \"Canadian Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Canadensis Var. Mortonii\"}], [{\"link\": \"/Detail/?v=HERB005418&label=Herb\", \"title\": \"HERB005418\"}, \"Te Luo Yi Huang Qi\", \"\\u7279\\u6d1b\\u4f0a\\u9ec4\\u82aa\", \"NA\", \"Trojan Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Trojanus\"}], [{\"link\": \"/Detail/?v=HERB000461&label=Herb\", \"title\": \"HERB000461\"}, \"Bian Jing Huang Qi\", \"\\u6241\\u830e\\u9ec4\\u82aa\", \"NA\", \"Flatstem Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Complanatus\"}], [{\"link\": \"/Detail/?v=HERB004935&label=Herb\", \"title\": \"HERB004935\"}, \"Shan Yang Huang Qi\", \"\\u5c71\\u7f8a\\u9ec4\\u6f06\", \"NA\", \"NA\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Caprinus\"}], [{\"link\": \"/Detail/?v=HERB003316&label=Herb\", \"title\": \"HERB003316\"}, \"Li Jiang Huang Qin\", \"\\u4e3d\\u6c5f\\u9ec4\\u82a9\", \"NA\", \"Likiang Skullcap\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Scutellaria Likiangensis\"}], [{\"link\": \"/Detail/?v=HERB003057&label=Herb\", \"title\": \"HERB003057\"}, \"Ju Yuan Ye Huang Qi\", \"\\u5de8\\u5706\\u53f6\\u9ec4\\u8006\", \"NA\", \"Oblongleaf Milkvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Astragalus Miser Var. Oblongifolia\"}], [{\"link\": \"/Detail/?v=HERB001537&label=Herb\", \"title\": \"HERB001537\"}, \"Duo Xu Yan Huang Qi\", \"\\u591a\\u5e8f\\u5ca9\\u9ec4\\u82aa\", \"NA\", \"Manyraceme Sweetvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Hedysarum Polybotrys\"}], [{\"link\": \"/Detail/?v=HERB003467&label=Herb\", \"title\": \"HERB003467\"}, \"Liu Ye Cai Huang Qin\", \"\\u67f3\\u53f6\\u83dc\\u9ec4\\u82a9\", \"NA\", \"Willowweedleaf Skullcap\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Scutellaria Epilobifolia\"}], [{\"link\": \"/Detail/?v=HERB000501&label=Herb\", \"title\": \"HERB000501\"}, \"Kui Zhuang Huang Qin\", \"\\u76d4\\u72b6\\u9ec4\\u82a9\", \"NA\", \"NA\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Scutellaria Galericulata\"}], [{\"link\": \"/Detail/?v=HERB000067&label=Herb\", \"title\": \"HERB000067\"}, \"Shen Lie Ye Huang Qin\", \"\\u6df1\\u88c2\\u53f6\\u9ec4\\u82a9\", \"NA\", \"Przewalsk Skullcap\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Scutellaria Przewalskii\"}], [{\"link\": \"/Detail/?v=HERB002289&label=Herb\", \"title\": \"HERB002289\"}, \"Hong Hua Yan Huang Qi\", \"\\u7ea2\\u82b1\\u5ca9\\u9ec4\\u82aa\", \"\\u7ea2\\u9ec4\\u82aa; \\u9ec4\\u82aa\", \"Redflower Sweetvetch\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Hedysarum Multijugum\"}], [{\"link\": \"/Detail/?v=HERB000639&label=Herb\", \"title\": \"HERB000639\"}, \"Chai Hu Zhuang Qian Li Guang\", \"\\u67f4\\u80e1\\u72b6\\u5343\\u91cc\\u5149\", \"NA\", \"Thorowax-Like Groundsel\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Senecio Bupleuroides\"}]]}"
+  },
+  "recorded_at": "2026-05-03T20:46:13.209329+00:00"
+}

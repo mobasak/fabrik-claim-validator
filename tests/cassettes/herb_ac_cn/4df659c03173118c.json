@@ -1,0 +1,436 @@
+{
+  "scraper_id": "herb_ac_cn",
+  "request": {
+    "method": "POST",
+    "url": "http://47.92.70.12/chedi/api/",
+    "body": {
+      "v": "HERB005809",
+      "label": "Herb",
+      "key_id": "HERB005809",
+      "func_name": "detail_api"
+    }
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "cmap2_data": "None.",
+      "herb_ingredient": [
+        [
+          "Ingredient id",
+          "Ingredient name",
+          "Ingredient alias name",
+          "Molecular formula",
+          "Canonical smiles"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN004216&label=Ingredient",
+            "title": "HBIN004216"
+          },
+          "2,4,4-trimethyl-1-pentene",
+          "Diisobutylene; 107-39-1; 25167-70-8; 2,4,4-Trimethylpent-1-ene; Pentene, 2,4,4-trimethyl-; 1-Pentene, 2,4,4-trimethyl-; 2,4,4-TRIMETHYLPENTENE; Diisobutene; 2,2,4-Trimethyl-4-pentene",
+          "C8H16",
+          "CC(=C)CC(C)(C)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN004819&label=Ingredient",
+            "title": "HBIN004819"
+          },
+          "2,6,10,14-tetramethylhexadecane",
+          "Phytane; 638-36-8; Phytan; Hexadecane, 2,6,10,14-tetramethyl-; 2,6,10,14-tetramethyl-hexadecane; 27UZX1Q8TR; EINECS 211-332-2; Hexadecane,2,6,10,14-tetramethyl-; UNII-27UZX1Q8TR",
+          "C20H42",
+          "CCC(C)CCCC(C)CCCC(C)CCCC(C)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN008886&label=Ingredient",
+            "title": "HBIN008886"
+          },
+          "3-methyl-3-hexanol",
+          "597-96-6; 3-Methylhexan-3-ol; 3-Hexanol, 3-methyl-; 2-Ethyl-2-pentanol; 3-Methyl-hexanol-(3); EINECS 209-910-4; NSC 27229; BRN 1719032; DTXSID90870658",
+          "C7H16O",
+          "CCCC(C)(CC)O"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN008944&label=Ingredient",
+            "title": "HBIN008944"
+          },
+          "3-methylheptane",
+          "589-81-1; Heptane, 3-methyl-; 2-Ethylhexane; 3-methyl-heptane; Z4R1WI6C0R; 3-Methyl-(S)-Heptane; EINECS 209-660-6; NSC 24845; NSC-24845",
+          "C8H18",
+          "CCCCC(C)CC"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN018727&label=Ingredient",
+            "title": "HBIN018727"
+          },
+          "Borneol",
+          "Isoborneol; 1,7,7-Trimethylbicyclo[2.2.1]heptan-2-ol; 507-70-0; 10385-78-1; 6627-72-1; (+/-)-Isoborneol; DL-Isoborneol; 2-borneol; DL-Borneol",
+          "C10H18O",
+          "CC1(C2CCC1(C(C2)O)C)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN023103&label=Ingredient",
+            "title": "HBIN023103"
+          },
+          "Dekan",
+          "DECANE; 124-18-5; n-Decane; Nonane, methyl-; MFCD00008954; NK85062OIY; 73138-29-1; DTXSID6024913; CHEBI:41808; NSC-8781",
+          "C10H22",
+          "CCCCCCCCCC"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN025900&label=Ingredient",
+            "title": "HBIN025900"
+          },
+          "Ethyl caprylate",
+          "ETHYL OCTANOATE; 106-32-1; Ethyl n-octanoate; Octanoic acid, ethyl ester; Caprylic acid ethyl ester; Ethyl octoate; Ethyl octylate; octanoic acid ethyl ester; Ethyl octanoate (natural)",
+          "C10H20O2",
+          "CCCCCCCC(=O)OCC"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN025965&label=Ingredient",
+            "title": "HBIN025965"
+          },
+          "Ethylpalmitate",
+          "ETHYL PALMITATE; Ethyl hexadecanoate; 628-97-7; Palmitic acid ethyl ester; Hexadecanoic acid, ethyl ester; Palmitic acid, ethyl ester; Ethyl cetylate; Ethyl n-hexadecanoate; FEMA No. 2451; Ethyl palmitate (natural)",
+          "C18H36O2",
+          "CCCCCCCCCCCCCCCC(=O)OCC"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN029037&label=Ingredient",
+            "title": "HBIN029037"
+          },
+          "Henicosane",
+          "HENEICOSANE; n-Heneicosane; 629-94-7; UNII-I93S5U5DMP; I93S5U5DMP; EINECS 211-118-9; MFCD00009346; AI3-36479; DTXSID9047097",
+          "C21H44",
+          "CCCCCCCCCCCCCCCCCCCCC"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN029090&label=Ingredient",
+            "title": "HBIN029090"
+          },
+          "Heptadekan",
+          "HEPTADECANE; n-Heptadecane; 629-78-7; EINECS 211-108-4; Normal-heptadecane; NSC 172782; BRN 1738898; DTXSID7047061; CHEBI:16148",
+          "C17H36",
+          "CCCCCCCCCCCCCCCCC"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN029328&label=Ingredient",
+            "title": "HBIN029328"
+          },
+          "Hexanoic acid",
+          "Caproic acid; 142-62-1; n-Caproic acid; n-Hexanoic acid; Capronic acid; 1-Hexanoic acid; Butylacetic acid; Pentylformic acid; Hexoic acid",
+          "C6H12O2",
+          "CCCCCC(=O)O"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN035336&label=Ingredient",
+            "title": "HBIN035336"
+          },
+          "Methyl octadecadienoate",
+          "METHYL LINOLEATE; 112-63-0; Linoleic acid methyl ester; methyl (9Z,12Z)-octadeca-9,12-dienoate; Linoleic acid, methyl ester; Methyl lineoleate; Methyl 9-cis,12-cis-octadecadienoate; Methyl linoleate, native; Methyl cis,cis-9,12-octadecadienoate",
+          "C19H34O2",
+          "CCCCCC=CCC=CCCCCCCCC(=O)OC"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN035353&label=Ingredient",
+            "title": "HBIN035353"
+          },
+          "Methyl palmitate",
+          "Methyl hexadecanoate; 112-39-0; Palmitic acid methyl ester; Hexadecanoic acid, methyl ester; Palmitic acid, methyl ester; Methyl n-hexadecanoate; Uniphat A60; Metholene 2216; n-Hexadecanoic acid methyl ester",
+          "C17H34O2",
+          "CCCCCCCCCCCCCCCC(=O)OC"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN035364&label=Ingredient",
+            "title": "HBIN035364"
+          },
+          "Methyl pentadecanoate",
+          "7132-64-1; Pentadecanoic acid, methyl ester; Pentadecanoic acid methyl ester; Methyl n-pentadecanoate; n-Pentadecanoic acid methyl ester; UNII-8K0ZV6FAIZ; 8K0ZV6FAIZ; MFCD00008989; EINECS 230-430-6",
+          "C16H32O2",
+          "CCCCCCCCCCCCCCC(=O)OC"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN035423&label=Ingredient",
+            "title": "HBIN035423"
+          },
+          "Methyl stearate",
+          "112-61-8; Methyl octadecanoate; Octadecanoic acid, methyl ester; Stearic acid methyl ester; Methyl n-octadecanoate; Stearic acid, methyl ester; Metholene 2218; Kemester 9718; Kemester 9018",
+          "C19H38O2",
+          "CCCCCCCCCCCCCCCCCC(=O)OC"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN035435&label=Ingredient",
+            "title": "HBIN035435"
+          },
+          "Methyl tetradecanoate",
+          "METHYL MYRISTATE; 124-10-7; Tetradecanoic acid, methyl ester; Myristic acid methyl ester; Uniphat A50; Metholeneat 2495; Methyl n-tetradecanoate; Myristic acid, methyl ester; FEMA No. 2722",
+          "C15H30O2",
+          "CCCCCCCCCCCCCC(=O)OC"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN037214&label=Ingredient",
+            "title": "HBIN037214"
+          },
+          "Nona-2,4-dienal",
+          "Nonadienal; 30551-17-8; n-Nona-2,4-dienal; 2,4-NONADIENAL; DTXSID70944265; 6750-03-4; Nona-2,4-dien-1-al; (2E,4E)-2,4-Nonadienal; MFCD00007006",
+          "C9H14O",
+          "CCCCC=CC=CC=O"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN037739&label=Ingredient",
+            "title": "HBIN037739"
+          },
+          "Octadecane",
+          "n-Octadecane; 593-45-3; Octadecan; Oktadekan; UNII-N102P6HAIU; N102P6HAIU; CCRIS 681; 1-(4-Chlorophenyl)-1,3-dihydro-2H-indol-2-one; TS Paraffin TS 8",
+          "C18H38",
+          "CCCCCCCCCCCCCCCCCC"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN037749&label=Ingredient",
+            "title": "HBIN037749"
+          },
+          "Octadecanoic acid",
+          "stearic acid; 57-11-4; n-Octadecanoic acid; Stearophanic acid; Cetylacetic acid; 1-Heptadecanecarboxylic acid; Pearl stearic; Stearex Beads; Octadecansaeure",
+          "C18H36O2",
+          "CCCCCCCCCCCCCCCCCC(=O)O"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN039519&label=Ingredient",
+            "title": "HBIN039519"
+          },
+          "Phenylic acid",
+          "phenol; 108-95-2; carbolic acid; Hydroxybenzene; Phenic acid; Oxybenzene; Benzenol; Phenylic alcohol; Monophenol",
+          "C6H6O",
+          "C1=CC=C(C=C1)O"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN043359&label=Ingredient",
+            "title": "HBIN043359"
+          },
+          "Schizandrin",
+          "Schisandrin; 7432-28-2; Schizandrol A; Schisandrol A; Wuweizichun A; Wuweizi alcohol A; 3,4,5,14,15,16-hexamethoxy-9,10-dimethyltricyclo[10.4.0.02,7]hexadeca-1(16),2,4,6,12,14-hexaen-9-ol; Schisandrin,(S); MFCD00905761",
+          "C24H32O7",
+          "CC1CC2=CC(=C(C(=C2C3=C(C(=C(C=C3CC1(C)O)OC)OC)OC)OC)OC)OC"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN044730&label=Ingredient",
+            "title": "HBIN044730"
+          },
+          "Stearic acid",
+          "Octadecanoic acid; 57-11-4; n-Octadecanoic acid; Stearophanic acid; Cetylacetic acid; 1-Heptadecanecarboxylic acid; Pearl stearic; Stearex Beads; Octadecansaeure",
+          "C18H36O2",
+          "CCCCCCCCCCCCCCCCCC(=O)O"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN045473&label=Ingredient",
+            "title": "HBIN045473"
+          },
+          "Tangshenoside",
+          "Tangshenoside I; 117278-74-7; 9WKT543Z4X; DTXSID101045680; HY-N9317; AKOS040762392; MS-31084; CS-0159371; .BETA.-D-GLUCOPYRANOSIDE, 4-((1E)-3-((3S)-4-CARBOXY-3-(.BETA.-D-GLUCOPYRANOSYLOXY)-3-METHYL-1-OXOBUTOXY)-1-PROPEN-1-YL)-2,6-DIMETHOXYPHENYL; .BETA.-D-GLUCOPYRANOSIDE, 4-((1E)-3-((3S)-4-CARBOXY-3-(.BETA.-D-GLUCOPYRANOSYLOXY)-3-METHYL-1-OXOBUTOXY)-1-PROPENYL)-2,6-DIMETHOXYPHENYL",
+          "C29H42O18",
+          "CC(CC(=O)O)(CC(=O)OCC=CC1=CC(=C(C(=C1)OC)OC2C(C(C(C(O2)CO)O)O)O)OC)OC3C(C(C(C(O3)CO)O)O)O"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN045814&label=Ingredient",
+            "title": "HBIN045814"
+          },
+          "T-butylbenzene",
+          "tert-Butylbenzene; 98-06-6; 2-Methyl-2-phenylpropane; Benzene, (1,1-dimethylethyl)-; Pseudobutylbenzene; Phenyltrimethylmethane; Trimethylphenylmethane; Benzene, tert-butyl-; Dimethylethylbenzene",
+          "C10H14",
+          "CC(C)(C)C1=CC=CC=C1"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN046493&label=Ingredient",
+            "title": "HBIN046493"
+          },
+          "Tmh",
+          "7785-70-8; (+)-alpha-Pinene; (1R,5R)-2,6,6-Trimethylbicyclo[3.1.1]hept-2-ene; (1R)-(+)-alpha-Pinene; (1R)-|A-Pinene; alpha-Pinene, (+)-; (1R,5R)-alpha-pinene; (1R,5R)-2-Pinene; (+)-Pin-2(3)-ene; alpha-Pinene(dextro)",
+          "C10H16",
+          "CC1=CCC2CC1C2(C)C"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HBIN047414&label=Ingredient",
+            "title": "HBIN047414"
+          },
+          "Twt",
+          "DOCOSANE; n-Docosane; 629-97-0; Dokosan; UNII-OW99Q363KO; OW99Q363KO; EINECS 211-121-5; MFCD00009348; NSC 77139; NSC-77139",
+          "C22H46",
+          "CCCCCCCCCCCCCCCCCCCCCC"
+        ]
+      ],
+      "formula_herb": [
+        [
+          "Formula id",
+          "Formula pinyin name",
+          "Formula cn name",
+          "Formula en name"
+        ]
+      ],
+      "Merge_diff_gene": {
+        "all_GO_csv#mouse": "NONE.No enriched GO terms",
+        "CMAP_CP_txt#mouse": "None.",
+        "up_kegg_csv#mouse": "NONE.No enriched KEGG terms",
+        "down_kegg_csv#human": "NONE.No enriched KEGG terms",
+        "diff_sig_gene#mouse": "NONE.No significantly different genes",
+        "all_GO_csv#human": "NONE.No enriched GO terms",
+        "drug_experiment": [
+          [
+            "EXP id",
+            "GSE id",
+            "Organism",
+            "Experiment type",
+            "Experiment detail",
+            "Control condition",
+            "Control samples",
+            "Experiment subject detail",
+            "Treatment samples"
+          ]
+        ],
+        "down_GO_csv#mouse": "NONE.No enriched GO terms",
+        "all_kegg_csv#human": "NONE.No enriched KEGG terms",
+        "up_GO_csv#mouse": "NONE.No enriched GO terms",
+        "CMAP_PCL_txt#mouse": "None.",
+        "all_kegg_csv#mouse": "NONE.No enriched KEGG terms",
+        "down_GO_csv#human": "NONE.No enriched GO terms",
+        "CMAP_OE_txt#mouse": "None.",
+        "CMAP_KD_txt#mouse": "NONE.No linked CMAP drugs",
+        "CMAP_draw#human": "",
+        "down_kegg_csv#mouse": "NONE.No enriched KEGG terms",
+        "CMAP_KD_txt#human": "NONE.No linked CMAP drugs",
+        "CMAP_OE_txt#human": "None.",
+        "up_GO_csv#human": "NONE.No enriched GO terms",
+        "CMAP_draw#mouse": "",
+        "CMAP_CP_txt#human": "None.",
+        "diff_sig_gene#human": "NONE.No significantly different genes",
+        "up_kegg_csv#human": "NONE.No enriched KEGG terms",
+        "CMAP_PCL_txt#human": "None."
+      },
+      "herb_disease": [
+        [
+          "Disease id",
+          "Disease name",
+          "Disease alias name",
+          "UMLS disease type",
+          "P value",
+          "FDR BH"
+        ]
+      ],
+      "summary": [
+        [
+          "Herb ID",
+          "Herb pinyin name",
+          "Herb Chinese name",
+          "Herb alias name",
+          "Herb English name",
+          "Herb Latin name",
+          "Property",
+          "Meridian",
+          "Use part",
+          "Function",
+          "Indication",
+          "Toxicity",
+          "Clinical manifestations",
+          "Therapeutic class",
+          "Therapeutic class (Chinese)",
+          "SymMap",
+          "TCMID",
+          "TCMSP",
+          "TCM-ID",
+          "URL"
+        ],
+        [
+          "HERB005809",
+          "Xi Dang",
+          "西党",
+          "NA",
+          "Root Pilose Asiabell",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Radix Codonopsis Pilosulae"
+          },
+          "Mild; Sweet",
+          "NA",
+          "NA",
+          "Treatment of weakness of the spleen and the lung manifested by shortness of breath, cough, palpitation, anorexia, loose stools, diabetes caused by internal heat.",
+          "Treatment of weakness of the spleen and the lung manifested by shortness of breath, cough, palpitation, anorexia, loose stools, diabetes caused by internal heat.",
+          "NA",
+          "NA",
+          "For tonifying weakness",
+          "补虚",
+          {
+            "link": "http://www.symmap.org/detail/SMHB00096",
+            "title": "SMHB00096"
+          },
+          "6575",
+          "NA",
+          "NA",
+          "http://47.92.70.12/KnowledgeGraph/?query_node_label=Herb&query_node_name=HERB005809"
+        ]
+      ],
+      "herb_target": [
+        [
+          "Target id",
+          "Gene symbol",
+          "Gene alias name",
+          "Protein name",
+          "Type of gene",
+          "P value",
+          "FDR BH"
+        ]
+      ],
+      "drug_paper_target": [
+        [
+          "Target id",
+          "Gene symbol",
+          "Protein name",
+          "Reference"
+        ]
+      ],
+      "meta_herb": [
+        []
+      ],
+      "drug_paper_disease": [
+        [
+          "Disease id",
+          "Disease name",
+          "UMLS disease type",
+          "Reference id",
+          "PubMed id",
+          "Paper title"
+        ]
+      ],
+      "clinical_herb": [
+        []
+      ]
+    },
+    "text": "{\"cmap2_data\": \"None.\", \"herb_ingredient\": [[\"Ingredient id\", \"Ingredient name\", \"Ingredient alias name\", \"Molecular formula\", \"Canonical smiles\"], [{\"link\": \"/Detail/?v=HBIN004216&label=Ingredient\", \"title\": \"HBIN004216\"}, \"2,4,4-trimethyl-1-pentene\", \"Diisobutylene; 107-39-1; 25167-70-8; 2,4,4-Trimethylpent-1-ene; Pentene, 2,4,4-trimethyl-; 1-Pentene, 2,4,4-trimethyl-; 2,4,4-TRIMETHYLPENTENE; Diisobutene; 2,2,4-Trimethyl-4-pentene\", \"C8H16\", \"CC(=C)CC(C)(C)C\"], [{\"link\": \"/Detail/?v=HBIN004819&label=Ingredient\", \"title\": \"HBIN004819\"}, \"2,6,10,14-tetramethylhexadecane\", \"Phytane; 638-36-8; Phytan; Hexadecane, 2,6,10,14-tetramethyl-; 2,6,10,14-tetramethyl-hexadecane; 27UZX1Q8TR; EINECS 211-332-2; Hexadecane,2,6,10,14-tetramethyl-; UNII-27UZX1Q8TR\", \"C20H42\", \"CCC(C)CCCC(C)CCCC(C)CCCC(C)C\"], [{\"link\": \"/Detail/?v=HBIN008886&label=Ingredient\", \"title\": \"HBIN008886\"}, \"3-methyl-3-hexanol\", \"597-96-6; 3-Methylhexan-3-ol; 3-Hexanol, 3-methyl-; 2-Ethyl-2-pentanol; 3-Methyl-hexanol-(3); EINECS 209-910-4; NSC 27229; BRN 1719032; DTXSID90870658\", \"C7H16O\", \"CCCC(C)(CC)O\"], [{\"link\": \"/Detail/?v=HBIN008944&label=Ingredient\", \"title\": \"HBIN008944\"}, \"3-methylheptane\", \"589-81-1; Heptane, 3-methyl-; 2-Ethylhexane; 3-methyl-heptane; Z4R1WI6C0R; 3-Methyl-(S)-Heptane; EINECS 209-660-6; NSC 24845; NSC-24845\", \"C8H18\", \"CCCCC(C)CC\"], [{\"link\": \"/Detail/?v=HBIN018727&label=Ingredient\", \"title\": \"HBIN018727\"}, \"Borneol\", \"Isoborneol; 1,7,7-Trimethylbicyclo[2.2.1]heptan-2-ol; 507-70-0; 10385-78-1; 6627-72-1; (+/-)-Isoborneol; DL-Isoborneol; 2-borneol; DL-Borneol\", \"C10H18O\", \"CC1(C2CCC1(C(C2)O)C)C\"], [{\"link\": \"/Detail/?v=HBIN023103&label=Ingredient\", \"title\": \"HBIN023103\"}, \"Dekan\", \"DECANE; 124-18-5; n-Decane; Nonane, methyl-; MFCD00008954; NK85062OIY; 73138-29-1; DTXSID6024913; CHEBI:41808; NSC-8781\", \"C10H22\", \"CCCCCCCCCC\"], [{\"link\": \"/Detail/?v=HBIN025900&label=Ingredient\", \"title\": \"HBIN025900\"}, \"Ethyl caprylate\", \"ETHYL OCTANOATE; 106-32-1; Ethyl n-octanoate; Octanoic acid, ethyl ester; Caprylic acid ethyl ester; Ethyl octoate; Ethyl octylate; octanoic acid ethyl ester; Ethyl octanoate (natural)\", \"C10H20O2\", \"CCCCCCCC(=O)OCC\"], [{\"link\": \"/Detail/?v=HBIN025965&label=Ingredient\", \"title\": \"HBIN025965\"}, \"Ethylpalmitate\", \"ETHYL PALMITATE; Ethyl hexadecanoate; 628-97-7; Palmitic acid ethyl ester; Hexadecanoic acid, ethyl ester; Palmitic acid, ethyl ester; Ethyl cetylate; Ethyl n-hexadecanoate; FEMA No. 2451; Ethyl palmitate (natural)\", \"C18H36O2\", \"CCCCCCCCCCCCCCCC(=O)OCC\"], [{\"link\": \"/Detail/?v=HBIN029037&label=Ingredient\", \"title\": \"HBIN029037\"}, \"Henicosane\", \"HENEICOSANE; n-Heneicosane; 629-94-7; UNII-I93S5U5DMP; I93S5U5DMP; EINECS 211-118-9; MFCD00009346; AI3-36479; DTXSID9047097\", \"C21H44\", \"CCCCCCCCCCCCCCCCCCCCC\"], [{\"link\": \"/Detail/?v=HBIN029090&label=Ingredient\", \"title\": \"HBIN029090\"}, \"Heptadekan\", \"HEPTADECANE; n-Heptadecane; 629-78-7; EINECS 211-108-4; Normal-heptadecane; NSC 172782; BRN 1738898; DTXSID7047061; CHEBI:16148\", \"C17H36\", \"CCCCCCCCCCCCCCCCC\"], [{\"link\": \"/Detail/?v=HBIN029328&label=Ingredient\", \"title\": \"HBIN029328\"}, \"Hexanoic acid\", \"Caproic acid; 142-62-1; n-Caproic acid; n-Hexanoic acid; Capronic acid; 1-Hexanoic acid; Butylacetic acid; Pentylformic acid; Hexoic acid\", \"C6H12O2\", \"CCCCCC(=O)O\"], [{\"link\": \"/Detail/?v=HBIN035336&label=Ingredient\", \"title\": \"HBIN035336\"}, \"Methyl octadecadienoate\", \"METHYL LINOLEATE; 112-63-0; Linoleic acid methyl ester; methyl (9Z,12Z)-octadeca-9,12-dienoate; Linoleic acid, methyl ester; Methyl lineoleate; Methyl 9-cis,12-cis-octadecadienoate; Methyl linoleate, native; Methyl cis,cis-9,12-octadecadienoate\", \"C19H34O2\", \"CCCCCC=CCC=CCCCCCCCC(=O)OC\"], [{\"link\": \"/Detail/?v=HBIN035353&label=Ingredient\", \"title\": \"HBIN035353\"}, \"Methyl palmitate\", \"Methyl hexadecanoate; 112-39-0; Palmitic acid methyl ester; Hexadecanoic acid, methyl ester; Palmitic acid, methyl ester; Methyl n-hexadecanoate; Uniphat A60; Metholene 2216; n-Hexadecanoic acid methyl ester\", \"C17H34O2\", \"CCCCCCCCCCCCCCCC(=O)OC\"], [{\"link\": \"/Detail/?v=HBIN035364&label=Ingredient\", \"title\": \"HBIN035364\"}, \"Methyl pentadecanoate\", \"7132-64-1; Pentadecanoic acid, methyl ester; Pentadecanoic acid methyl ester; Methyl n-pentadecanoate; n-Pentadecanoic acid methyl ester; UNII-8K0ZV6FAIZ; 8K0ZV6FAIZ; MFCD00008989; EINECS 230-430-6\", \"C16H32O2\", \"CCCCCCCCCCCCCCC(=O)OC\"], [{\"link\": \"/Detail/?v=HBIN035423&label=Ingredient\", \"title\": \"HBIN035423\"}, \"Methyl stearate\", \"112-61-8; Methyl octadecanoate; Octadecanoic acid, methyl ester; Stearic acid methyl ester; Methyl n-octadecanoate; Stearic acid, methyl ester; Metholene 2218; Kemester 9718; Kemester 9018\", \"C19H38O2\", \"CCCCCCCCCCCCCCCCCC(=O)OC\"], [{\"link\": \"/Detail/?v=HBIN035435&label=Ingredient\", \"title\": \"HBIN035435\"}, \"Methyl tetradecanoate\", \"METHYL MYRISTATE; 124-10-7; Tetradecanoic acid, methyl ester; Myristic acid methyl ester; Uniphat A50; Metholeneat 2495; Methyl n-tetradecanoate; Myristic acid, methyl ester; FEMA No. 2722\", \"C15H30O2\", \"CCCCCCCCCCCCCC(=O)OC\"], [{\"link\": \"/Detail/?v=HBIN037214&label=Ingredient\", \"title\": \"HBIN037214\"}, \"Nona-2,4-dienal\", \"Nonadienal; 30551-17-8; n-Nona-2,4-dienal; 2,4-NONADIENAL; DTXSID70944265; 6750-03-4; Nona-2,4-dien-1-al; (2E,4E)-2,4-Nonadienal; MFCD00007006\", \"C9H14O\", \"CCCCC=CC=CC=O\"], [{\"link\": \"/Detail/?v=HBIN037739&label=Ingredient\", \"title\": \"HBIN037739\"}, \"Octadecane\", \"n-Octadecane; 593-45-3; Octadecan; Oktadekan; UNII-N102P6HAIU; N102P6HAIU; CCRIS 681; 1-(4-Chlorophenyl)-1,3-dihydro-2H-indol-2-one; TS Paraffin TS 8\", \"C18H38\", \"CCCCCCCCCCCCCCCCCC\"], [{\"link\": \"/Detail/?v=HBIN037749&label=Ingredient\", \"title\": \"HBIN037749\"}, \"Octadecanoic acid\", \"stearic acid; 57-11-4; n-Octadecanoic acid; Stearophanic acid; Cetylacetic acid; 1-Heptadecanecarboxylic acid; Pearl stearic; Stearex Beads; Octadecansaeure\", \"C18H36O2\", \"CCCCCCCCCCCCCCCCCC(=O)O\"], [{\"link\": \"/Detail/?v=HBIN039519&label=Ingredient\", \"title\": \"HBIN039519\"}, \"Phenylic acid\", \"phenol; 108-95-2; carbolic acid; Hydroxybenzene; Phenic acid; Oxybenzene; Benzenol; Phenylic alcohol; Monophenol\", \"C6H6O\", \"C1=CC=C(C=C1)O\"], [{\"link\": \"/Detail/?v=HBIN043359&label=Ingredient\", \"title\": \"HBIN043359\"}, \"Schizandrin\", \"Schisandrin; 7432-28-2; Schizandrol A; Schisandrol A; Wuweizichun A; Wuweizi alcohol A; 3,4,5,14,15,16-hexamethoxy-9,10-dimethyltricyclo[10.4.0.02,7]hexadeca-1(16),2,4,6,12,14-hexaen-9-ol; Schisandrin,(S); MFCD00905761\", \"C24H32O7\", \"CC1CC2=CC(=C(C(=C2C3=C(C(=C(C=C3CC1(C)O)OC)OC)OC)OC)OC)OC\"], [{\"link\": \"/Detail/?v=HBIN044730&label=Ingredient\", \"title\": \"HBIN044730\"}, \"Stearic acid\", \"Octadecanoic acid; 57-11-4; n-Octadecanoic acid; Stearophanic acid; Cetylacetic acid; 1-Heptadecanecarboxylic acid; Pearl stearic; Stearex Beads; Octadecansaeure\", \"C18H36O2\", \"CCCCCCCCCCCCCCCCCC(=O)O\"], [{\"link\": \"/Detail/?v=HBIN045473&label=Ingredient\", \"title\": \"HBIN045473\"}, \"Tangshenoside\", \"Tangshenoside I; 117278-74-7; 9WKT543Z4X; DTXSID101045680; HY-N9317; AKOS040762392; MS-31084; CS-0159371; .BETA.-D-GLUCOPYRANOSIDE, 4-((1E)-3-((3S)-4-CARBOXY-3-(.BETA.-D-GLUCOPYRANOSYLOXY)-3-METHYL-1-OXOBUTOXY)-1-PROPEN-1-YL)-2,6-DIMETHOXYPHENYL; .BETA.-D-GLUCOPYRANOSIDE, 4-((1E)-3-((3S)-4-CARBOXY-3-(.BETA.-D-GLUCOPYRANOSYLOXY)-3-METHYL-1-OXOBUTOXY)-1-PROPENYL)-2,6-DIMETHOXYPHENYL\", \"C29H42O18\", \"CC(CC(=O)O)(CC(=O)OCC=CC1=CC(=C(C(=C1)OC)OC2C(C(C(C(O2)CO)O)O)O)OC)OC3C(C(C(C(O3)CO)O)O)O\"], [{\"link\": \"/Detail/?v=HBIN045814&label=Ingredient\", \"title\": \"HBIN045814\"}, \"T-butylbenzene\", \"tert-Butylbenzene; 98-06-6; 2-Methyl-2-phenylpropane; Benzene, (1,1-dimethylethyl)-; Pseudobutylbenzene; Phenyltrimethylmethane; Trimethylphenylmethane; Benzene, tert-butyl-; Dimethylethylbenzene\", \"C10H14\", \"CC(C)(C)C1=CC=CC=C1\"], [{\"link\": \"/Detail/?v=HBIN046493&label=Ingredient\", \"title\": \"HBIN046493\"}, \"Tmh\", \"7785-70-8; (+)-alpha-Pinene; (1R,5R)-2,6,6-Trimethylbicyclo[3.1.1]hept-2-ene; (1R)-(+)-alpha-Pinene; (1R)-|A-Pinene; alpha-Pinene, (+)-; (1R,5R)-alpha-pinene; (1R,5R)-2-Pinene; (+)-Pin-2(3)-ene; alpha-Pinene(dextro)\", \"C10H16\", \"CC1=CCC2CC1C2(C)C\"], [{\"link\": \"/Detail/?v=HBIN047414&label=Ingredient\", \"title\": \"HBIN047414\"}, \"Twt\", \"DOCOSANE; n-Docosane; 629-97-0; Dokosan; UNII-OW99Q363KO; OW99Q363KO; EINECS 211-121-5; MFCD00009348; NSC 77139; NSC-77139\", \"C22H46\", \"CCCCCCCCCCCCCCCCCCCCCC\"]], \"formula_herb\": [[\"Formula id\", \"Formula pinyin name\", \"Formula cn name\", \"Formula en name\"]], \"Merge_diff_gene\": {\"all_GO_csv#mouse\": \"NONE.No enriched GO terms\", \"CMAP_CP_txt#mouse\": \"None.\", \"up_kegg_csv#mouse\": \"NONE.No enriched KEGG terms\", \"down_kegg_csv#human\": \"NONE.No enriched KEGG terms\", \"diff_sig_gene#mouse\": \"NONE.No significantly different genes\", \"all_GO_csv#human\": \"NONE.No enriched GO terms\", \"drug_experiment\": [[\"EXP id\", \"GSE id\", \"Organism\", \"Experiment type\", \"Experiment detail\", \"Control condition\", \"Control samples\", \"Experiment subject detail\", \"Treatment samples\"]], \"down_GO_csv#mouse\": \"NONE.No enriched GO terms\", \"all_kegg_csv#human\": \"NONE.No enriched KEGG terms\", \"up_GO_csv#mouse\": \"NONE.No enriched GO terms\", \"CMAP_PCL_txt#mouse\": \"None.\", \"all_kegg_csv#mouse\": \"NONE.No enriched KEGG terms\", \"down_GO_csv#human\": \"NONE.No enriched GO terms\", \"CMAP_OE_txt#mouse\": \"None.\", \"CMAP_KD_txt#mouse\": \"NONE.No linked CMAP drugs\", \"CMAP_draw#human\": \"\", \"down_kegg_csv#mouse\": \"NONE.No enriched KEGG terms\", \"CMAP_KD_txt#human\": \"NONE.No linked CMAP drugs\", \"CMAP_OE_txt#human\": \"None.\", \"up_GO_csv#human\": \"NONE.No enriched GO terms\", \"CMAP_draw#mouse\": \"\", \"CMAP_CP_txt#human\": \"None.\", \"diff_sig_gene#human\": \"NONE.No significantly different genes\", \"up_kegg_csv#human\": \"NONE.No enriched KEGG terms\", \"CMAP_PCL_txt#human\": \"None.\"}, \"herb_disease\": [[\"Disease id\", \"Disease name\", \"Disease alias name\", \"UMLS disease type\", \"P value\", \"FDR BH\"]], \"summary\": [[\"Herb ID\", \"Herb pinyin name\", \"Herb Chinese name\", \"Herb alias name\", \"Herb English name\", \"Herb Latin name\", \"Property\", \"Meridian\", \"Use part\", \"Function\", \"Indication\", \"Toxicity\", \"Clinical manifestations\", \"Therapeutic class\", \"Therapeutic class (Chinese)\", \"SymMap\", \"TCMID\", \"TCMSP\", \"TCM-ID\", \"URL\"], [\"HERB005809\", \"Xi Dang\", \"\\u897f\\u515a\", \"NA\", \"Root Pilose Asiabell\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Radix Codonopsis Pilosulae\"}, \"Mild; Sweet\", \"NA\", \"NA\", \"Treatment of weakness of the spleen and the lung manifested by shortness of breath, cough, palpitation, anorexia, loose stools, diabetes caused by internal heat.\", \"Treatment of weakness of the spleen and the lung manifested by shortness of breath, cough, palpitation, anorexia, loose stools, diabetes caused by internal heat.\", \"NA\", \"NA\", \"For tonifying weakness\", \"\\u8865\\u865a\", {\"link\": \"http://www.symmap.org/detail/SMHB00096\", \"title\": \"SMHB00096\"}, \"6575\", \"NA\", \"NA\", \"http://47.92.70.12/KnowledgeGraph/?query_node_label=Herb&query_node_name=HERB005809\"]], \"herb_target\": [[\"Target id\", \"Gene symbol\", \"Gene alias name\", \"Protein name\", \"Type of gene\", \"P value\", \"FDR BH\"]], \"drug_paper_target\": [[\"Target id\", \"Gene symbol\", \"Protein name\", \"Reference\"]], \"meta_herb\": [[]], \"drug_paper_disease\": [[\"Disease id\", \"Disease name\", \"UMLS disease type\", \"Reference id\", \"PubMed id\", \"Paper title\"]], \"clinical_herb\": [[]]}"
+  },
+  "recorded_at": "2026-05-03T20:46:51.612904+00:00"
+}

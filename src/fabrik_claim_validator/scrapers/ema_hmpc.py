@@ -481,6 +481,7 @@ class EmaHmpcScraper:
             "indications_native": indications,
             "contraindications_native": contraindications,
             "preparations": preparations,
+            "full_text": full_text,
             "source_url": source_url,
             "_parsed": parsed,  # attached for logging; stripped before DB insert
         }
@@ -534,6 +535,7 @@ class EmaHmpcScraper:
             "indications_native": indications,
             "contraindications_native": contraindications,
             "preparations": preparations,
+            "full_text": _strip_html(html)[:50000],
             "source_url": url,
         }
 
@@ -551,10 +553,10 @@ class EmaHmpcScraper:
                     title_en, title_native, monograph_lang,
                     evidence_tier, indications_native,
                     contraindications_native, preparations,
-                    source_url, scraped_at
+                    full_text, source_url, scraped_at
                 ) VALUES (
                     $1, $2, $3, $4, $5, $6, $7, $8::text[], $9::text[],
-                    $10::jsonb, $11, NOW()
+                    $10::jsonb, $11, $12, NOW()
                 )
                 ON CONFLICT (tradition_code, source_id, monograph_native_id)
                 DO UPDATE SET
@@ -564,6 +566,7 @@ class EmaHmpcScraper:
                     indications_native = EXCLUDED.indications_native,
                     contraindications_native = EXCLUDED.contraindications_native,
                     preparations = EXCLUDED.preparations,
+                    full_text = EXCLUDED.full_text,
                     source_url = EXCLUDED.source_url,
                     scraped_at = NOW()
                 """,
@@ -577,6 +580,7 @@ class EmaHmpcScraper:
                 data["indications_native"],
                 data["contraindications_native"],
                 json.dumps(data["preparations"]),
+                data.get("full_text", ""),
                 data["source_url"],
             )
 

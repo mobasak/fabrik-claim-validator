@@ -1,6 +1,6 @@
 # Changelog — fabrik-claim-validator
 
-**Last Updated:** 2026-05-03
+**Last Updated:** 2026-05-04
 
 All notable changes to this project are documented in this file.
 
@@ -9,6 +9,31 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ---
 
 ## [Unreleased]
+
+### Changed — Sprint 3 pre-flight probes & infrastructure (2026-05-04)
+
+- **Browserless v2 upgrade:** `browser.vps1.ocoron.com` upgraded from v1 to v2
+  (`ghcr.io/browserless/chromium`). Token auth mandatory. `&stealth` query param
+  enables Puppeteer stealth mode (bypasses Incapsula/bot detection).
+  Added `BROWSERLESS_URL` + `BROWSERLESS_TOKEN` to `.env.example` and `CONFIGURATION.md`.
+- **Proxy country targeting:** Webshare residential proxy now supports
+  `?country_code=XX&sticky=true` via proxy service. Iranian targeting configured
+  but Webshare has 0 Iranian IPs in pool (2026-05-04).
+- **FCV-303 (✅ architecture verified 2026-05-05):** TPM (`research.tums.ac.ir`)
+  behind ArvanCloud WAF with Iran-only IP whitelist. Path proven via `/opt/proxy`
+  API: `GET /proxy?country_code=IR&sticky=true` → Webshare IR residential
+  backbone (`hwpppvkg-residential-IR-rotate`). Operator confirmed working from
+  other WSL projects. Webshare IR pool is thin/intermittent (occasional 502);
+  scraper must implement fail-open retry budget with `data_acquisition_pending`
+  fallback after 3 consecutive failures in 15-min window.
+- **FCV-305 (✅ architecture verified):** DTAM (`www.dtam.moph.go.th`) behind
+  Incapsula JS challenge. Solved by Browserless v2 + `&stealth` — 270KB real
+  Thai TTM content returned. No proxy or captcha needed.
+- **PLAN.md environment matrix updated** with all Sprint 3 source probe results.
+- **Documentation refresh:** Filled README.md, FEATURES.md, CONFIGURATION.md,
+  QUICKSTART.md, STRATEGIC_BACKLOG.md, TROUBLESHOOTING.md, INDEX.md,
+  docs/README.md with real project content (replaced scaffold placeholders).
+  Updated `data_ingest.md` HERB section for HERB 2.0 JSON API.
 
 ### Added — Sprint 2.5: Carry-forward & live ingest (2026-05-03)
 
@@ -36,11 +61,26 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   **Live result: 600 ingredients scraped (0 errors), 140 medicinal, 44 with
   monograph references.** Old LNHPD code archived. Full 15K run available
   but takes ~8h at polite rate (1 req/2s).
-- **FCV-253 (🟡 blocked):** HERB scraper not yet written — Sprint 3 scope.
-  `herb.ac.cn` is reachable from WSL (HTTP 200). Runbook in `data_ingest.md`.
-- **FCV-254 (🟡 blocked):** EMA HMPC listing URL `/en/medicines/herbal` returns
-  404 — EMA restructured their website. Scraper code exists but listing endpoint
-  needs discovery of the new URL structure. Reachable from WSL (no geoblock).
+- **FCV-253 (✅):** HERB 2.0 resolver rewrite — discovered `POST /chedi/api/` JSON-RPC
+  endpoint via Browserless XHR interception. Two func_names: `search_api` (name→ID)
+  and `detail_api` (full herb data). Rewrote `resolvers/herb_ac_cn.py` from HTML
+  regex to JSON API. Added Pinyin alias fallback (`_PINYIN_ALIASES`) for Latin
+  binomials that fail HERB's Chinese-indexed search. `HERB_BASE_URL` env var
+  (default `http://47.92.70.12`). No proxy or Browserless needed for production.
+  **Live result: 10/10 corpus herbs resolved.** Richest: Bupleurum chinense
+  (419 ingredients, 44 targets), Salvia miltiorrhiza (306 ingredients, 119 targets,
+  124 diseases). 24 cassettes recorded; 8 tests pass (including pure-function test
+  for `parse_detail_json`). Discovery report: `docs/operations/sprint_2_5_herb_discovery.md`.
+- **FCV-254 (✅):** EMA 5-monograph spot-check — bypassed broken listing route
+  (404, tracked as FCV-202c) by hardcoding 5 monograph URLs. Fetched detail pages
+  directly, downloaded + parsed primary PDFs via `parsers/pdf_monograph.py`.
+  Added `full_text` to `_upsert_monograph` (was missing from DB writes).
+  **Live result: 5/5 monographs loaded** (Valeriana 14.9K chars, Hedera 8.7K,
+  Echinacea 11.2K, Passiflora 8.4K, Crataegus 12.7K). All have non-empty
+  `full_text`, `evidence_tier`, indications, contraindications. 3 exact, 2
+  cosmetic-deviation (tier A vs expected B — EMA PDFs have dual columns).
+  Report: `docs/operations/sprint_2_5_ema_spotcheck.md`.
+  Skipped EMA integration tests (listing-dependent) with FCV-202c reference.
 
 ### Added — Sprint 2: Western regulatory scrapers (2026-05-03)
 

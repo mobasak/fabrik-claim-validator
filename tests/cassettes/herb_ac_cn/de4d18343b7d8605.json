@@ -1,0 +1,61 @@
+{
+  "scraper_id": "herb_ac_cn",
+  "request": {
+    "method": "POST",
+    "url": "http://47.92.70.12/chedi/api/",
+    "body": {
+      "keyword": "Rehmannia glutinosa",
+      "label": "Herb",
+      "func_name": "search_api"
+    }
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "res_data": [
+        [
+          "Herb ID",
+          "Herb PinYin Name",
+          "Herb Chinese name",
+          "Herb Alias Name",
+          "Herb English Name",
+          "Herb Latin Name"
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB005974&label=Herb",
+            "title": "HERB005974"
+          },
+          "Xian Di Huang",
+          "鲜地黄",
+          "生地黄; 鲜生地; 山菸根",
+          "Adhesive Rehmannia Fresh Root",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Rehmannia Glutinosa"
+          }
+        ],
+        [
+          {
+            "link": "/Detail/?v=HERB007164&label=Herb",
+            "title": "HERB007164"
+          },
+          "Zi Di Huang",
+          "紫地黄",
+          "NA",
+          "Purple Adhesive Rehmannia",
+          {
+            "style": {
+              "fontStyle": "italic"
+            },
+            "title": "Rehmannia Glutinosa Var. Purpurea"
+          }
+        ]
+      ]
+    },
+    "text": "{\"res_data\": [[\"Herb ID\", \"Herb PinYin Name\", \"Herb Chinese name\", \"Herb Alias Name\", \"Herb English Name\", \"Herb Latin Name\"], [{\"link\": \"/Detail/?v=HERB005974&label=Herb\", \"title\": \"HERB005974\"}, \"Xian Di Huang\", \"\\u9c9c\\u5730\\u9ec4\", \"\\u751f\\u5730\\u9ec4; \\u9c9c\\u751f\\u5730; \\u5c71\\u83f8\\u6839\", \"Adhesive Rehmannia Fresh Root\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Rehmannia Glutinosa\"}], [{\"link\": \"/Detail/?v=HERB007164&label=Herb\", \"title\": \"HERB007164\"}, \"Zi Di Huang\", \"\\u7d2b\\u5730\\u9ec4\", \"NA\", \"Purple Adhesive Rehmannia\", {\"style\": {\"fontStyle\": \"italic\"}, \"title\": \"Rehmannia Glutinosa Var. Purpurea\"}]]}"
+  },
+  "recorded_at": "2026-05-03T20:46:33.314522+00:00"
+}
