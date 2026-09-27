@@ -1,0 +1,20 @@
+{
+  "blocked_by": [],
+  "created": "2026-09-27T20:33:54.281951Z",
+  "creator": "intel",
+  "evidence": "",
+  "id": "W-b44e2b3d",
+  "kind": "backlog",
+  "legacy": false,
+  "links": {
+    "decision": "",
+    "plan": "",
+    "spec": ""
+  },
+  "next": "**Vision LLM PDF parsing**: Some pharmacopoeia PDFs have table-as-image layouts that pdfplumber can't handle. Needs OpenRouter + Claude Vision. Blocked by Sprint 4 JP18/KP12 tickets.\n\n---",
+  "note": "migrated-digest:dc6571633dcd",
+  "owner": "",
+  "priority": 2,
+  "status": "open",
+  "title": "**Vision LLM PDF parsing**: Some pharmacopoeia PDFs have table-as-image layouts that pdfplumber can't handle. Needs OpenRouter + Claude Vision. Blocked by Sprint 4 JP18/KP12 tickets."
+}

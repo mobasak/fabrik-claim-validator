@@ -1,0 +1,20 @@
+{
+  "blocked_by": [],
+  "created": "2026-09-27T20:33:54.254801Z",
+  "creator": "intel",
+  "evidence": "",
+  "id": "W-7cb66748",
+  "kind": "backlog",
+  "legacy": false,
+  "links": {
+    "decision": "",
+    "plan": "",
+    "spec": ""
+  },
+  "next": "## Now — Ready for Focus Window\n\n| Effort | Item | Why Priority | Ready When |\n| :--- | :--- | :--- | :--- |\n| **S** | EMA listing route fix (FCV-202c) | Sprint 4 scrapers need working listing discovery | Sprint 4 kickoff |\n| **M** | HERB Pinyin alias expansion | Current 10-herb alias table won't scale to full TCM corpus (~800 herbs) | Sprint 4 TCM scraper |\n| **M** | Proxy client API alignment | `services/proxy.py` uses `POST /proxy/acquire` but VPS API is `GET /proxy?service=&worker_id=` | Before any scraper needs proxy |\n\n---",
+  "note": "migrated-digest:dc2997a07e59",
+  "owner": "",
+  "priority": 2,
+  "status": "open",
+  "title": "Now — Ready for Focus Window"
+}

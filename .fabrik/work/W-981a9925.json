@@ -1,0 +1,20 @@
+{
+  "blocked_by": [],
+  "created": "2026-09-27T20:33:54.287622Z",
+  "creator": "intel",
+  "evidence": "",
+  "id": "W-981a9925",
+  "kind": "backlog",
+  "legacy": false,
+  "links": {
+    "decision": "",
+    "plan": "",
+    "spec": ""
+  },
+  "next": "## Context\n\n- ⚠️ **HERB search**: HERB 2.0 indexes by Chinese/Pinyin names, NOT Latin binomials. Always use `_PINYIN_ALIASES` or search by English common name. Latin names like `Astragalus membranaceus` return empty.\n- ⚠️ **EMA listing**: `/en/medicines/herbal` returns 404 as of 2026-05-03. Individual monograph URLs still work. Tracked as FCV-202c.\n- 💡 **Cassette architecture**: Record once with `CASSETTE_MODE=record`, replay forever in CI. Hash is `sha256(scraper_id + canonical_json(request))`. Cassettes are scraper-specific subdirectories under `tests/cassettes/`.\n- 💡 **SPA scraping pattern**: When a site is an SPA, use Browserless `/function` endpoint to intercept XHR/fetch requests and discover the underlying JSON API. Then call the API directly — never scrape rendered HTML.\n\n---",
+  "note": "migrated-digest:bd199ed80a60",
+  "owner": "",
+  "priority": 2,
+  "status": "open",
+  "title": "Context"
+}

@@ -1,0 +1,20 @@
+{
+  "blocked_by": [],
+  "created": "2026-09-27T20:33:54.293756Z",
+  "creator": "intel",
+  "evidence": "",
+  "id": "W-e2dca912",
+  "kind": "backlog",
+  "legacy": false,
+  "links": {
+    "decision": "",
+    "plan": "",
+    "spec": ""
+  },
+  "next": "## Activation\n\nItems move to active development when:\n1. **Focus window opens**: A block of 4+ hours of uninterrupted time is identified.\n2. **Resource/budget availability**: External tools, APIs, or budget tiers become accessible.\n3. **Measurable failure**: A \"functional but fragile\" component begins causing repeated issues.",
+  "note": "migrated-digest:b5085aed6965",
+  "owner": "",
+  "priority": 2,
+  "status": "open",
+  "title": "Activation"
+}
