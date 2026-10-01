@@ -88,65 +88,41 @@ docs/reference/MD/
 PORTS.md
 
 # ============================================================
-# Fabrik-synced files — DO NOT EDIT (centrally managed)
-# Pushed from /opt/fabrik by sync_enforcement_to_projects.py; local edits
-# are overwritten on the next sync. To change one: edit the canonical copy
-# in /opt/fabrik and re-sync — only if the change applies to ALL projects.
+# Fabrik-synced files — managed by sync_enforcement_to_projects.py
+# DO NOT EDIT this block — it is overwritten on every sync run.
+# These files are copied from /opt/fabrik and should not be
+# committed to individual project repos.
 # ============================================================
 
 # Governance files
 AGENTS.md
-agents-fabrik.md
-agents-fabrik-core.md
 AGENTS-compact.md
-opencode.json
-.windsurfrules
 CLAUDE.md
-.worktreeinclude
+.windsurfrules
+opencode.json
 
-# Agent definition-of-done hooks
-.claude/settings.json
-.claude/hooks/final_gate_stop.py
-.claude/hooks/skill_router.py
-.claude/hooks/session_orient.py
-.claude/hooks/mail_notify.py
-.claude/hooks/quota_stop.py
-.claude/hooks/agent_role.py
-.claude/hooks/mcp_watch.py
-.windsurf/hooks.json
-
-# Rule packs, workflows and synced reference dirs
+# Rule packs and workflows (entire directory)
 .windsurf/
-docs/reference/kilo/
-docs/reference/MD/
 
 # Reference docs (synced from fabrik)
+docs/reference/kilo/
+docs/reference/MD/
+docs/reference/windsurf/cascade-models.md
 docs/reference/long-command-monitoring.md
 docs/reference/technology-stack-decision-guide.md
+docs/reference/AI_TAXONOMY.md
+docs/reference/ai_agent_prompt_directives.md
+docs/reference/fabrik-lifecycle.md
+docs/reference/fabrik-project-catalog.md
 PORTS.md
-docs/operations/fabrik-lifecycle.md
-docs/reference/opt-project-catalog.md
-docs/reference/mobile-responsive-testing-guide.md
-docs/reference/convergence-prompts.md
 
 # Synced scripts
 scripts/final_gate.py
+scripts/kilo_code_review.py
+scripts/kilo_docs_enforcer.py
 scripts/docs_updater.py
-scripts/doc_reconcile.py
+scripts/update_agents_toc.py
 scripts/health_checker.py
-scripts/select_rules.py
-scripts/review_rubric.py
-scripts/review_receipt.py
-scripts/rules_match.py
-scripts/release_cut.py
-scripts/mail.py
-scripts/merge_request.py
-scripts/rivals_run.py
-scripts/whoami_agent.py
-scripts/command_run.py
-scripts/thread_anchor.py
-scripts/work.py
-scripts/check_research_ledger.py
 scripts/enforcement/
 scripts/rund
 scripts/rundsh
@@ -159,27 +135,6 @@ scripts/runtail
 scripts/runclean
 scripts/sync_cascade_backup.sh
 scripts/sync_extensions.sh
-
-# Vendored fabrik-lib modules (synced fleet-wide)
-libs/health_probe/
-
-# Retired vendored modules (no longer synced; still ignored so a leftover copy is not `git clean -fd` / `git add -A` bait)
-libs/subagents/
-
-# MCP config (emitted by emit_mcp_project_config.py, gitignored: carries the repo's resolved DATABASE_URL)
-.mcp.json
-
-# Per-machine tool state (created locally, never synced: serena's project + symbol cache)
-.serena/
-
-# Local state (never committed, never synced)
-.fabrik/synced.lock
-.fabrik/worktree-synced.lock
-.claude/settings.local.json
-.fabrik/plan-locks/*-salvage-*.diff
-.claude/worktrees/
-.venv
-/.fabrik/backups/
 
 # ============================================================
 # End Fabrik-synced block
